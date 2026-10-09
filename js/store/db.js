@@ -1,1 +1,92 @@
-LyoqCiAqIFBBR0VTIGRhdGEgbGF5ZXIg4oCUIGludGVyZmFjZSBkZWZpbml0aW9uLgogKgogKiBFdmVyeSBhZGFwdGVyIGltcGxlbWVudHMgdGhlc2UgbWV0aG9kcy4gVGhlIGFwcCBuZXZlciB0b3VjaGVzCiAqIGxvY2FsU3RvcmFnZSBvciBTdXBhYmFzZSBkaXJlY3RseTsgaXQgdGFsa3MgdG8gYGRiYC4KICoKICogVHdvIGltcGxlbWVudGF0aW9uczoKICogIC0gbG9jYWwtYWRhcHRlci5qcyAgICDihpIgYnJvd3NlciBsb2NhbFN0b3JhZ2UuIERlbW8vcGlsb3QgbW9kZS4gTm8gYmFja2VuZCBuZWVkZWQuCiAqICAtIHN1cGFiYXNlLWFkYXB0ZXIuanMg4oaSIFN1cGFiYXNlIEF1dGggKyBQb3N0Z3JlcyArIFJMUy4gUHJvZHVjdGlvbiBtb2RlLgogKgogKiBUaGUgYWN0aXZlIGFkYXB0ZXIgaXMgY2hvc2VuIGluIG1haW4uanMgYmFzZWQgb24gY29uZmlnIChzZWUgLmVudi5leGFtcGxlKS4KICovCgpleHBvcnQgY29uc3QgUk9MRVMgPSB7IE9XTkVSOiAnb3duZXInLCBBRE1JTjogJ2FkbWluJywgTUVNQkVSOiAnbWVtYmVyJyB9OwpleHBvcnQgY29uc3QgTUVNQkVSX1NUQVRVUyA9IHsgQUNUSVZFOiAnYWN0aXZlJywgSU5WSVRFRDogJ2ludml0ZWQnLCBSRU1PVkVEOiAncmVtb3ZlZCcgfTsKZXhwb3J0IGNvbnN0IE1JU1NJT05fU1RBVFVTID0geyBPUEVOOiAnb3BlbicsIERPTkU6ICdkb25lJyB9OwpleHBvcnQgY29uc3QgTUlMRVNUT05FX1NUQVRVUyA9IHsgT1BFTjogJ29wZW4nLCBET05FOiAnZG9uZScgfTsKZXhwb3J0IGNvbnN0IENPTU1JVE1FTlRfU1RBVFVTID0gewogIFBST1BPU0VEOiAncHJvcG9zZWQnLCBBQ0NFUFRFRDogJ2FjY2VwdGVkJywgREVDTElORUQ6ICdkZWNsaW5lZCcsCiAgQ09NUExFVEVEOiAnY29tcGxldGVkJywgQ0FOQ0VMTEVEOiAnY2FuY2VsbGVkJywKfTsKCi8qKgogKiBAdHlwZWRlZiB7b2JqZWN0fSBTZXNzaW9uCiAqIEBwcm9wZXJ0eSB7c3RyaW5nfSB1c2VySWQKICogQHByb3BlcnR5IHtzdHJpbmd9IGVtYWlsCiAqIEBwcm9wZXJ0eSB7c3RyaW5nfSBkaXNwbGF5TmFtZQogKi8KCmNvbnN0IGRiID0gewogIG1vZGU6ICdhYnN0cmFjdCcsCgogIC8vIC0tLS0gYXV0aCAtLS0tCiAgLyoqIEByZXR1cm5zIHtQcm9taXNlPFNlc3Npb258bnVsbD59ICovCiAgY3VycmVudFNlc3Npb24oKSB7IHRocm93IG5ldyBFcnJvcignbm90IGltcGxlbWVudGVkJyk7IH0sCiAgLyoqIEByZXR1cm5zIHtQcm9taXNlPFNlc3Npb24+fSAqLwogIHNpZ25JbihlbWFpbCwgZGlzcGxheU5hbWUpIHsgdGhyb3cgbmV3IEVycm9yKCdub3QgaW1wbGVtZW50ZWQnKTsgfSwKICAvKiogQHJldHVybnMge1Byb21pc2U8dm9pZD59ICovCiAgc2lnbk91dCgpIHsgdGhyb3cgbmV3IEVycm9yKCdub3QgaW1wbGVtZW50ZWQnKTsgfSwKCiAgLy8gLS0tLSBjaXJjbGVzIC0tLS0KICAvKiogQHJldHVybnMge1Byb21pc2U8QXJyYXk+fSBjaXJjbGVzIHRoZSBzZXNzaW9uIHVzZXIgYmVsb25ncyB0byAqLwogIGxpc3RDaXJjbGVzKCkgeyB0aHJvdyBuZXcgRXJyb3IoJ25vdCBpbXBsZW1lbnRlZCcpOyB9LAogIC8qKiBAcmV0dXJucyB7UHJvbWlzZTxvYmplY3Q+fSAqLwogIGNyZWF0ZUNpcmNsZSh7IG5hbWUsIGRlc2NyaXB0aW9uIH0pIHsgdGhyb3cgbmV3IEVycm9yKCdub3QgaW1wbGVtZW50ZWQnKTsgfSwKICAvKiogQHJldHVybnMge1Byb21pc2U8b2JqZWN0Pn0gZnVsbCBjaXJjbGUgaW5jbC4gbWVtYmVycyAoYXV0aHogZW5mb3JjZWQpICovCiAgZ2V0Q2lyY2xlKGNpcmNsZUlkKSB7IHRocm93IG5ldyBFcnJvcignbm90IGltcGxlbWVudGVkJyk7IH0sCgogIC8vIC0tLS0gaW52aXRhdGlvbnMgLS0tLQogIC8qKiBAcmV0dXJucyB7UHJvbWlzZTx7dG9rZW46c3RyaW5nLCB1cmw6c3RyaW5nfT59ICovCiAgY3JlYXRlSW52aXRlKGNpcmNsZUlkLCB7IG1heFVzZXMgPSAxMCwgdHRsSG91cnMgPSA3MiB9ID0ge30pIHsgdGhyb3cgbmV3IEVycm9yKCdub3QgaW1wbGVtZW50ZWQnKTsgfSwKICAvKiogQHJldHVybnMge1Byb21pc2U8b2JqZWN0Pn0gUmVkZWVtIGEgdG9rZW4g4oaSIG1lbWJlcnNoaXAuIFRocm93cyBvbiBpbnZhbGlkL2V4cGlyZWQuICovCiAgYWNjZXB0SW52aXRlKHRva2VuKSB7IHRocm93IG5ldyBFcnJvcignbm90IGltcGxlbWVudGVkJyk7IH0sCgogIC8vIC0tLS0gbWlzc2lvbnMgLS0tLQogIC8qKiBAcmV0dXJucyB7UHJvbWlzZTxBcnJheT59ICovCiAgbGlzdE1pc3Npb25zKGNpcmNsZUlkKSB7IHRocm93IG5ldyBFcnJvcignbm90IGltcGxlbWVudGVkJyk7IH0sCiAgLyoqIEByZXR1cm5zIHtQcm9taXNlPG9iamVjdD59ICovCiAgY3JlYXRlTWlzc2lvbihjaXJjbGVJZCwgeyB0aXRsZSwgZGVzY3JpcHRpb24gfSkgeyB0aHJvdyBuZXcgRXJyb3IoJ25vdCBpbXBsZW1lbnRlZCcpOyB9LAogIC8qKiBAcmV0dXJucyB7UHJvbWlzZTxvYmplY3Q+fSAqLwogIHVwZGF0ZU1pc3Npb24obWlzc2lvbklkLCBwYXRjaCkgeyB0aHJvdyBuZXcgRXJyb3IoJ25vdCBpbXBsZW1lbnRlZCcpOyB9LAoKICAvLyAtLS0tIG1pbGVzdG9uZXMgLS0tLQogIC8qKiBAcmV0dXJucyB7UHJvbWlzZTxvYmplY3Q+fSAqLwogIGNyZWF0ZU1pbGVzdG9uZShtaXNzaW9uSWQsIHsgdGl0bGUsIGFzc2lnbmVlSWQsIGR1ZURhdGUgfSkgeyB0aHJvdyBuZXcgRXJyb3IoJ25vdCBpbXBsZW1lbnRlZCcpOyB9LAogIC8qKiBAcmV0dXJucyB7UHJvbWlzZTxvYmplY3Q+fSB0b2dnbGUgb3Blbi9kb25lICovCiAgdG9nZ2xlTWlsZXN0b25lKG1pbGVzdG9uZUlkKSB7IHRocm93IG5ldyBFcnJvcignbm90IGltcGxlbWVudGVkJyk7IH0sCgogIC8vIC0tLS0gY29tbWl0bWVudHMgKEtleXN0b25lIExpdGUpIC0tLS0KICAvKiogQHJldHVybnMge1Byb21pc2U8QXJyYXk+fSAqLwogIGxpc3RDb21taXRtZW50cyhjaXJjbGVJZCkgeyB0aHJvdyBuZXcgRXJyb3IoJ25vdCBpbXBsZW1lbnRlZCcpOyB9LAogIC8qKiBAcmV0dXJucyB7UHJvbWlzZTxvYmplY3Q+fSBwcm9wb3NlciA9IHNlc3Npb24gdXNlciAqLwogIHByb3Bvc2VDb21taXRtZW50KGNpcmNsZUlkLCB7IHJlY2lwaWVudElkLCB0aXRsZSwgdGVybXMgfSkgeyB0aHJvdyBuZXcgRXJyb3IoJ25vdCBpbXBsZW1lbnRlZCcpOyB9LAogIC8qKiBPbmx5IHRoZSByZWNpcGllbnQgbWF5IGFjY2VwdC9kZWNsaW5lIHRoZWlyIG93biBjb21taXRtZW50LiAqLwogIHJlc3BvbmRDb21taXRtZW50KGNvbW1pdG1lbnRJZCwgYWNjZXB0KSB7IHRocm93IG5ldyBFcnJvcignbm90IGltcGxlbWVudGVkJyk7IH0sCiAgLyoqIE1hcmsgY29tcGxldGVkIChwcm9wb3NlciBvciByZWNpcGllbnQpLiAqLwogIGNvbXBsZXRlQ29tbWl0bWVudChjb21taXRtZW50SWQpIHsgdGhyb3cgbmV3IEVycm9yKCdub3QgaW1wbGVtZW50ZWQnKTsgfSwKICAvKiogQHJldHVybnMge1Byb21pc2U8QXJyYXk+fSBpbW11dGFibGUgaGlzdG9yeSAqLwogIGNvbW1pdG1lbnRIaXN0b3J5KGNvbW1pdG1lbnRJZCkgeyB0aHJvdyBuZXcgRXJyb3IoJ25vdCBpbXBsZW1lbnRlZCcpOyB9LAoKICAvLyAtLS0tIGNvbnZlcnNhdGlvbiAtLS0tCiAgLyoqIEByZXR1cm5zIHtQcm9taXNlPEFycmF5Pn0gKi8KICBsaXN0TWVzc2FnZXMoY2lyY2xlSWQpIHsgdGhyb3cgbmV3IEVycm9yKCdub3QgaW1wbGVtZW50ZWQnKTsgfSwKICAvKiogQHJldHVybnMge1Byb21pc2U8b2JqZWN0Pn0gKi8KICBzZW5kTWVzc2FnZShjaXJjbGVJZCwgYm9keSkgeyB0aHJvdyBuZXcgRXJyb3IoJ25vdCBpbXBsZW1lbnRlZCcpOyB9LAoKICAvLyAtLS0tIGFjdGl2aXR5IC0tLS0KICAvKiogQHJldHVybnMge1Byb21pc2U8QXJyYXk+fSBuZXdlc3QgZmlyc3QgKi8KICBsaXN0QWN0aXZpdHkoY2lyY2xlSWQsIGxpbWl0ID0gNTApIHsgdGhyb3cgbmV3IEVycm9yKCdub3QgaW1wbGVtZW50ZWQnKTsgfSwKfTsKCmV4cG9ydCBkZWZhdWx0IGRiOwo=
+/**
+ * PAGES data layer — interface definition.
+ *
+ * Every adapter implements these methods. The app never touches
+ * localStorage or Supabase directly; it talks to `db`.
+ *
+ * Two implementations:
+ *  - local-adapter.js    → browser localStorage. Demo/pilot mode. No backend needed.
+ *  - supabase-adapter.js → Supabase Auth + Postgres + RLS. Production mode.
+ *
+ * The active adapter is chosen in main.js based on config (see .env.example).
+ */
+
+export const ROLES = { OWNER: 'owner', ADMIN: 'admin', MEMBER: 'member' };
+export const MEMBER_STATUS = { ACTIVE: 'active', INVITED: 'invited', REMOVED: 'removed' };
+export const MISSION_STATUS = { OPEN: 'open', DONE: 'done' };
+export const MILESTONE_STATUS = { OPEN: 'open', DONE: 'done' };
+export const COMMITMENT_STATUS = {
+  PROPOSED: 'proposed', ACCEPTED: 'accepted', DECLINED: 'declined',
+  COMPLETED: 'completed', CANCELLED: 'cancelled',
+};
+
+/**
+ * @typedef {object} Session
+ * @property {string} userId
+ * @property {string} email
+ * @property {string} displayName
+ */
+
+const db = {
+  mode: 'abstract',
+
+  // ---- auth ----
+  /** @returns {Promise<Session|null>} */
+  currentSession() { throw new Error('not implemented'); },
+  /** @returns {Promise<Session>} */
+  signIn(email, displayName) { throw new Error('not implemented'); },
+  /** @returns {Promise<void>} */
+  signOut() { throw new Error('not implemented'); },
+
+  // ---- circles ----
+  /** @returns {Promise<Array>} circles the session user belongs to */
+  listCircles() { throw new Error('not implemented'); },
+  /** @returns {Promise<object>} */
+  createCircle({ name, description }) { throw new Error('not implemented'); },
+  /** @returns {Promise<object>} full circle incl. members (authz enforced) */
+  getCircle(circleId) { throw new Error('not implemented'); },
+
+  // ---- invitations ----
+  /** @returns {Promise<{token:string, url:string}>} */
+  createInvite(circleId, { maxUses = 10, ttlHours = 72 } = {}) { throw new Error('not implemented'); },
+  /** @returns {Promise<object>} Redeem a token → membership. Throws on invalid/expired. */
+  acceptInvite(token) { throw new Error('not implemented'); },
+
+  // ---- missions ----
+  /** @returns {Promise<Array>} */
+  listMissions(circleId) { throw new Error('not implemented'); },
+  /** @returns {Promise<object>} */
+  createMission(circleId, { title, description }) { throw new Error('not implemented'); },
+  /** @returns {Promise<object>} */
+  updateMission(missionId, patch) { throw new Error('not implemented'); },
+
+  // ---- milestones ----
+  /** @returns {Promise<object>} */
+  createMilestone(missionId, { title, assigneeId, dueDate }) { throw new Error('not implemented'); },
+  /** @returns {Promise<object>} toggle open/done */
+  toggleMilestone(milestoneId) { throw new Error('not implemented'); },
+
+  // ---- commitments (Keystone Lite) ----
+  /** @returns {Promise<Array>} */
+  listCommitments(circleId) { throw new Error('not implemented'); },
+  /** @returns {Promise<object>} proposer = session user */
+  proposeCommitment(circleId, { recipientId, title, terms }) { throw new Error('not implemented'); },
+  /** Only the recipient may accept/decline their own commitment. */
+  respondCommitment(commitmentId, accept) { throw new Error('not implemented'); },
+  /** Mark completed (proposer or recipient). */
+  completeCommitment(commitmentId) { throw new Error('not implemented'); },
+  /** @returns {Promise<Array>} immutable history */
+  commitmentHistory(commitmentId) { throw new Error('not implemented'); },
+
+  // ---- conversation ----
+  /** @returns {Promise<Array>} */
+  listMessages(circleId) { throw new Error('not implemented'); },
+  /** @returns {Promise<object>} */
+  sendMessage(circleId, body) { throw new Error('not implemented'); },
+
+  // ---- activity ----
+  /** @returns {Promise<Array>} newest first */
+  listActivity(circleId, limit = 50) { throw new Error('not implemented'); },
+};
+
+export default db;
