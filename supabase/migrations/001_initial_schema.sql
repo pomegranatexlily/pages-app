@@ -4,22 +4,6 @@
 -- touch rows the RLS policies allow; privileged mutations go through
 -- SECURITY DEFINER functions below.
 
--- ---------- helpers ----------
-create or replace function public.is_circle_member(p_circle uuid)
-returns boolean language sql stable security definer as $$
-  select exists (
-    select 1 from public.memberships
-    where circle_id = p_circle and user_id = auth.uid() and status = 'active'
-  );
-$$;
-
-create or replace function public.circle_role(p_circle uuid)
-returns text language sql stable security definer as $$
-  select role from public.memberships
-  where circle_id = p_circle and user_id = auth.uid() and status = 'active'
-  limit 1;
-$$;
-
 -- ---------- tables ----------
 create table public.profiles (
   id uuid primary key references auth.users(id) on delete cascade,
@@ -132,6 +116,24 @@ create table public.notifications (
   created_at timestamptz not null default now()
 );
 create index on public.notifications (user_id, read);
+
+-- ---------- helpers ----------
+-- (must come after the tables: Postgres validates SQL function bodies
+--  against existing tables at creation time)
+create or replace function public.is_circle_member(p_circle uuid)
+returns boolean language sql stable security definer as $$
+  select exists (
+    select 1 from public.memberships
+    where circle_id = p_circle and user_id = auth.uid() and status = 'active'
+  );
+$$;
+
+create or replace function public.circle_role(p_circle uuid)
+returns text language sql stable security definer as $$
+  select role from public.memberships
+  where circle_id = p_circle and user_id = auth.uid() and status = 'active'
+  limit 1;
+$$;
 
 -- ---------- RLS ----------
 alter table public.profiles enable row level security;
