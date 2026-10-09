@@ -5,8 +5,7 @@ import localDb from './store/local-adapter.js';
 import supabaseDb from './store/supabase-adapter.js';
 import { showAuth } from './views/auth.js';
 import { showHome } from './views/home.js';
-import { showCircles, showCircleDetail } from './views/circles.js';
-import { showJoin } from './views/join.js';
+import { showCircles, showCircleDetail, showJoin } from './views/circles.js';
 
 // ---------- config ----------
 // Local demo mode by default. To use Supabase, create a config.js next to
