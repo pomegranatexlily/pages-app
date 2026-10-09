@@ -1,1 +1,29 @@
-aW1wb3J0IHsgZGIsIGVsLCBlc2MsIHRvYXN0IH0gZnJvbSAnLi4vbWFpbi5qcyc7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gc2hvd0F1dGgoKSB7CiAgY29uc3Qgd3JhcCA9IGVsKGA8ZGl2IGNsYXNzPSJhdXRod3JhcCI+CiAgICA8ZGl2IGNsYXNzPSJtYXJrIj5QQUdFUzwvZGl2PgogICAgPGRpdiBjbGFzcz0idGFnIj5CdWlsZCBhIExpZmUgVG9nZXRoZXIuPC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJjYXJkIiBzdHlsZT0idGV4dC1hbGlnbjpsZWZ0Ij4KICAgICAgPGRpdiBjbGFzcz0iZmllbGQiPjxsYWJlbD5FbWFpbDwvbGFiZWw+PGlucHV0IGlkPSJlbWFpbCIgdHlwZT0iZW1haWwiIHBsYWNlaG9sZGVyPSJ5b3VAZXhhbXBsZS5jb20iIGF1dG9jb21wbGV0ZT0iZW1haWwiPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJmaWVsZCI+PGxhYmVsPkRpc3BsYXkgbmFtZTwvbGFiZWw+PGlucHV0IGlkPSJuYW1lIiB0eXBlPSJ0ZXh0IiBwbGFjZWhvbGRlcj0iV2hhdCBzaG91bGQgQ2lyY2xlcyBjYWxsIHlvdT8iIGF1dG9jb21wbGV0ZT0ibmlja25hbWUiPjwvZGl2PgogICAgICA8YnV0dG9uIGNsYXNzPSJidG4iIGlkPSJnbyI+Q29udGludWU8L2J1dHRvbj4KICAgIDwvZGl2PgogICAgPGRpdiBjbGFzcz0ibW9kZS1ub3RlIiBpZD0ibW9kZSI+PC9kaXY+CiAgPC9kaXY+YCk7CiAgY29uc3QgbW9kZSA9IGRiLm1vZGUgPT09ICdzdXBhYmFzZScKICAgID8gJ1Byb2R1Y3Rpb24gbW9kZSDigJQgY2hlY2sgeW91ciBlbWFpbCBmb3IgYSBzaWduLWluIGxpbmsuJwogICAgOiAnRGVtbyBtb2RlIOKAlCBubyBwYXNzd29yZC4gVXNlIG9uZSBlbWFpbCBwZXIgdGVzdCBhY2NvdW50IChlLmcuIGFtYUB0ZXN0LmNvbSwgYmVuQHRlc3QuY29tKS4nOwogIHdyYXAucXVlcnlTZWxlY3RvcignI21vZGUnKS50ZXh0Q29udGVudCA9IG1vZGU7CiAgd3JhcC5xdWVyeVNlbGVjdG9yKCcjZ28nKS5vbmNsaWNrID0gYXN5bmMgKCkgPT4gewogICAgY29uc3QgZW1haWwgPSB3cmFwLnF1ZXJ5U2VsZWN0b3IoJyNlbWFpbCcpLnZhbHVlLnRyaW0oKTsKICAgIGNvbnN0IG5hbWUgPSB3cmFwLnF1ZXJ5U2VsZWN0b3IoJyNuYW1lJykudmFsdWUudHJpbSgpOwogICAgaWYgKCFlbWFpbCkgcmV0dXJuIHRvYXN0KCdFbnRlciBhbiBlbWFpbCB0byBjb250aW51ZScpOwogICAgdHJ5IHsKICAgICAgY29uc3QgcyA9IGF3YWl0IGRiLnNpZ25JbihlbWFpbCwgbmFtZSk7CiAgICAgIGlmIChzLnBlbmRpbmdNYWdpY0xpbmspIHsgdG9hc3QoJ0NoZWNrIHlvdXIgZW1haWwgZm9yIHRoZSBzaWduLWluIGxpbmsnKTsgcmV0dXJuOyB9CiAgICAgIGxvY2F0aW9uLmhhc2ggPSAnIy8nOwogICAgfSBjYXRjaCAoZSkgeyB0b2FzdChlLm1lc3NhZ2UpOyB9CiAgfTsKICByZXR1cm4gd3JhcDsKfQo=
+import { db, el, esc, toast } from '../main.js';
+
+export async function showAuth() {
+  const wrap = el(`<div class="authwrap">
+    <div class="mark">PAGES</div>
+    <div class="tag">Build a Life Together.</div>
+    <div class="card" style="text-align:left">
+      <div class="field"><label>Email</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
+      <div class="field"><label>Display name</label><input id="name" type="text" placeholder="What should Circles call you?" autocomplete="nickname"></div>
+      <button class="btn" id="go">Continue</button>
+    </div>
+    <div class="mode-note" id="mode"></div>
+  </div>`);
+  const mode = db.mode === 'supabase'
+    ? 'Production mode — check your email for a sign-in link.'
+    : 'Demo mode — no password. Use one email per test account (e.g. ama@test.com, ben@test.com).';
+  wrap.querySelector('#mode').textContent = mode;
+  wrap.querySelector('#go').onclick = async () => {
+    const email = wrap.querySelector('#email').value.trim();
+    const name = wrap.querySelector('#name').value.trim();
+    if (!email) return toast('Enter an email to continue');
+    try {
+      const s = await db.signIn(email, name);
+      if (s.pendingMagicLink) { toast('Check your email for the sign-in link'); return; }
+      location.hash = '#/';
+    } catch (e) { toast(e.message); }
+  };
+  return wrap;
+}
