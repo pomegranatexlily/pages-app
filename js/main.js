@@ -103,6 +103,9 @@ const routes = [
 
 async function route() {
   const h = location.hash || '#/';
+  // Never clobber a Supabase auth callback: the boot handler owns URLs
+  // carrying access_token / error params.
+  if (/access_token|error=/.test(h)) return;
   for (const [re, fn] of routes) {
     const m = h.match(re);
     if (m) { try { await fn(m); } catch (e) { toast(e.message); } return; }
@@ -111,4 +114,13 @@ async function route() {
 }
 
 window.addEventListener('hashchange', route);
+
+// Supabase magic-link callbacks land here with auth params in the URL
+// (?code= or #access_token=). Handle them BEFORE the router runs — the
+// router would otherwise treat the auth hash as an unknown route and wipe
+// the tokens before the session can be established (the login loop).
+if (db.mode === 'supabase' && typeof db.handleAuthCallback === 'function') {
+  try { await db.handleAuthCallback(); }
+  catch (e) { console.warn(e); toast(e.message); }
+}
 route();
