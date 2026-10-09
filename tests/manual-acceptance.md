@@ -1,1 +1,48 @@
-IyBQQUdFUyB2MC4xIOKAlCBUd28tYWNjb3VudCBtYW51YWwgYWNjZXB0YW5jZSBzY3JpcHQKClJ1biB0aGUgYXBwIGxvY2FsbHkgKGBweXRob24zIC1tIGh0dHAuc2VydmVyIDgwODBgKSBhbmQgb3BlbiBpdCBpbiB5b3VyCmJyb3dzZXIuIERlbW8gbW9kZSBzdG9yZXMgZGF0YSBpbiB0aGUgYnJvd3NlciAobG9jYWxTdG9yYWdlLCBzaGFyZWQgYWNyb3NzCnRhYnMpIHdpdGggYSBwZXItdGFiIHNpZ24taW4gKHNlc3Npb25TdG9yYWdlKSDigJQgc28gdGhlIHR3by1hY2NvdW50IHRlc3QKcnVucyBpbiAqKnR3byB0YWJzIG9mIHRoZSBzYW1lIGJyb3dzZXIqKi4KCiMjIFNldHVwCgotICoqVGFiIDEg4oCUIEFjY291bnQgQSAoQW1hKToqKiBzaWduIGluIGFzIGBhbWFAdGVzdC5jb21gCi0gKipUYWIgMiDigJQgQWNjb3VudCBCIChCZW4pOioqIHNpZ24gaW4gYXMgYGJlbkB0ZXN0LmNvbWAKCiMjIFRoZSBqb3VybmV5CgoxLiBbQV0gQ2lyY2xlcyDihpIgY3JlYXRlICJDb21tdW5pdHkgRXZlbnQgVGVhbSIsIHB1cnBvc2UgIkZpcnN0IGV2ZW50Ii4KICAgRXhwZWN0OiByZWRpcmVjdGVkIGludG8gdGhlIGNpcmNsZTsgTWVtYmVycyB0YWIgc2hvd3MgQW1hIGFzIG93bmVyLgoyLiBbQV0gTWVtYmVycyDihpIgQ3JlYXRlIGludml0ZSBsaW5rIOKGkiBDb3B5IGxpbmsuCjMuIFtUYWIgMl0gUGFzdGUgdGhlIGludml0ZSBsaW5rIGluIHRoZSBzZWNvbmQgdGFiIOKGkiBleHBlY3QgIldlbGNvbWUgaW4uIgo0LiBbQl0gTWlzc2lvbnMg4oaSIGNyZWF0ZSAiT3JnYW5pemUgb3VyIGZpcnN0IGNvbW11bml0eSBldmVudCIuCiAgIEFkZCBtaWxlc3RvbmVzOiAiU2VsZWN0IGEgbG9jYXRpb24iLCAiRXN0YWJsaXNoIHRoZSBidWRnZXQiLgo1LiBbQV0gUmVmcmVzaCDigJQgZXhwZWN0IHRvIHNlZSBCJ3MgbWlzc2lvbiBhbmQgbWlsZXN0b25lcyAocGVyc2lzdGVuY2UpLgo2LiBbQV0gQ29tbWl0bWVudHMg4oaSIFByb3Bvc2U6IHRvIEJlbiwgdGl0bGUgIkNvbmZpcm0gdGhlIHZlbnVlIGJ5IE9jdG9iZXIgMTYiLAogICB0ZXJtcyAiQ2FsbCBSaXZlcnNpZGUgSGFsbCwgY29uZmlybSBPY3QgMjQgYXZhaWxhYmlsaXR5LCByZXBvcnQgYmFjayBpbiBjaGF0LiIKNy4gW0JdIEhvbWUg4oaSIGV4cGVjdCB0aGUgY29tbWl0bWVudCBjYXJkICJuZWVkcyB5b3VyIGFuc3dlciIuCjguIFtCXSBPcGVuIHRoZSBjaXJjbGUg4oaSIENvbW1pdG1lbnRzIOKGkiBBY2NlcHQuCiAgIEV4cGVjdDogcGlsbCBjaGFuZ2VzIHRvICJhY2NlcHRlZCIuCjkuIFtBXSBDb21taXRtZW50cyDihpIgYXR0ZW1wdCB0byBtYXJrIGl0IGNvbXBsZXRlZCDigJQgYWxsb3dlZCAocHJvcG9zZXIpLgogICAoT3IgaGF2ZSBCIGNvbXBsZXRlIGl0LikgRXhwZWN0OiAiY29tcGxldGVkIiwgSGlzdG9yeSBzaG93cwogICBwcm9wb3NlZCDihpIgYWNjZXB0ZWQg4oaSIGNvbXBsZXRlZCB3aXRoIGlkZW50aWNhbCB0aXRsZS90ZXJtcyBzbmFwc2hvdHMuCjEwLiBbQV0gQWN0aXZpdHkg4oaSIGV4cGVjdCB0aGUgZnVsbCBldmVudCB0cmFpbC4KMTEuIFtCXSBDaGF0IOKGkiBzZW5kICJWZW51ZSBjb25maXJtZWQhIiDihpIgW0FdIHJlZnJlc2gg4oaSIG1lc3NhZ2UgdmlzaWJsZS4KCiMjIEF1dGhvcml6YXRpb24gY2hlY2tzCgoxMi4gT3BlbiBhICoqdGhpcmQgdGFiKiosIHNpZ24gaW4gYXMgYG1hbGxvcnlAdGVzdC5jb21gLCBwYXN0ZSB0aGUKICAgIGNpcmNsZSBVUkwgZGlyZWN0bHkgKG5vIGludml0ZSkuIEV4cGVjdDogIkNpcmNsZSB1bmF2YWlsYWJsZSAvIE5vdCBhIG1lbWJlciIuCjEzLiBbQV0gUHJvcG9zZSBhIHNlY29uZCBjb21taXRtZW50IHRvIEJlbi4gW0FdIGF0dGVtcHRzIHRvIEFjY2VwdCBpdC4KICAgIEV4cGVjdDogZXJyb3IgIk9ubHkgdGhlIHJlY2lwaWVudCBjYW4gYWNjZXB0IG9yIGRlY2xpbmUiLgoxNC4gW0JdIEFjY2VwdCwgdGhlbiBhdHRlbXB0IHRvIEFjY2VwdCBhZ2Fpbi4gRXhwZWN0OiAibm8gbG9uZ2VyIGF3YWl0aW5nIGEgcmVzcG9uc2UiLgoxNS4gQ3JlYXRlIGFuIGludml0ZSwgdGhlbiBpbiBCJ3MgYnJvd3NlciB3YWl0IHBhc3QgZXhwaXJ5IChvciBjcmFmdCBhbgogICAgZXhwaXJlZCB0b2tlbiB2aWEgZGV2dG9vbHMpLiBFeHBlY3Q6ICJJbnZpdGUgZXhwaXJlZCIuCgojIyBNb2JpbGUgbGF5b3V0CgoxNi4gUmVzaXplIHRvIDM5MMOXODQ0IChvciB1c2UgYSBwaG9uZSkuIENoZWNrOiB0YWIgYmFyIHJlYWNoYWJsZSwgbm8KICAgIGhvcml6b250YWwgc2Nyb2xsLCBmb3JtcyB1c2FibGUsIGNhcmRzIHJlYWRhYmxlLgoKUGFzcyBjcml0ZXJpYTogYWxsIDE1IHN0ZXBzIGJlaGF2ZSBhcyBkZXNjcmliZWQgd2l0aCBubyBjb25zb2xlIGVycm9ycy4K
+# PAGES v0.1 — Two-account manual acceptance script
+
+Run the app locally (`python3 -m http.server 8080`) and open it in your
+browser. Demo mode stores data in the browser (localStorage, shared across
+tabs) with a per-tab sign-in (sessionStorage) — so the two-account test
+runs in **two tabs of the same browser**.
+
+## Setup
+
+- **Tab 1 — Account A (Ama):** sign in as `ama@test.com`
+- **Tab 2 — Account B (Ben):** sign in as `ben@test.com`
+
+## The journey
+
+1. [A] Circles → create "Community Event Team", purpose "First event".
+   Expect: redirected into the circle; Members tab shows Ama as owner.
+2. [A] Members → Create invite link → Copy link.
+3. [Tab 2] Paste the invite link in the second tab → expect "Welcome in."
+4. [B] Missions → create "Organize our first community event".
+   Add milestones: "Select a location", "Establish the budget".
+5. [A] Refresh — expect to see B's mission and milestones (persistence).
+6. [A] Commitments → Propose: to Ben, title "Confirm the venue by October 16",
+   terms "Call Riverside Hall, confirm Oct 24 availability, report back in chat."
+7. [B] Home → expect the commitment card "needs your answer".
+8. [B] Open the circle → Commitments → Accept.
+   Expect: pill changes to "accepted".
+9. [A] Commitments → attempt to mark it completed — allowed (proposer).
+   (Or have B complete it.) Expect: "completed", History shows
+   proposed → accepted → completed with identical title/terms snapshots.
+10. [A] Activity → expect the full event trail.
+11. [B] Chat → send "Venue confirmed!" → [A] refresh → message visible.
+
+## Authorization checks
+
+12. Open a **third tab**, sign in as `mallory@test.com`, paste the
+    circle URL directly (no invite). Expect: "Circle unavailable / Not a member".
+13. [A] Propose a second commitment to Ben. [A] attempts to Accept it.
+    Expect: error "Only the recipient can accept or decline".
+14. [B] Accept, then attempt to Accept again. Expect: "no longer awaiting a response".
+15. Create an invite, then in B's browser wait past expiry (or craft an
+    expired token via devtools). Expect: "Invite expired".
+
+## Mobile layout
+
+16. Resize to 390×844 (or use a phone). Check: tab bar reachable, no
+    horizontal scroll, forms usable, cards readable.
+
+Pass criteria: all 15 steps behave as described with no console errors.
