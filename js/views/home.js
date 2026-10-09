@@ -1,1 +1,49 @@
-aW1wb3J0IHsgZGIsIGVsLCBlc2MsIHRpbWVBZ28gfSBmcm9tICcuLi9tYWluLmpzJzsKCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBzaG93SG9tZShzZXNzaW9uKSB7CiAgY29uc3Qgcm9vdCA9IGVsKCc8ZGl2PjwvZGl2PicpOwogIHJvb3QuaW5uZXJIVE1MID0gYDxoMT5Hb29kIHRvIHNlZSB5b3UsICR7ZXNjKHNlc3Npb24uZGlzcGxheU5hbWUpfS48L2gxPgogICAgPHAgY2xhc3M9ImxlZGUiPllvdXIgQ2lyY2xlcywgYW5kIHdoYXQgbmVlZHMgeW91IHRvZGF5LjwvcD4KICAgIDxkaXYgaWQ9Im5lZWRzIj48L2Rpdj4KICAgIDxoMiBjbGFzcz0ic2VjIj5SZWNlbnQgYWN0aXZpdHk8L2gyPgogICAgPGRpdiBpZD0iZmVlZCI+PC9kaXY+YDsKCiAgY29uc3QgY2lyY2xlcyA9IGF3YWl0IGRiLmxpc3RDaXJjbGVzKCk7CiAgY29uc3QgbmVlZHMgPSByb290LnF1ZXJ5U2VsZWN0b3IoJyNuZWVkcycpOwogIGNvbnN0IGZlZWQgPSByb290LnF1ZXJ5U2VsZWN0b3IoJyNmZWVkJyk7CgogIGlmICghY2lyY2xlcy5sZW5ndGgpIHsKICAgIG5lZWRzLmlubmVySFRNTCA9IGA8ZGl2IGNsYXNzPSJlbXB0eSI+PGRpdiBjbGFzcz0iYmlnIj7il688L2Rpdj4KICAgICAgPHA+Tm8gQ2lyY2xlcyB5ZXQuIEV2ZXJ5dGhpbmcgb24gUEFHRVMgc3RhcnRzIHdpdGggcGVvcGxlIHlvdSB0cnVzdC48L3A+PC9kaXY+YDsKICB9IGVsc2UgewogICAgLy8gY29tbWl0bWVudHMgYXdhaXRpbmcgdGhpcyB1c2VyICsgb3BlbiBtaXNzaW9ucyBhY3Jvc3MgY2lyY2xlcwogICAgbGV0IHdhaXRpbmcgPSBbXTsKICAgIGZvciAoY29uc3QgYyBvZiBjaXJjbGVzKSB7CiAgICAgIGNvbnN0IGNvbXMgPSBhd2FpdCBkYi5saXN0Q29tbWl0bWVudHMoYy5pZCk7CiAgICAgIHdhaXRpbmcucHVzaCguLi5jb21zLmZpbHRlcih4ID0+IHguc3RhdHVzID09PSAncHJvcG9zZWQnICYmIHgucmVjaXBpZW50SWQgPT09IHNlc3Npb24udXNlcklkKQogICAgICAgIC5tYXAoeCA9PiAoeyAuLi54LCBjaXJjbGVOYW1lOiBjLm5hbWUgfSkpKTsKICAgIH0KICAgIG5lZWRzLmlubmVySFRNTCA9IHdhaXRpbmcubGVuZ3RoCiAgICAgID8gd2FpdGluZy5tYXAodyA9PiBgPGRpdiBjbGFzcz0iY2FyZCB0YXBwYWJsZSIgZGF0YS1jPSIke3cuY2lyY2xlSWR9Ij4KICAgICAgICAgIDxkaXYgY2xhc3M9InJvdyI+PGRpdiBjbGFzcz0idGl0bGUiPiR7ZXNjKHcudGl0bGUpfTwvZGl2PgogICAgICAgICAgPHNwYW4gY2xhc3M9InBpbGwgcHJvcG9zZWQiPm5lZWRzIHlvdXIgYW5zd2VyPC9zcGFuPjwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0ibWV0YSI+JHtlc2Mody5jaXJjbGVOYW1lKX0gwrcgcHJvcG9zZWQgYnkgJHtlc2Mody5wcm9wb3Nlcj8uZGlzcGxheU5hbWUgfHwgdy5wcm9wb3Nlcj8uZGlzcGxheV9uYW1lIHx8ICdzb21lb25lJyl9PC9kaXY+CiAgICAgICAgPC9kaXY+YCkuam9pbignJykKICAgICAgOiBgPGRpdiBjbGFzcz0iY2FyZCI+PGRpdiBjbGFzcz0ibWV0YSI+Tm90aGluZyBuZWVkcyB5b3VyIGFuc3dlciByaWdodCBub3cuICR7Y2lyY2xlcy5sZW5ndGh9IGNpcmNsZSR7Y2lyY2xlcy5sZW5ndGggPiAxID8gJ3MnIDogJyd9IHJ1bm5pbmcuPC9kaXY+PC9kaXY+YDsKICAgIG5lZWRzLnF1ZXJ5U2VsZWN0b3JBbGwoJ1tkYXRhLWNdJykuZm9yRWFjaChjYXJkID0+CiAgICAgIGNhcmQub25jbGljayA9ICgpID0+IGxvY2F0aW9uLmhhc2ggPSAnIy9jaXJjbGUvJyArIGNhcmQuZGF0YXNldC5jKTsKICB9CgogIC8vIGFjdGl2aXR5IGFjcm9zcyBjaXJjbGVzIChuZXdlc3QgZmlyc3QpCiAgbGV0IGV2ZW50cyA9IFtdOwogIGZvciAoY29uc3QgYyBvZiBjaXJjbGVzLnNsaWNlKDAsIDUpKSB7CiAgICBjb25zdCBldnMgPSBhd2FpdCBkYi5saXN0QWN0aXZpdHkoYy5pZCwgOCk7CiAgICBldmVudHMucHVzaCguLi5ldnMubWFwKGUgPT4gKHsgLi4uZSwgY2lyY2xlTmFtZTogYy5uYW1lIH0pKSk7CiAgfQogIGV2ZW50cy5zb3J0KChhLCBiKSA9PiBuZXcgRGF0ZShiLmNyZWF0ZWRBdCB8fCBiLmNyZWF0ZWRfYXQpIC0gbmV3IERhdGUoYS5jcmVhdGVkQXQgfHwgYS5jcmVhdGVkX2F0KSk7CiAgZmVlZC5pbm5lckhUTUwgPSBldmVudHMubGVuZ3RoCiAgICA/IGV2ZW50cy5zbGljZSgwLCAyMCkubWFwKGUgPT4gYDxkaXYgY2xhc3M9ImV2Ij4ke2VzYyhlLnN1bW1hcnkpfQogICAgICAgIDxkaXYgY2xhc3M9IndoZW4iPiR7ZXNjKGUuY2lyY2xlTmFtZSl9IMK3ICR7dGltZUFnbyhlLmNyZWF0ZWRBdCB8fCBlLmNyZWF0ZWRfYXQpfTwvZGl2PjwvZGl2PmApLmpvaW4oJycpCiAgICA6IGA8ZGl2IGNsYXNzPSJlbXB0eSI+PHA+QWN0aXZpdHkgZnJvbSB5b3VyIENpcmNsZXMgd2lsbCBhcHBlYXIgaGVyZS48L3A+PC9kaXY+YDsKICByZXR1cm4gcm9vdDsKfQo=
+import { db, el, esc, timeAgo } from '../main.js';
+
+export async function showHome(session) {
+  const root = el('<div></div>');
+  root.innerHTML = `<h1>Good to see you, ${esc(session.displayName)}.</h1>
+    <p class="lede">Your Circles, and what needs you today.</p>
+    <div id="needs"></div>
+    <h2 class="sec">Recent activity</h2>
+    <div id="feed"></div>`;
+
+  const circles = await db.listCircles();
+  const needs = root.querySelector('#needs');
+  const feed = root.querySelector('#feed');
+
+  if (!circles.length) {
+    needs.innerHTML = `<div class="empty"><div class="big">◯</div>
+      <p>No Circles yet. Everything on PAGES starts with people you trust.</p></div>`;
+  } else {
+    // commitments awaiting this user + open missions across circles
+    let waiting = [];
+    for (const c of circles) {
+      const coms = await db.listCommitments(c.id);
+      waiting.push(...coms.filter(x => x.status === 'proposed' && x.recipientId === session.userId)
+        .map(x => ({ ...x, circleName: c.name })));
+    }
+    needs.innerHTML = waiting.length
+      ? waiting.map(w => `<div class="card tappable" data-c="${w.circleId}">
+          <div class="row"><div class="title">${esc(w.title)}</div>
+          <span class="pill proposed">needs your answer</span></div>
+          <div class="meta">${esc(w.circleName)} · proposed by ${esc(w.proposer?.displayName || w.proposer?.display_name || 'someone')}</div>
+        </div>`).join('')
+      : `<div class="card"><div class="meta">Nothing needs your answer right now. ${circles.length} circle${circles.length > 1 ? 's' : ''} running.</div></div>`;
+    needs.querySelectorAll('[data-c]').forEach(card =>
+      card.onclick = () => location.hash = '#/circle/' + card.dataset.c);
+  }
+
+  // activity across circles (newest first)
+  let events = [];
+  for (const c of circles.slice(0, 5)) {
+    const evs = await db.listActivity(c.id, 8);
+    events.push(...evs.map(e => ({ ...e, circleName: c.name })));
+  }
+  events.sort((a, b) => new Date(b.createdAt || b.created_at) - new Date(a.createdAt || a.created_at));
+  feed.innerHTML = events.length
+    ? events.slice(0, 20).map(e => `<div class="ev">${esc(e.summary)}
+        <div class="when">${esc(e.circleName)} · ${timeAgo(e.createdAt || e.created_at)}</div></div>`).join('')
+    : `<div class="empty"><p>Activity from your Circles will appear here.</p></div>`;
+  return root;
+}
