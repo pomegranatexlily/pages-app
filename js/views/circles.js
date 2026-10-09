@@ -1,1 +1,281 @@
-aW1wb3J0IHsgZGIsIGVsLCBlc2MsIHRvYXN0LCB0aW1lQWdvIH0gZnJvbSAnLi4vbWFpbi5qcyc7CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gc2hvd0NpcmNsZXMoc2Vzc2lvbikgewogIGNvbnN0IHJvb3QgPSBlbCgnPGRpdj48L2Rpdj4nKTsKICByb290LmlubmVySFRNTCA9IGA8aDE+Q2lyY2xlczwvaDE+CiAgICA8cCBjbGFzcz0ibGVkZSI+T25lIGlkZW50aXR5LiBNYW55IENpcmNsZXMuIEV2ZXJ5dGhpbmcgeW91IGJ1aWxkIHRvZ2V0aGVyLjwvcD4KICAgIDxkaXYgaWQ9Imxpc3QiPjwvZGl2PgogICAgPGgyIGNsYXNzPSJzZWMiPlN0YXJ0IGEgbmV3IENpcmNsZTwvaDI+CiAgICA8ZGl2IGNsYXNzPSJjYXJkIj4KICAgICAgPGRpdiBjbGFzcz0iZmllbGQiPjxsYWJlbD5OYW1lPC9sYWJlbD48aW5wdXQgaWQ9ImNuYW1lIiBwbGFjZWhvbGRlcj0iZS5nLiBDb21tdW5pdHkgRXZlbnQgVGVhbSI+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImZpZWxkIj48bGFiZWw+UHVycG9zZTwvbGFiZWw+PHRleHRhcmVhIGlkPSJjZGVzYyIgcGxhY2Vob2xkZXI9IldoYXQgaXMgdGhpcyBDaXJjbGUgZm9yPyI+PC90ZXh0YXJlYT48L2Rpdj4KICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIiBpZD0iY3JlYXRlIj5DcmVhdGUgQ2lyY2xlPC9idXR0b24+CiAgICA8L2Rpdj5gOwoKICBjb25zdCByZW5kZXIgPSBhc3luYyAoKSA9PiB7CiAgICBjb25zdCBjaXJjbGVzID0gYXdhaXQgZGIubGlzdENpcmNsZXMoKTsKICAgIGNvbnN0IGxpc3QgPSByb290LnF1ZXJ5U2VsZWN0b3IoJyNsaXN0Jyk7CiAgICBsaXN0LmlubmVySFRNTCA9IGNpcmNsZXMubGVuZ3RoID8gJycgOiBgPGRpdiBjbGFzcz0iZW1wdHkiPjxkaXYgY2xhc3M9ImJpZyI+4pevPC9kaXY+PHA+WW91ciBDaXJjbGVzIHdpbGwgbGl2ZSBoZXJlLjwvcD48L2Rpdj5gOwogICAgZm9yIChjb25zdCBjIG9mIGNpcmNsZXMpIHsKICAgICAgY29uc3QgY2FyZCA9IGVsKGA8ZGl2IGNsYXNzPSJjYXJkIHRhcHBhYmxlIj4KICAgICAgICA8ZGl2IGNsYXNzPSJ0aXRsZSI+JHtlc2MoYy5uYW1lKX08L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJtZXRhIj4ke2VzYyhjLmRlc2NyaXB0aW9uIHx8ICcnKX08L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJtZXRhIiBzdHlsZT0ibWFyZ2luLXRvcDo2cHgiPiR7Yy5tZW1iZXJDb3VudCA/PyAnJ30gbWVtYmVyczwvZGl2PgogICAgICA8L2Rpdj5gKTsKICAgICAgY2FyZC5vbmNsaWNrID0gKCkgPT4gbG9jYXRpb24uaGFzaCA9ICcjL2NpcmNsZS8nICsgYy5pZDsKICAgICAgbGlzdC5hcHBlbmRDaGlsZChjYXJkKTsKICAgIH0KICB9OwogIGF3YWl0IHJlbmRlcigpOwoKICByb290LnF1ZXJ5U2VsZWN0b3IoJyNjcmVhdGUnKS5vbmNsaWNrID0gYXN5bmMgKCkgPT4gewogICAgY29uc3QgbmFtZSA9IHJvb3QucXVlcnlTZWxlY3RvcignI2NuYW1lJykudmFsdWU7CiAgICBjb25zdCBkZXNjcmlwdGlvbiA9IHJvb3QucXVlcnlTZWxlY3RvcignI2NkZXNjJykudmFsdWU7CiAgICB0cnkgewogICAgICBjb25zdCBjID0gYXdhaXQgZGIuY3JlYXRlQ2lyY2xlKHsgbmFtZSwgZGVzY3JpcHRpb24gfSk7CiAgICAgIHRvYXN0KCdDaXJjbGUgY3JlYXRlZCcpOwogICAgICBsb2NhdGlvbi5oYXNoID0gJyMvY2lyY2xlLycgKyBjLmlkOwogICAgfSBjYXRjaCAoZSkgeyB0b2FzdChlLm1lc3NhZ2UpOyB9CiAgfTsKICByZXR1cm4gcm9vdDsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHNob3dKb2luKHNlc3Npb24sIHRva2VuKSB7CiAgY29uc3Qgcm9vdCA9IGVsKCc8ZGl2PjwvZGl2PicpOwogIHJvb3QuaW5uZXJIVE1MID0gYDxoMT5Kb2luIENpcmNsZTwvaDE+PHAgY2xhc3M9ImxlZGUiPkNoZWNraW5nIHlvdXIgaW52aXRhdGlvbuKApjwvcD5gOwogIHRyeSB7CiAgICBjb25zdCBjID0gYXdhaXQgZGIuYWNjZXB0SW52aXRlKHRva2VuKTsKICAgIHJvb3QuaW5uZXJIVE1MID0gYDxoMT5XZWxjb21lIGluLjwvaDE+CiAgICAgIDxwIGNsYXNzPSJsZWRlIj5Zb3UncmUgbm93IGEgbWVtYmVyIG9mIDxiPiR7ZXNjKGMubmFtZSl9PC9iPi48L3A+CiAgICAgIDxidXR0b24gY2xhc3M9ImJ0biIgaWQ9Im9wZW4iPk9wZW4gdGhlIENpcmNsZTwvYnV0dG9uPmA7CiAgICByb290LnF1ZXJ5U2VsZWN0b3IoJyNvcGVuJykub25jbGljayA9ICgpID0+IGxvY2F0aW9uLmhhc2ggPSAnIy9jaXJjbGUvJyArIGMuaWQ7CiAgfSBjYXRjaCAoZSkgewogICAgcm9vdC5pbm5lckhUTUwgPSBgPGgxPkludml0ZSBkaWRuJ3Qgd29yazwvaDE+CiAgICAgIDxwIGNsYXNzPSJsZWRlIj4ke2VzYyhlLm1lc3NhZ2UpfTwvcD4KICAgICAgPGJ1dHRvbiBjbGFzcz0iYnRuIHNlY29uZGFyeSIgaWQ9ImJhY2siPkJhY2sgdG8gQ2lyY2xlczwvYnV0dG9uPmA7CiAgICByb290LnF1ZXJ5U2VsZWN0b3IoJyNiYWNrJykub25jbGljayA9ICgpID0+IGxvY2F0aW9uLmhhc2ggPSAnIy9jaXJjbGVzJzsKICB9CiAgcmV0dXJuIHJvb3Q7Cn0KCmNvbnN0IFRBQlMgPSBbJ0FjdGl2aXR5JywgJ01pc3Npb25zJywgJ0NvbW1pdG1lbnRzJywgJ0NoYXQnLCAnTWVtYmVycyddOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHNob3dDaXJjbGVEZXRhaWwoc2Vzc2lvbiwgY2lyY2xlSWQpIHsKICBjb25zdCByb290ID0gZWwoJzxkaXY+PC9kaXY+Jyk7CiAgbGV0IGNpcmNsZTsKICB0cnkgeyBjaXJjbGUgPSBhd2FpdCBkYi5nZXRDaXJjbGUoY2lyY2xlSWQpOyB9CiAgY2F0Y2ggKGUpIHsgcm9vdC5pbm5lckhUTUwgPSBgPGgxPkNpcmNsZSB1bmF2YWlsYWJsZTwvaDE+PHAgY2xhc3M9ImxlZGUiPiR7ZXNjKGUubWVzc2FnZSl9PC9wPmA7IHJldHVybiByb290OyB9CgogIHJvb3QuaW5uZXJIVE1MID0gYAogICAgPGgxPiR7ZXNjKGNpcmNsZS5uYW1lKX08L2gxPgogICAgPHAgY2xhc3M9ImxlZGUiPiR7ZXNjKGNpcmNsZS5kZXNjcmlwdGlvbiB8fCAnJyl9PC9wPgogICAgPGRpdiBpZD0idGFicm93IiBzdHlsZT0iZGlzcGxheTpmbGV4O2dhcDo4cHg7b3ZlcmZsb3cteDphdXRvO21hcmdpbi1ib3R0b206MTRweCI+PC9kaXY+CiAgICA8ZGl2IGlkPSJ0YWJib2R5Ij48L2Rpdj5gOwoKICBjb25zdCB0YWJyb3cgPSByb290LnF1ZXJ5U2VsZWN0b3IoJyN0YWJyb3cnKTsKICBjb25zdCB0YWJib2R5ID0gcm9vdC5xdWVyeVNlbGVjdG9yKCcjdGFiYm9keScpOwogIGxldCBhY3RpdmUgPSAnQWN0aXZpdHknOwoKICBjb25zdCBkcmF3ID0gYXN5bmMgKCkgPT4gewogICAgdGFicm93LmlubmVySFRNTCA9ICcnOwogICAgZm9yIChjb25zdCB0IG9mIFRBQlMpIHsKICAgICAgY29uc3QgYiA9IGVsKGA8YnV0dG9uIGNsYXNzPSJidG4gc21hbGwgJHt0ID09PSBhY3RpdmUgPyAnJyA6ICdzZWNvbmRhcnknfSI+JHt0fTwvYnV0dG9uPmApOwogICAgICBiLm9uY2xpY2sgPSAoKSA9PiB7IGFjdGl2ZSA9IHQ7IGRyYXcoKTsgfTsKICAgICAgdGFicm93LmFwcGVuZENoaWxkKGIpOwogICAgfQogICAgdGFiYm9keS5pbm5lckhUTUwgPSAnPHAgY2xhc3M9ImxlZGUiPkxvYWRpbmfigKY8L3A+JzsKICAgIHRyeSB7CiAgICAgIGlmIChhY3RpdmUgPT09ICdBY3Rpdml0eScpIHRhYmJvZHkuYXBwZW5kQ2hpbGQoYXdhaXQgdkFjdGl2aXR5KGNpcmNsZUlkKSk7CiAgICAgIGlmIChhY3RpdmUgPT09ICdNaXNzaW9ucycpIHRhYmJvZHkuYXBwZW5kQ2hpbGQoYXdhaXQgdk1pc3Npb25zKHNlc3Npb24sIGNpcmNsZSwgcm9vdCwgZHJhdykpOwogICAgICBpZiAoYWN0aXZlID09PSAnQ29tbWl0bWVudHMnKSB0YWJib2R5LmFwcGVuZENoaWxkKGF3YWl0IHZDb21taXRtZW50cyhzZXNzaW9uLCBjaXJjbGUpKTsKICAgICAgaWYgKGFjdGl2ZSA9PT0gJ0NoYXQnKSB0YWJib2R5LmFwcGVuZENoaWxkKGF3YWl0IHZDaGF0KHNlc3Npb24sIGNpcmNsZUlkKSk7CiAgICAgIGlmIChhY3RpdmUgPT09ICdNZW1iZXJzJykgdGFiYm9keS5hcHBlbmRDaGlsZChhd2FpdCB2TWVtYmVycyhzZXNzaW9uLCBjaXJjbGUpKTsKICAgIH0gY2F0Y2ggKGUpIHsgdGFiYm9keS5pbm5lckhUTUwgPSBgPHAgY2xhc3M9ImxlZGUiPiR7ZXNjKGUubWVzc2FnZSl9PC9wPmA7IH0KICB9OwogIGF3YWl0IGRyYXcoKTsKICByZXR1cm4gcm9vdDsKfQoKYXN5bmMgZnVuY3Rpb24gdkFjdGl2aXR5KGNpcmNsZUlkKSB7CiAgY29uc3Qgd3JhcCA9IGVsKCc8ZGl2PjwvZGl2PicpOwogIGNvbnN0IGV2cyA9IGF3YWl0IGRiLmxpc3RBY3Rpdml0eShjaXJjbGVJZCk7CiAgd3JhcC5pbm5lckhUTUwgPSBldnMubGVuZ3RoCiAgICA/IGV2cy5tYXAoZSA9PiBgPGRpdiBjbGFzcz0iZXYiPiR7ZXNjKGUuc3VtbWFyeSl9PGRpdiBjbGFzcz0id2hlbiI+JHt0aW1lQWdvKGUuY3JlYXRlZEF0IHx8IGUuY3JlYXRlZF9hdCl9PC9kaXY+PC9kaXY+YCkuam9pbignJykKICAgIDogYDxkaXYgY2xhc3M9ImVtcHR5Ij48cD5Ob3RoaW5nIGhhcyBoYXBwZW5lZCBoZXJlIHlldC4gU3RhcnQgdGhlIGZpcnN0IE1pc3Npb24uPC9wPjwvZGl2PmA7CiAgcmV0dXJuIHdyYXA7Cn0KCmFzeW5jIGZ1bmN0aW9uIHZNaXNzaW9ucyhzZXNzaW9uLCBjaXJjbGUsIHJvb3QsIHJlZHJhdykgewogIGNvbnN0IHdyYXAgPSBlbCgnPGRpdj48L2Rpdj4nKTsKICBjb25zdCBtaXNzaW9ucyA9IGF3YWl0IGRiLmxpc3RNaXNzaW9ucyhjaXJjbGUuaWQpOwogIGNvbnN0IGJveCA9IGVsKCc8ZGl2PjwvZGl2PicpOwogIGZvciAoY29uc3QgbSBvZiBtaXNzaW9ucykgewogICAgY29uc3QgY2FyZCA9IGVsKGA8ZGl2IGNsYXNzPSJjYXJkIj4KICAgICAgPGRpdiBjbGFzcz0icm93Ij48ZGl2IGNsYXNzPSJ0aXRsZSI+JHtlc2MobS50aXRsZSl9PC9kaXY+CiAgICAgICAgPHNwYW4gY2xhc3M9InBpbGwgJHttLnN0YXR1c30iPiR7bS5zdGF0dXN9PC9zcGFuPjwvZGl2PgogICAgICAke20uZGVzY3JpcHRpb24gPyBgPGRpdiBjbGFzcz0ibWV0YSI+JHtlc2MobS5kZXNjcmlwdGlvbil9PC9kaXY+YCA6ICcnfQogICAgICA8ZGl2IGNsYXNzPSJtcyI+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImZpZWxkIiBzdHlsZT0ibWFyZ2luLXRvcDoxMHB4Ij48aW5wdXQgcGxhY2Vob2xkZXI9IkFkZCBhIG1pbGVzdG9uZeKApiIgY2xhc3M9Im1zaW4iPjwvZGl2PgogICAgPC9kaXY+YCk7CiAgICBjb25zdCBtc0JveCA9IGNhcmQucXVlcnlTZWxlY3RvcignLm1zJyk7CiAgICBjb25zdCBwYWludCA9IGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgY3VyID0gKGF3YWl0IGRiLmxpc3RNaXNzaW9ucyhjaXJjbGUuaWQpKS5maW5kKHggPT4geC5pZCA9PT0gbS5pZCk7CiAgICAgIG1zQm94LmlubmVySFRNTCA9ICcnOwogICAgICBjb25zdCBsaXN0ID0gY3VyLm1pbGVzdG9uZXMgfHwgW107CiAgICAgIGZvciAoY29uc3QgbXMgb2YgbGlzdCkgewogICAgICAgIGNvbnN0IGFuID0gbXMuYXNzaWduZWVJZCA/ICcnIDogJyc7CiAgICAgICAgY29uc3Qgcm93ID0gZWwoYDxkaXYgY2xhc3M9Iml0ZW0iPgogICAgICAgICAgPGRpdiBjbGFzcz0iY2hlY2sgJHttcy5zdGF0dXMgPT09ICdkb25lJyA/ICdvbicgOiAnJ30iPjwvZGl2PgogICAgICAgICAgPGRpdiBjbGFzcz0iZ3JvdyI+PGRpdiBjbGFzcz0idCAke21zLnN0YXR1cyA9PT0gJ2RvbmUnID8gJ3N0cmlrZScgOiAnJ30iPiR7ZXNjKG1zLnRpdGxlKX08L2Rpdj4KICAgICAgICAgICR7bXMuZHVlRGF0ZSB8fCBtcy5kdWVfZGF0ZSA/IGA8ZGl2IGNsYXNzPSJzIj5kdWUgJHtlc2MobXMuZHVlRGF0ZSB8fCBtcy5kdWVfZGF0ZSl9PC9kaXY+YCA6ICcnfTwvZGl2PgogICAgICAgIDwvZGl2PmApOwogICAgICAgIHJvdy5xdWVyeVNlbGVjdG9yKCcuY2hlY2snKS5vbmNsaWNrID0gYXN5bmMgKCkgPT4geyBhd2FpdCBkYi50b2dnbGVNaWxlc3RvbmUobXMuaWQpOyBwYWludCgpOyB9OwogICAgICAgIG1zQm94LmFwcGVuZENoaWxkKHJvdyk7CiAgICAgIH0KICAgICAgaWYgKCFsaXN0Lmxlbmd0aCkgbXNCb3guaW5uZXJIVE1MID0gJzxkaXYgY2xhc3M9Im1ldGEiIHN0eWxlPSJwYWRkaW5nOjhweCAwIj5ObyBtaWxlc3RvbmVzIHlldC48L2Rpdj4nOwogICAgfTsKICAgIGF3YWl0IHBhaW50KCk7CiAgICBjYXJkLnF1ZXJ5U2VsZWN0b3IoJy5tc2luJykuYWRkRXZlbnRMaXN0ZW5lcigna2V5ZG93bicsIGFzeW5jIChlKSA9PiB7CiAgICAgIGlmIChlLmtleSAhPT0gJ0VudGVyJyB8fCAhZS50YXJnZXQudmFsdWUudHJpbSgpKSByZXR1cm47CiAgICAgIGF3YWl0IGRiLmNyZWF0ZU1pbGVzdG9uZShtLmlkLCB7IHRpdGxlOiBlLnRhcmdldC52YWx1ZS50cmltKCkgfSk7CiAgICAgIGUudGFyZ2V0LnZhbHVlID0gJyc7IHBhaW50KCk7IHRvYXN0KCdNaWxlc3RvbmUgYWRkZWQnKTsKICAgIH0pOwogICAgY29uc3QgZm9vdCA9IGVsKGA8ZGl2IHN0eWxlPSJkaXNwbGF5OmZsZXg7Z2FwOjhweDttYXJnaW4tdG9wOjhweCI+PC9kaXY+YCk7CiAgICBpZiAobS5zdGF0dXMgPT09ICdvcGVuJykgewogICAgICBjb25zdCBkb25lID0gZWwoJzxidXR0b24gY2xhc3M9ImJ0biBzbWFsbCBzZWNvbmRhcnkiPk1hcmsgbWlzc2lvbiBjb21wbGV0ZTwvYnV0dG9uPicpOwogICAgICBkb25lLm9uY2xpY2sgPSBhc3luYyAoKSA9PiB7IGF3YWl0IGRiLnVwZGF0ZU1pc3Npb24obS5pZCwgeyBzdGF0dXM6ICdkb25lJyB9KTsgcmVkcmF3KCk7IH07CiAgICAgIGZvb3QuYXBwZW5kQ2hpbGQoZG9uZSk7CiAgICB9CiAgICBjYXJkLmFwcGVuZENoaWxkKGZvb3QpOwogICAgYm94LmFwcGVuZENoaWxkKGNhcmQpOwogIH0KICBjb25zdCBmb3JtID0gZWwoYDxkaXYgY2xhc3M9ImNhcmQiPjxoMiBjbGFzcz0ic2VjIiBzdHlsZT0ibWFyZ2luLXRvcDowIj5TdGFydCBhIE1pc3Npb248L2gyPgogICAgPGRpdiBjbGFzcz0iZmllbGQiPjxsYWJlbD5UaXRsZTwvbGFiZWw+PGlucHV0IGNsYXNzPSJtdCIgcGxhY2Vob2xkZXI9ImUuZy4gT3JnYW5pemUgb3VyIGZpcnN0IGNvbW11bml0eSBldmVudCI+PC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJmaWVsZCI+PGxhYmVsPkRlc2NyaXB0aW9uPC9sYWJlbD48dGV4dGFyZWEgY2xhc3M9Im1kIiBwbGFjZWhvbGRlcj0iV2hhdCBkb2VzIGRvbmUgbG9vayBsaWtlPyI+PC90ZXh0YXJlYT48L2Rpdj4KICAgIDxidXR0b24gY2xhc3M9ImJ0biI+Q3JlYXRlIE1pc3Npb248L2J1dHRvbj48L2Rpdj5gKTsKICBmb3JtLnF1ZXJ5U2VsZWN0b3IoJy5idG4nKS5vbmNsaWNrID0gYXN5bmMgKCkgPT4gewogICAgdHJ5IHsKICAgICAgYXdhaXQgZGIuY3JlYXRlTWlzc2lvbihjaXJjbGUuaWQsIHsKICAgICAgICB0aXRsZTogZm9ybS5xdWVyeVNlbGVjdG9yKCcubXQnKS52YWx1ZSwKICAgICAgICBkZXNjcmlwdGlvbjogZm9ybS5xdWVyeVNlbGVjdG9yKCcubWQnKS52YWx1ZSwKICAgICAgfSk7CiAgICAgIHRvYXN0KCdNaXNzaW9uIHN0YXJ0ZWQnKTsgcmVkcmF3KCk7CiAgICB9IGNhdGNoIChlKSB7IHRvYXN0KGUubWVzc2FnZSk7IH0KICB9OwogIHdyYXAuYXBwZW5kKGJveCwgZm9ybSk7CiAgcmV0dXJuIHdyYXA7Cn0KCmFzeW5jIGZ1bmN0aW9uIHZDb21taXRtZW50cyhzZXNzaW9uLCBjaXJjbGUpIHsKICBjb25zdCB3cmFwID0gZWwoJzxkaXY+PC9kaXY+Jyk7CiAgY29uc3QgbGlzdCA9IGF3YWl0IGRiLmxpc3RDb21taXRtZW50cyhjaXJjbGUuaWQpOwogIGNvbnN0IGJveCA9IGVsKCc8ZGl2PjwvZGl2PicpOwogIGZvciAoY29uc3QgYyBvZiBsaXN0KSB7CiAgICBjb25zdCBwbmFtZSA9IGMucHJvcG9zZXI/LmRpc3BsYXlOYW1lIHx8IGMucHJvcG9zZXI/LmRpc3BsYXlfbmFtZSB8fCAnPyc7CiAgICBjb25zdCBybmFtZSA9IGMucmVjaXBpZW50Py5kaXNwbGF5TmFtZSB8fCBjLnJlY2lwaWVudD8uZGlzcGxheV9uYW1lIHx8ICc/JzsKICAgIGNvbnN0IG1pbmUgPSBjLnJlY2lwaWVudElkID09PSBzZXNzaW9uLnVzZXJJZCB8fCBjLnJlY2lwaWVudF9pZCA9PT0gc2Vzc2lvbi51c2VySWQ7CiAgICBjb25zdCBjYXJkID0gZWwoYDxkaXYgY2xhc3M9ImNhcmQiPgogICAgICA8ZGl2IGNsYXNzPSJyb3ciPjxkaXYgY2xhc3M9InRpdGxlIj4ke2VzYyhjLnRpdGxlKX08L2Rpdj48c3BhbiBjbGFzcz0icGlsbCAke2Muc3RhdHVzfSI+JHtjLnN0YXR1c308L3NwYW4+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9Im1ldGEiPiR7ZXNjKHBuYW1lKX0g4oaSICR7ZXNjKHJuYW1lKX0gwrcgJHt0aW1lQWdvKGMuY3JlYXRlZEF0IHx8IGMuY3JlYXRlZF9hdCl9PC9kaXY+CiAgICAgICR7KGMudGVybXMpID8gYDxkaXYgc3R5bGU9Im1hcmdpbi10b3A6OHB4O2ZvbnQtc2l6ZToxNHB4Ij4ke2VzYyhjLnRlcm1zKX08L2Rpdj5gIDogJyd9CiAgICAgIDxkaXYgY2xhc3M9ImFjdHMiIHN0eWxlPSJkaXNwbGF5OmZsZXg7Z2FwOjhweDttYXJnaW4tdG9wOjEwcHgiPjwvZGl2PgogICAgPC9kaXY+YCk7CiAgICBjb25zdCBhY3RzID0gY2FyZC5xdWVyeVNlbGVjdG9yKCcuYWN0cycpOwogICAgaWYgKGMuc3RhdHVzID09PSAncHJvcG9zZWQnICYmIG1pbmUpIHsKICAgICAgY29uc3QgYSA9IGVsKCc8YnV0dG9uIGNsYXNzPSJidG4gc21hbGwiPkFjY2VwdDwvYnV0dG9uPicpOwogICAgICBjb25zdCBkID0gZWwoJzxidXR0b24gY2xhc3M9ImJ0biBzbWFsbCBzZWNvbmRhcnkiPkRlY2xpbmU8L2J1dHRvbj4nKTsKICAgICAgYS5vbmNsaWNrID0gYXN5bmMgKCkgPT4geyBhd2FpdCBkYi5yZXNwb25kQ29tbWl0bWVudChjLmlkLCB0cnVlKTsgdG9hc3QoJ0NvbW1pdG1lbnQgYWNjZXB0ZWQnKTsgbG9jYXRpb24ucmVsb2FkKCk7IH07CiAgICAgIGQub25jbGljayA9IGFzeW5jICgpID0+IHsgYXdhaXQgZGIucmVzcG9uZENvbW1pdG1lbnQoYy5pZCwgZmFsc2UpOyB0b2FzdCgnQ29tbWl0bWVudCBkZWNsaW5lZCcpOyBsb2NhdGlvbi5yZWxvYWQoKTsgfTsKICAgICAgYWN0cy5hcHBlbmQoYSwgZCk7CiAgICB9IGVsc2UgaWYgKGMuc3RhdHVzID09PSAnYWNjZXB0ZWQnKSB7CiAgICAgIGNvbnN0IGRvbmUgPSBlbCgnPGJ1dHRvbiBjbGFzcz0iYnRuIHNtYWxsIHNlY29uZGFyeSI+TWFyayBjb21wbGV0ZWQ8L2J1dHRvbj4nKTsKICAgICAgZG9uZS5vbmNsaWNrID0gYXN5bmMgKCkgPT4gewogICAgICAgIHRyeSB7IGF3YWl0IGRiLmNvbXBsZXRlQ29tbWl0bWVudChjLmlkKTsgdG9hc3QoJ0NvbXBsZXRlZCcpOyBsb2NhdGlvbi5yZWxvYWQoKTsgfQogICAgICAgIGNhdGNoIChlKSB7IHRvYXN0KGUubWVzc2FnZSk7IH0KICAgICAgfTsKICAgICAgYWN0cy5hcHBlbmRDaGlsZChkb25lKTsKICAgIH0KICAgIGNvbnN0IGhpc3QgPSBlbCgnPGJ1dHRvbiBjbGFzcz0iYnRuIHNtYWxsIGdob3N0Ij5IaXN0b3J5PC9idXR0b24+Jyk7CiAgICBoaXN0Lm9uY2xpY2sgPSBhc3luYyAoKSA9PiB7CiAgICAgIGNvbnN0IGV2cyA9IGF3YWl0IGRiLmNvbW1pdG1lbnRIaXN0b3J5KGMuaWQpOwogICAgICB0b2FzdChldnMubWFwKGUgPT4gYCR7ZS5ldmVudFR5cGV9OiAke2Uuc25hcHNob3Q/LnRpdGxlIHx8ICcnfWApLmpvaW4oJyDihpIgJykgfHwgJ05vIGhpc3RvcnknKTsKICAgIH07CiAgICBhY3RzLmFwcGVuZENoaWxkKGhpc3QpOwogICAgYm94LmFwcGVuZENoaWxkKGNhcmQpOwogIH0KICBpZiAoIWxpc3QubGVuZ3RoKSBib3guaW5uZXJIVE1MID0gYDxkaXYgY2xhc3M9ImVtcHR5Ij48cD5ObyBjb21taXRtZW50cyB5ZXQuIFByb3Bvc2UgdGhlIGZpcnN0IG9uZS48L3A+PC9kaXY+YDsKCiAgLy8gcHJvcG9zZSBmb3JtIOKAlCByZWNpcGllbnQgcGlja2VyIGZyb20gbWVtYmVycwogIGNvbnN0IG1lbWJlcnMgPSAoY2lyY2xlLm1lbWJlcnMgfHwgW10pLm1hcChtID0+ICh7CiAgICBpZDogbS51c2VySWQgfHwgbS51c2VyX2lkLCBuYW1lOiBtLnVzZXI/LmRpc3BsYXlOYW1lIHx8IG0udXNlcj8uZGlzcGxheV9uYW1lIHx8IG0ucHJvZmlsZXM/LmRpc3BsYXlfbmFtZSB8fCAnPycsCiAgfSkpLmZpbHRlcihtID0+IG0uaWQgIT09IHNlc3Npb24udXNlcklkKTsKICBjb25zdCBmb3JtID0gZWwoYDxkaXYgY2xhc3M9ImNhcmQiPjxoMiBjbGFzcz0ic2VjIiBzdHlsZT0ibWFyZ2luLXRvcDowIj5Qcm9wb3NlIGEgQ29tbWl0bWVudDwvaDI+CiAgICA8ZGl2IGNsYXNzPSJmaWVsZCI+PGxhYmVsPlRvIHdob208L2xhYmVsPjxzZWxlY3QgY2xhc3M9ImNyIj4KICAgICAgJHttZW1iZXJzLm1hcChtID0+IGA8b3B0aW9uIHZhbHVlPSIke20uaWR9Ij4ke2VzYyhtLm5hbWUpfTwvb3B0aW9uPmApLmpvaW4oJycpfQogICAgPC9zZWxlY3Q+PC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJmaWVsZCI+PGxhYmVsPlRpdGxlPC9sYWJlbD48aW5wdXQgY2xhc3M9ImN0IiBwbGFjZWhvbGRlcj0iZS5nLiBDb25maXJtIHRoZSB2ZW51ZSI+PC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJmaWVsZCI+PGxhYmVsPkV4YWN0IHRlcm1zPC9sYWJlbD48dGV4dGFyZWEgY2xhc3M9ImN4IiBwbGFjZWhvbGRlcj0iV2hhdCBleGFjdGx5IGlzIGJlaW5nIHByb21pc2VkLCBhbmQgYnkgd2hlbj8iPjwvdGV4dGFyZWE+PC9kaXY+CiAgICA8YnV0dG9uIGNsYXNzPSJidG4iPlByb3Bvc2U8L2J1dHRvbj48L2Rpdj5gKTsKICBmb3JtLnF1ZXJ5U2VsZWN0b3IoJy5idG4nKS5vbmNsaWNrID0gYXN5bmMgKCkgPT4gewogICAgdHJ5IHsKICAgICAgYXdhaXQgZGIucHJvcG9zZUNvbW1pdG1lbnQoY2lyY2xlLmlkLCB7CiAgICAgICAgcmVjaXBpZW50SWQ6IGZvcm0ucXVlcnlTZWxlY3RvcignLmNyJykudmFsdWUsCiAgICAgICAgdGl0bGU6IGZvcm0ucXVlcnlTZWxlY3RvcignLmN0JykudmFsdWUsCiAgICAgICAgdGVybXM6IGZvcm0ucXVlcnlTZWxlY3RvcignLmN4JykudmFsdWUsCiAgICAgIH0pOwogICAgICB0b2FzdCgnQ29tbWl0bWVudCBwcm9wb3NlZCcpOyBsb2NhdGlvbi5yZWxvYWQoKTsKICAgIH0gY2F0Y2ggKGUpIHsgdG9hc3QoZS5tZXNzYWdlKTsgfQogIH07CiAgd3JhcC5hcHBlbmQoYm94LCBmb3JtKTsKICByZXR1cm4gd3JhcDsKfQoKYXN5bmMgZnVuY3Rpb24gdkNoYXQoc2Vzc2lvbiwgY2lyY2xlSWQpIHsKICBjb25zdCB3cmFwID0gZWwoJzxkaXY+PC9kaXY+Jyk7CiAgY29uc3QgbXNncyA9IGF3YWl0IGRiLmxpc3RNZXNzYWdlcyhjaXJjbGVJZCk7CiAgY29uc3QgYm94ID0gZWwoJzxkaXYgY2xhc3M9ImNhcmQiPjwvZGl2PicpOwogIGJveC5pbm5lckhUTUwgPSBtc2dzLmxlbmd0aAogICAgPyBtc2dzLm1hcChtID0+IGA8ZGl2IGNsYXNzPSJldiI+PGI+JHtlc2MobS51c2VyPy5kaXNwbGF5TmFtZSB8fCBtLnVzZXI/LmRpc3BsYXlfbmFtZSB8fCAnPycpfTwvYj4g4oCUICR7ZXNjKG0uYm9keSl9CiAgICAgICAgPGRpdiBjbGFzcz0id2hlbiI+JHt0aW1lQWdvKG0uY3JlYXRlZEF0IHx8IG0uY3JlYXRlZF9hdCl9PC9kaXY+PC9kaXY+YCkuam9pbignJykKICAgIDogJzxkaXYgY2xhc3M9Im1ldGEiPk5vIG1lc3NhZ2VzIHlldC4gU2F5IGhlbGxvLjwvZGl2Pic7CiAgY29uc3QgZm9ybSA9IGVsKGA8ZGl2IGNsYXNzPSJjYXJkIj48ZGl2IGNsYXNzPSJmaWVsZCI+PGlucHV0IGNsYXNzPSJtYiIgcGxhY2Vob2xkZXI9Ik1lc3NhZ2UgdGhlIENpcmNsZeKApiI+PC9kaXY+CiAgICA8YnV0dG9uIGNsYXNzPSJidG4iPlNlbmQ8L2J1dHRvbj48L2Rpdj5gKTsKICBjb25zdCBzZW5kID0gYXN5bmMgKCkgPT4gewogICAgY29uc3QgdiA9IGZvcm0ucXVlcnlTZWxlY3RvcignLm1iJykudmFsdWUudHJpbSgpOwogICAgaWYgKCF2KSByZXR1cm47CiAgICB0cnkgeyBhd2FpdCBkYi5zZW5kTWVzc2FnZShjaXJjbGVJZCwgdik7IGxvY2F0aW9uLnJlbG9hZCgpOyB9CiAgICBjYXRjaCAoZSkgeyB0b2FzdChlLm1lc3NhZ2UpOyB9CiAgfTsKICBmb3JtLnF1ZXJ5U2VsZWN0b3IoJy5idG4nKS5vbmNsaWNrID0gc2VuZDsKICBmb3JtLnF1ZXJ5U2VsZWN0b3IoJy5tYicpLmFkZEV2ZW50TGlzdGVuZXIoJ2tleWRvd24nLCBlID0+IHsgaWYgKGUua2V5ID09PSAnRW50ZXInKSBzZW5kKCk7IH0pOwogIHdyYXAuYXBwZW5kKGJveCwgZm9ybSk7CiAgcmV0dXJuIHdyYXA7Cn0KCmFzeW5jIGZ1bmN0aW9uIHZNZW1iZXJzKHNlc3Npb24sIGNpcmNsZSkgewogIGNvbnN0IHdyYXAgPSBlbCgnPGRpdj48L2Rpdj4nKTsKICBjb25zdCBtZW1iZXJzID0gY2lyY2xlLm1lbWJlcnMgfHwgW107CiAgd3JhcC5pbm5lckhUTUwgPSBgPGgyIGNsYXNzPSJzZWMiIHN0eWxlPSJtYXJnaW4tdG9wOjAiPk1lbWJlcnMgKCR7bWVtYmVycy5sZW5ndGh9KTwvaDI+YCArCiAgICBtZW1iZXJzLm1hcChtID0+IHsKICAgICAgY29uc3QgbmFtZSA9IG0udXNlcj8uZGlzcGxheU5hbWUgfHwgbS51c2VyPy5kaXNwbGF5X25hbWUgfHwgbS5wcm9maWxlcz8uZGlzcGxheV9uYW1lIHx8ICc/JzsKICAgICAgcmV0dXJuIGA8ZGl2IGNsYXNzPSJpdGVtIj48ZGl2IGNsYXNzPSJncm93Ij48ZGl2IGNsYXNzPSJ0Ij4ke2VzYyhuYW1lKX08L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJzIj4ke2VzYyhtLnJvbGUpfTwvZGl2PjwvZGl2PjwvZGl2PmA7CiAgICB9KS5qb2luKCcnKTsKICBjb25zdCBpbnYgPSBlbChgPGRpdiBjbGFzcz0iY2FyZCIgc3R5bGU9Im1hcmdpbi10b3A6MTRweCI+PGgyIGNsYXNzPSJzZWMiIHN0eWxlPSJtYXJnaW4tdG9wOjAiPkludml0ZSBzb21lb25lPC9oMj4KICAgIDxwIGNsYXNzPSJsZWRlIj5HZW5lcmF0ZXMgYSBzZWN1cmUgaW52aXRlIGxpbmsuIEV4cGlyZXMgaW4gNzIgaG91cnMsIHVwIHRvIDEwIHVzZXMuPC9wPgogICAgPGJ1dHRvbiBjbGFzcz0iYnRuIj5DcmVhdGUgaW52aXRlIGxpbms8L2J1dHRvbj48ZGl2IGNsYXNzPSJvdXQiPjwvZGl2PjwvZGl2PmApOwogIGludi5xdWVyeVNlbGVjdG9yKCcuYnRuJykub25jbGljayA9IGFzeW5jICgpID0+IHsKICAgIHRyeSB7CiAgICAgIGNvbnN0IHsgdXJsIH0gPSBhd2FpdCBkYi5jcmVhdGVJbnZpdGUoY2lyY2xlLmlkKTsKICAgICAgaW52LnF1ZXJ5U2VsZWN0b3IoJy5vdXQnKS5pbm5lckhUTUwgPQogICAgICAgIGA8ZGl2IGNsYXNzPSJpbnZpdGVib3giPjxjb2RlPiR7ZXNjKHVybCl9PC9jb2RlPjwvZGl2PgogICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4gc21hbGwgc2Vjb25kYXJ5IiBpZD0iY3AiPkNvcHkgbGluazwvYnV0dG9uPmA7CiAgICAgIGludi5xdWVyeVNlbGVjdG9yKCcjY3AnKS5vbmNsaWNrID0gYXN5bmMgKCkgPT4gewogICAgICAgIGF3YWl0IG5hdmlnYXRvci5jbGlwYm9hcmQud3JpdGVUZXh0KHVybCkuY2F0Y2goKCkgPT4ge30pOwogICAgICAgIHRvYXN0KCdJbnZpdGUgbGluayBjb3BpZWQnKTsKICAgICAgfTsKICAgIH0gY2F0Y2ggKGUpIHsgdG9hc3QoZS5tZXNzYWdlKTsgfQogIH07CiAgd3JhcC5hcHBlbmRDaGlsZChpbnYpOwogIHJldHVybiB3cmFwOwp9Cg==
+import { db, el, esc, toast, timeAgo } from '../main.js';
+
+export async function showCircles(session) {
+  const root = el('<div></div>');
+  root.innerHTML = `<h1>Circles</h1>
+    <p class="lede">One identity. Many Circles. Everything you build together.</p>
+    <div id="list"></div>
+    <h2 class="sec">Start a new Circle</h2>
+    <div class="card">
+      <div class="field"><label>Name</label><input id="cname" placeholder="e.g. Community Event Team"></div>
+      <div class="field"><label>Purpose</label><textarea id="cdesc" placeholder="What is this Circle for?"></textarea></div>
+      <button class="btn" id="create">Create Circle</button>
+    </div>`;
+
+  const render = async () => {
+    const circles = await db.listCircles();
+    const list = root.querySelector('#list');
+    list.innerHTML = circles.length ? '' : `<div class="empty"><div class="big">◯</div><p>Your Circles will live here.</p></div>`;
+    for (const c of circles) {
+      const card = el(`<div class="card tappable">
+        <div class="title">${esc(c.name)}</div>
+        <div class="meta">${esc(c.description || '')}</div>
+        <div class="meta" style="margin-top:6px">${c.memberCount ?? ''} members</div>
+      </div>`);
+      card.onclick = () => location.hash = '#/circle/' + c.id;
+      list.appendChild(card);
+    }
+  };
+  await render();
+
+  root.querySelector('#create').onclick = async () => {
+    const name = root.querySelector('#cname').value;
+    const description = root.querySelector('#cdesc').value;
+    try {
+      const c = await db.createCircle({ name, description });
+      toast('Circle created');
+      location.hash = '#/circle/' + c.id;
+    } catch (e) { toast(e.message); }
+  };
+  return root;
+}
+
+export async function showJoin(session, token) {
+  const root = el('<div></div>');
+  root.innerHTML = `<h1>Join Circle</h1><p class="lede">Checking your invitation…</p>`;
+  try {
+    const c = await db.acceptInvite(token);
+    root.innerHTML = `<h1>Welcome in.</h1>
+      <p class="lede">You're now a member of <b>${esc(c.name)}</b>.</p>
+      <button class="btn" id="open">Open the Circle</button>`;
+    root.querySelector('#open').onclick = () => location.hash = '#/circle/' + c.id;
+  } catch (e) {
+    root.innerHTML = `<h1>Invite didn't work</h1>
+      <p class="lede">${esc(e.message)}</p>
+      <button class="btn secondary" id="back">Back to Circles</button>`;
+    root.querySelector('#back').onclick = () => location.hash = '#/circles';
+  }
+  return root;
+}
+
+const TABS = ['Activity', 'Missions', 'Commitments', 'Chat', 'Members'];
+
+export async function showCircleDetail(session, circleId) {
+  const root = el('<div></div>');
+  let circle;
+  try { circle = await db.getCircle(circleId); }
+  catch (e) { root.innerHTML = `<h1>Circle unavailable</h1><p class="lede">${esc(e.message)}</p>`; return root; }
+
+  root.innerHTML = `
+    <h1>${esc(circle.name)}</h1>
+    <p class="lede">${esc(circle.description || '')}</p>
+    <div id="tabrow" style="display:flex;gap:8px;overflow-x:auto;margin-bottom:14px"></div>
+    <div id="tabbody"></div>`;
+
+  const tabrow = root.querySelector('#tabrow');
+  const tabbody = root.querySelector('#tabbody');
+  let active = 'Activity';
+
+  const draw = async () => {
+    tabrow.innerHTML = '';
+    for (const t of TABS) {
+      const b = el(`<button class="btn small ${t === active ? '' : 'secondary'}">${t}</button>`);
+      b.onclick = () => { active = t; draw(); };
+      tabrow.appendChild(b);
+    }
+    tabbody.innerHTML = '<p class="lede">Loading…</p>';
+    try {
+      if (active === 'Activity') tabbody.appendChild(await vActivity(circleId));
+      if (active === 'Missions') tabbody.appendChild(await vMissions(session, circle, root, draw));
+      if (active === 'Commitments') tabbody.appendChild(await vCommitments(session, circle));
+      if (active === 'Chat') tabbody.appendChild(await vChat(session, circleId));
+      if (active === 'Members') tabbody.appendChild(await vMembers(session, circle));
+    } catch (e) { tabbody.innerHTML = `<p class="lede">${esc(e.message)}</p>`; }
+  };
+  await draw();
+  return root;
+}
+
+async function vActivity(circleId) {
+  const wrap = el('<div></div>');
+  const evs = await db.listActivity(circleId);
+  wrap.innerHTML = evs.length
+    ? evs.map(e => `<div class="ev">${esc(e.summary)}<div class="when">${timeAgo(e.createdAt || e.created_at)}</div></div>`).join('')
+    : `<div class="empty"><p>Nothing has happened here yet. Start the first Mission.</p></div>`;
+  return wrap;
+}
+
+async function vMissions(session, circle, root, redraw) {
+  const wrap = el('<div></div>');
+  const missions = await db.listMissions(circle.id);
+  const box = el('<div></div>');
+  for (const m of missions) {
+    const card = el(`<div class="card">
+      <div class="row"><div class="title">${esc(m.title)}</div>
+        <span class="pill ${m.status}">${m.status}</span></div>
+      ${m.description ? `<div class="meta">${esc(m.description)}</div>` : ''}
+      <div class="ms"></div>
+      <div class="field" style="margin-top:10px"><input placeholder="Add a milestone…" class="msin"></div>
+    </div>`);
+    const msBox = card.querySelector('.ms');
+    const paint = async () => {
+      const cur = (await db.listMissions(circle.id)).find(x => x.id === m.id);
+      msBox.innerHTML = '';
+      const list = cur.milestones || [];
+      for (const ms of list) {
+        const an = ms.assigneeId ? '' : '';
+        const row = el(`<div class="item">
+          <div class="check ${ms.status === 'done' ? 'on' : ''}"></div>
+          <div class="grow"><div class="t ${ms.status === 'done' ? 'strike' : ''}">${esc(ms.title)}</div>
+          ${ms.dueDate || ms.due_date ? `<div class="s">due ${esc(ms.dueDate || ms.due_date)}</div>` : ''}</div>
+        </div>`);
+        row.querySelector('.check').onclick = async () => { await db.toggleMilestone(ms.id); paint(); };
+        msBox.appendChild(row);
+      }
+      if (!list.length) msBox.innerHTML = '<div class="meta" style="padding:8px 0">No milestones yet.</div>';
+    };
+    await paint();
+    card.querySelector('.msin').addEventListener('keydown', async (e) => {
+      if (e.key !== 'Enter' || !e.target.value.trim()) return;
+      await db.createMilestone(m.id, { title: e.target.value.trim() });
+      e.target.value = ''; paint(); toast('Milestone added');
+    });
+    const foot = el(`<div style="display:flex;gap:8px;margin-top:8px"></div>`);
+    if (m.status === 'open') {
+      const done = el('<button class="btn small secondary">Mark mission complete</button>');
+      done.onclick = async () => { await db.updateMission(m.id, { status: 'done' }); redraw(); };
+      foot.appendChild(done);
+    }
+    card.appendChild(foot);
+    box.appendChild(card);
+  }
+  const form = el(`<div class="card"><h2 class="sec" style="margin-top:0">Start a Mission</h2>
+    <div class="field"><label>Title</label><input class="mt" placeholder="e.g. Organize our first community event"></div>
+    <div class="field"><label>Description</label><textarea class="md" placeholder="What does done look like?"></textarea></div>
+    <button class="btn">Create Mission</button></div>`);
+  form.querySelector('.btn').onclick = async () => {
+    try {
+      await db.createMission(circle.id, {
+        title: form.querySelector('.mt').value,
+        description: form.querySelector('.md').value,
+      });
+      toast('Mission started'); redraw();
+    } catch (e) { toast(e.message); }
+  };
+  wrap.append(box, form);
+  return wrap;
+}
+
+async function vCommitments(session, circle) {
+  const wrap = el('<div></div>');
+  const list = await db.listCommitments(circle.id);
+  const box = el('<div></div>');
+  for (const c of list) {
+    const pname = c.proposer?.displayName || c.proposer?.display_name || '?';
+    const rname = c.recipient?.displayName || c.recipient?.display_name || '?';
+    const mine = c.recipientId === session.userId || c.recipient_id === session.userId;
+    const card = el(`<div class="card">
+      <div class="row"><div class="title">${esc(c.title)}</div><span class="pill ${c.status}">${c.status}</span></div>
+      <div class="meta">${esc(pname)} → ${esc(rname)} · ${timeAgo(c.createdAt || c.created_at)}</div>
+      ${(c.terms) ? `<div style="margin-top:8px;font-size:14px">${esc(c.terms)}</div>` : ''}
+      <div class="acts" style="display:flex;gap:8px;margin-top:10px"></div>
+    </div>`);
+    const acts = card.querySelector('.acts');
+    if (c.status === 'proposed' && mine) {
+      const a = el('<button class="btn small">Accept</button>');
+      const d = el('<button class="btn small secondary">Decline</button>');
+      a.onclick = async () => { await db.respondCommitment(c.id, true); toast('Commitment accepted'); location.reload(); };
+      d.onclick = async () => { await db.respondCommitment(c.id, false); toast('Commitment declined'); location.reload(); };
+      acts.append(a, d);
+    } else if (c.status === 'accepted') {
+      const done = el('<button class="btn small secondary">Mark completed</button>');
+      done.onclick = async () => {
+        try { await db.completeCommitment(c.id); toast('Completed'); location.reload(); }
+        catch (e) { toast(e.message); }
+      };
+      acts.appendChild(done);
+    }
+    const hist = el('<button class="btn small ghost">History</button>');
+    hist.onclick = async () => {
+      const evs = await db.commitmentHistory(c.id);
+      toast(evs.map(e => `${e.eventType}: ${e.snapshot?.title || ''}`).join(' → ') || 'No history');
+    };
+    acts.appendChild(hist);
+    box.appendChild(card);
+  }
+  if (!list.length) box.innerHTML = `<div class="empty"><p>No commitments yet. Propose the first one.</p></div>`;
+
+  // propose form — recipient picker from members
+  const members = (circle.members || []).map(m => ({
+    id: m.userId || m.user_id, name: m.user?.displayName || m.user?.display_name || m.profiles?.display_name || '?',
+  })).filter(m => m.id !== session.userId);
+  const form = el(`<div class="card"><h2 class="sec" style="margin-top:0">Propose a Commitment</h2>
+    <div class="field"><label>To whom</label><select class="cr">
+      ${members.map(m => `<option value="${m.id}">${esc(m.name)}</option>`).join('')}
+    </select></div>
+    <div class="field"><label>Title</label><input class="ct" placeholder="e.g. Confirm the venue"></div>
+    <div class="field"><label>Exact terms</label><textarea class="cx" placeholder="What exactly is being promised, and by when?"></textarea></div>
+    <button class="btn">Propose</button></div>`);
+  form.querySelector('.btn').onclick = async () => {
+    try {
+      await db.proposeCommitment(circle.id, {
+        recipientId: form.querySelector('.cr').value,
+        title: form.querySelector('.ct').value,
+        terms: form.querySelector('.cx').value,
+      });
+      toast('Commitment proposed'); location.reload();
+    } catch (e) { toast(e.message); }
+  };
+  wrap.append(box, form);
+  return wrap;
+}
+
+async function vChat(session, circleId) {
+  const wrap = el('<div></div>');
+  const msgs = await db.listMessages(circleId);
+  const box = el('<div class="card"></div>');
+  box.innerHTML = msgs.length
+    ? msgs.map(m => `<div class="ev"><b>${esc(m.user?.displayName || m.user?.display_name || '?')}</b> — ${esc(m.body)}
+        <div class="when">${timeAgo(m.createdAt || m.created_at)}</div></div>`).join('')
+    : '<div class="meta">No messages yet. Say hello.</div>';
+  const form = el(`<div class="card"><div class="field"><input class="mb" placeholder="Message the Circle…"></div>
+    <button class="btn">Send</button></div>`);
+  const send = async () => {
+    const v = form.querySelector('.mb').value.trim();
+    if (!v) return;
+    try { await db.sendMessage(circleId, v); location.reload(); }
+    catch (e) { toast(e.message); }
+  };
+  form.querySelector('.btn').onclick = send;
+  form.querySelector('.mb').addEventListener('keydown', e => { if (e.key === 'Enter') send(); });
+  wrap.append(box, form);
+  return wrap;
+}
+
+async function vMembers(session, circle) {
+  const wrap = el('<div></div>');
+  const members = circle.members || [];
+  wrap.innerHTML = `<h2 class="sec" style="margin-top:0">Members (${members.length})</h2>` +
+    members.map(m => {
+      const name = m.user?.displayName || m.user?.display_name || m.profiles?.display_name || '?';
+      return `<div class="item"><div class="grow"><div class="t">${esc(name)}</div>
+        <div class="s">${esc(m.role)}</div></div></div>`;
+    }).join('');
+  const inv = el(`<div class="card" style="margin-top:14px"><h2 class="sec" style="margin-top:0">Invite someone</h2>
+    <p class="lede">Generates a secure invite link. Expires in 72 hours, up to 10 uses.</p>
+    <button class="btn">Create invite link</button><div class="out"></div></div>`);
+  inv.querySelector('.btn').onclick = async () => {
+    try {
+      const { url } = await db.createInvite(circle.id);
+      inv.querySelector('.out').innerHTML =
+        `<div class="invitebox"><code>${esc(url)}</code></div>
+         <button class="btn small secondary" id="cp">Copy link</button>`;
+      inv.querySelector('#cp').onclick = async () => {
+        await navigator.clipboard.writeText(url).catch(() => {});
+        toast('Invite link copied');
+      };
+    } catch (e) { toast(e.message); }
+  };
+  wrap.appendChild(inv);
+  return wrap;
+}
