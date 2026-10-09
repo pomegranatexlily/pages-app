@@ -15,6 +15,13 @@ export async function showAuth() {
     ? 'Production mode — check your email for a sign-in link.'
     : 'Demo mode — no password. Use one email per test account (e.g. ama@test.com, ben@test.com).';
   wrap.querySelector('#mode').textContent = mode;
+  // remember the last email so reopening the app is one tap
+  if (db.mode !== 'supabase') {
+    try {
+      const last = localStorage.getItem('pages_last_email');
+      if (last) wrap.querySelector('#email').value = last;
+    } catch {}
+  }
   wrap.querySelector('#go').onclick = async () => {
     const email = wrap.querySelector('#email').value.trim();
     const name = wrap.querySelector('#name').value.trim();
