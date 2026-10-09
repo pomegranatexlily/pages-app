@@ -61,6 +61,7 @@ local.signIn = async (email, displayName) => {
   }
   const sess = { userId: u.id, email: u.email, displayName: u.displayName };
   sessionStorage.setItem('pages_session', JSON.stringify(sess));
+  try { localStorage.setItem('pages_last_email', u.email); } catch {}
   return sess;
 };
 
