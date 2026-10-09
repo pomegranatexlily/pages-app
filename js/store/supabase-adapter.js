@@ -29,8 +29,18 @@ async function me() {
   const sb = await client();
   const { data: { user } } = await sb.auth.getUser();
   if (!user) throw new Error('Not signed in');
-  const { data: profile } = await sb.from('profiles').select('*').eq('id', user.id).single();
-  session = { userId: user.id, email: user.email, displayName: profile?.display_name || user.email };
+  let { data: profile } = await sb.from('profiles').select('*').eq('id', user.id).maybeSingle();
+  if (!profile) {
+    // first sign-in: create the profile row (RLS allows own-profile insert)
+    const displayName =
+      sessionStorage.getItem('pages_display_name') || user.email.split('@')[0];
+    const { data, error } = await sb.from('profiles')
+      .insert({ id: user.id, email: user.email, display_name: displayName })
+      .select().single();
+    if (error) throw error;
+    profile = data;
+  }
+  session = { userId: user.id, email: user.email, displayName: profile.display_name };
   return session;
 }
 
@@ -41,9 +51,13 @@ sbx.currentSession = async () => {
   try { return await me(); } catch { return null; }
 };
 
-sbx.signIn = async (email) => {
+sbx.signIn = async (email, displayName) => {
   const sb = await client();
-  const { error } = await sb.auth.signInWithOtp({ email });
+  if (displayName) sessionStorage.setItem('pages_display_name', displayName);
+  const { error } = await sb.auth.signInWithOtp({
+    email,
+    options: { emailRedirectTo: location.origin + location.pathname },
+  });
   if (error) throw error;
   return { email, pendingMagicLink: true };
 };
