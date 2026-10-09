@@ -1,1 +1,27 @@
-LyogUEFHRVMgZGVzaWduIHRva2VucyDigJQgUG9tZWdyYW5hdGUgw5cgTGlseSAqLwo6cm9vdCB7CiAgLS1wbC1jcmltc29uOiAjN2YxZDI0OwogIC0tcGwtY3JpbXNvbi1kZWVwOiAjNWUxNDFhOwogIC0tcGwtY29wcGVyOiAjOWI0YzMwOwogIC0tcGwtY3JlYW06ICNmYWY3ZjI7CiAgLS1wbC1wYXBlcjogI2ZmZmZmZjsKICAtLXBsLWluazogIzFhMWExYTsKICAtLXBsLWluay1zb2Z0OiAjNGE0YTRhOwogIC0tcGwtbXV0ZWQ6ICM4YTg1N2U7CiAgLS1wbC1saW5lOiAjZThlMmQ5OwogIC0tcGwtc3VjY2VzczogIzJlN2Q0ZjsKICAtLXBsLXdhcm46ICNiNzc5MWY7CiAgLS1wbC1kYW5nZXI6ICNiMzM2MmI7CgogIC0tZm9udC1ib2R5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICJTZWdvZSBVSSIsIHN5c3RlbS11aSwgc2Fucy1zZXJpZjsKICAtLWZvbnQtZGlzcGxheTogR2VvcmdpYSwgIlRpbWVzIE5ldyBSb21hbiIsIHNlcmlmOwoKICAtLXItc206IDhweDsKICAtLXItbWQ6IDE0cHg7CiAgLS1yLWxnOiAyMnB4OwoKICAtLXNoYWRvdy0xOiAwIDFweCAzcHggcmdiYSgyNiwyNiwyNiwuMDgpOwogIC0tc2hhZG93LTI6IDAgNHB4IDE2cHggcmdiYSgyNiwyNiwyNiwuMTApOwoKICAtLXRhYmJhci1oOiA2NHB4Owp9Cg==
+/* PAGES design tokens — Pomegranate × Lily */
+:root {
+  --pl-crimson: #7f1d24;
+  --pl-crimson-deep: #5e141a;
+  --pl-copper: #9b4c30;
+  --pl-cream: #faf7f2;
+  --pl-paper: #ffffff;
+  --pl-ink: #1a1a1a;
+  --pl-ink-soft: #4a4a4a;
+  --pl-muted: #8a857e;
+  --pl-line: #e8e2d9;
+  --pl-success: #2e7d4f;
+  --pl-warn: #b7791f;
+  --pl-danger: #b3362b;
+
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+
+  --shadow-1: 0 1px 3px rgba(26,26,26,.08);
+  --shadow-2: 0 4px 16px rgba(26,26,26,.10);
+
+  --tabbar-h: 64px;
+}
