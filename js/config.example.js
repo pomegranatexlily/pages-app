@@ -1,1 +1,8 @@
-Ly8gUEFHRVMgY29uZmlnIOKAlCBjb3B5IHRvIGNvbmZpZy5qcyBhbmQgZmlsbCBpbi4gY29uZmlnLmpzIGlzIGdpdGlnbm9yZWQuCi8vIHsKLy8gICAiTU9ERSI6ICJzdXBhYmFzZSIsCi8vICAgIlNVUEFCQVNFX1VSTCI6ICJodHRwczovL3h5emNvbXBhbnkuc3VwYWJhc2UuY28iLAovLyAgICJTVVBBQkFTRV9BTk9OX0tFWSI6ICJleUpoYkdjaU9pLi4uIChhbm9uIHB1YmxpYyBrZXkg4oCUIHNhZmUgZm9yIGJyb3dzZXIpIgovLyB9Ci8vIE5FVkVSIHB1dCB0aGUgc2VydmljZS1yb2xlIGtleSBoZXJlLgpleHBvcnQgZGVmYXVsdCB7IE1PREU6ICdsb2NhbCcgfTsK
+// PAGES config — copy to config.js and fill in. config.js is gitignored.
+// {
+//   "MODE": "supabase",
+//   "SUPABASE_URL": "https://xyzcompany.supabase.co",
+//   "SUPABASE_ANON_KEY": "eyJhbGciOi... (anon public key — safe for browser)"
+// }
+// NEVER put the service-role key here.
+export default { MODE: 'local' };
