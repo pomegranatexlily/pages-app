@@ -1,1 +1,302 @@
-LyoqCiAqIExvY2FsIGFkYXB0ZXIg4oCUIGZ1bGwgUEFHRVMgZGF0YSBsYXllciBvbiBicm93c2VyIGxvY2FsU3RvcmFnZS4KICoKICogREVNTyBNT0RFIE9OTFkuIEF1dGhvcml6YXRpb24gaXMgZW5mb3JjZWQgaW4gdGhpcyBjbGllbnQgY29kZSBzbyB0aGUKICogcHJvdG90eXBlIGJlaGF2ZXMgbGlrZSBwcm9kdWN0aW9uLCBidXQgYSBob3N0aWxlIGNsaWVudCBjb3VsZCBieXBhc3MgaXQuCiAqIFJlYWwgZW5mb3JjZW1lbnQgbGl2ZXMgaW4gU3VwYWJhc2Ugcm93LWxldmVsIHNlY3VyaXR5IChzZWUKICogc3VwYWJhc2UvbWlncmF0aW9ucy8pLiBOZXZlciB0cmVhdCBsb2NhbCBtb2RlIGFzIHNlY3VyZS4KICovCmltcG9ydCBkYiwgewogIFJPTEVTLCBNRU1CRVJfU1RBVFVTLCBNSVNTSU9OX1NUQVRVUywgTUlMRVNUT05FX1NUQVRVUywgQ09NTUlUTUVOVF9TVEFUVVMsCn0gZnJvbSAnLi9kYi5qcyc7Cgpjb25zdCBLRVkgPSAncGFnZXNfZGJfdjEnOwoKZnVuY3Rpb24gbG9hZCgpIHsKICB0cnkgeyByZXR1cm4gSlNPTi5wYXJzZShsb2NhbFN0b3JhZ2UuZ2V0SXRlbShLRVkpKSB8fCBibGFuaygpOyB9CiAgY2F0Y2ggeyByZXR1cm4gYmxhbmsoKTsgfQp9CmZ1bmN0aW9uIHNhdmUocykgeyBsb2NhbFN0b3JhZ2Uuc2V0SXRlbShLRVksIEpTT04uc3RyaW5naWZ5KHMpKTsgfQpmdW5jdGlvbiBibGFuaygpIHsKICByZXR1cm4gewogICAgdXNlcnM6IFtdLCBjaXJjbGVzOiBbXSwgbWVtYmVyc2hpcHM6IFtdLCBpbnZpdGVzOiBbXSwKICAgIG1pc3Npb25zOiBbXSwgbWlsZXN0b25lczogW10sIGNvbW1pdG1lbnRzOiBbXSwgY29tbWl0bWVudEV2ZW50czogW10sCiAgICBtZXNzYWdlczogW10sIGFjdGl2aXR5OiBbXSwKICB9Owp9CmNvbnN0IHVpZCA9IChwID0gJ2lkJykgPT4gcCArICdfJyArIE1hdGgucmFuZG9tKCkudG9TdHJpbmcoMzYpLnNsaWNlKDIsIDEwKSArIERhdGUubm93KCkudG9TdHJpbmcoMzYpOwpjb25zdCBub3cgPSAoKSA9PiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCk7CmNvbnN0IHRva2VuID0gKCkgPT4gTWF0aC5yYW5kb20oKS50b1N0cmluZygzNikuc2xpY2UoMiwgMTApICsgTWF0aC5yYW5kb20oKS50b1N0cmluZygzNikuc2xpY2UoMiwgMTApOwoKZnVuY3Rpb24gc2Vzc2lvblVzZXIoKSB7CiAgY29uc3QgcyA9IEpTT04ucGFyc2Uoc2Vzc2lvblN0b3JhZ2UuZ2V0SXRlbSgncGFnZXNfc2Vzc2lvbicpIHx8ICdudWxsJyk7CiAgaWYgKCFzKSB0aHJvdyBuZXcgRXJyb3IoJ05vdCBzaWduZWQgaW4nKTsKICByZXR1cm4gczsKfQpmdW5jdGlvbiBpc01lbWJlcihzLCBjaXJjbGVJZCwgdXNlcklkKSB7CiAgcmV0dXJuIHMubWVtYmVyc2hpcHMuc29tZShtID0+IG0uY2lyY2xlSWQgPT09IGNpcmNsZUlkICYmIG0udXNlcklkID09PSB1c2VySWQKICAgICYmIG0uc3RhdHVzID09PSBNRU1CRVJfU1RBVFVTLkFDVElWRSk7Cn0KZnVuY3Rpb24gcmVxdWlyZU1lbWJlcihzLCBjaXJjbGVJZCwgdXNlcklkKSB7CiAgaWYgKCFpc01lbWJlcihzLCBjaXJjbGVJZCwgdXNlcklkKSkgdGhyb3cgbmV3IEVycm9yKCdOb3QgYSBtZW1iZXIgb2YgdGhpcyBjaXJjbGUnKTsKfQpmdW5jdGlvbiBsb2cocywgY2lyY2xlSWQsIGFjdG9ySWQsIGV2ZW50VHlwZSwgc3VtbWFyeSkgewogIHMuYWN0aXZpdHkudW5zaGlmdCh7IGlkOiB1aWQoJ2V2JyksIGNpcmNsZUlkLCBhY3RvcklkLCBldmVudFR5cGUsIHN1bW1hcnksIGNyZWF0ZWRBdDogbm93KCkgfSk7Cn0KCmNvbnN0IGxvY2FsID0gT2JqZWN0LmNyZWF0ZShkYik7CmxvY2FsLm1vZGUgPSAnbG9jYWwnOwoKbG9jYWwuY3VycmVudFNlc3Npb24gPSBhc3luYyAoKSA9PgogIEpTT04ucGFyc2Uoc2Vzc2lvblN0b3JhZ2UuZ2V0SXRlbSgncGFnZXNfc2Vzc2lvbicpIHx8ICdudWxsJyk7Cgpsb2NhbC5zaWduSW4gPSBhc3luYyAoZW1haWwsIGRpc3BsYXlOYW1lKSA9PiB7CiAgY29uc3QgcyA9IGxvYWQoKTsKICBsZXQgdSA9IHMudXNlcnMuZmluZCh4ID0+IHguZW1haWwgPT09IGVtYWlsLnRvTG93ZXJDYXNlKCkpOwogIGlmICghdSkgewogICAgdSA9IHsgaWQ6IHVpZCgndScpLCBlbWFpbDogZW1haWwudG9Mb3dlckNhc2UoKSwgZGlzcGxheU5hbWU6IGRpc3BsYXlOYW1lIHx8IGVtYWlsLnNwbGl0KCdAJylbMF0sIGNyZWF0ZWRBdDogbm93KCkgfTsKICAgIHMudXNlcnMucHVzaCh1KTsgc2F2ZShzKTsKICB9IGVsc2UgaWYgKGRpc3BsYXlOYW1lICYmIGRpc3BsYXlOYW1lICE9PSB1LmRpc3BsYXlOYW1lKSB7CiAgICB1LmRpc3BsYXlOYW1lID0gZGlzcGxheU5hbWU7IHNhdmUocyk7CiAgfQogIGNvbnN0IHNlc3MgPSB7IHVzZXJJZDogdS5pZCwgZW1haWw6IHUuZW1haWwsIGRpc3BsYXlOYW1lOiB1LmRpc3BsYXlOYW1lIH07CiAgc2Vzc2lvblN0b3JhZ2Uuc2V0SXRlbSgncGFnZXNfc2Vzc2lvbicsIEpTT04uc3RyaW5naWZ5KHNlc3MpKTsKICByZXR1cm4gc2VzczsKfTsKCmxvY2FsLnNpZ25PdXQgPSBhc3luYyAoKSA9PiBzZXNzaW9uU3RvcmFnZS5yZW1vdmVJdGVtKCdwYWdlc19zZXNzaW9uJyk7CgovLyAtLS0tIGNpcmNsZXMgLS0tLQpsb2NhbC5saXN0Q2lyY2xlcyA9IGFzeW5jICgpID0+IHsKICBjb25zdCBzID0gbG9hZCgpOyBjb25zdCBtZSA9IHNlc3Npb25Vc2VyKCk7CiAgY29uc3QgbXlJZHMgPSBzLm1lbWJlcnNoaXBzLmZpbHRlcihtID0+IG0udXNlcklkID09PSBtZS51c2VySWQgJiYgbS5zdGF0dXMgPT09IE1FTUJFUl9TVEFUVVMuQUNUSVZFKQogICAgLm1hcChtID0+IG0uY2lyY2xlSWQpOwogIHJldHVybiBzLmNpcmNsZXMuZmlsdGVyKGMgPT4gbXlJZHMuaW5jbHVkZXMoYy5pZCkpCiAgICAubWFwKGMgPT4gKHsgLi4uYywgbWVtYmVyQ291bnQ6IHMubWVtYmVyc2hpcHMuZmlsdGVyKG0gPT4gbS5jaXJjbGVJZCA9PT0gYy5pZCAmJiBtLnN0YXR1cyA9PT0gJ2FjdGl2ZScpLmxlbmd0aCB9KSk7Cn07Cgpsb2NhbC5jcmVhdGVDaXJjbGUgPSBhc3luYyAoeyBuYW1lLCBkZXNjcmlwdGlvbiB9KSA9PiB7CiAgaWYgKCFuYW1lIHx8ICFuYW1lLnRyaW0oKSkgdGhyb3cgbmV3IEVycm9yKCdDaXJjbGUgbmVlZHMgYSBuYW1lJyk7CiAgY29uc3QgcyA9IGxvYWQoKTsgY29uc3QgbWUgPSBzZXNzaW9uVXNlcigpOwogIGNvbnN0IGMgPSB7IGlkOiB1aWQoJ2MnKSwgbmFtZTogbmFtZS50cmltKCksIGRlc2NyaXB0aW9uOiAoZGVzY3JpcHRpb24gfHwgJycpLnRyaW0oKSwKICAgIGNyZWF0ZWRCeTogbWUudXNlcklkLCBjcmVhdGVkQXQ6IG5vdygpIH07CiAgcy5jaXJjbGVzLnB1c2goYyk7CiAgcy5tZW1iZXJzaGlwcy5wdXNoKHsgaWQ6IHVpZCgnbScpLCBjaXJjbGVJZDogYy5pZCwgdXNlcklkOiBtZS51c2VySWQsCiAgICByb2xlOiBST0xFUy5PV05FUiwgc3RhdHVzOiBNRU1CRVJfU1RBVFVTLkFDVElWRSwgY3JlYXRlZEF0OiBub3coKSB9KTsKICBsb2cocywgYy5pZCwgbWUudXNlcklkLCAnY2lyY2xlLmNyZWF0ZWQnLCBgJHttZS5kaXNwbGF5TmFtZX0gY3JlYXRlZCB0aGUgY2lyY2xlYCk7CiAgc2F2ZShzKTsKICByZXR1cm4gYzsKfTsKCmxvY2FsLmdldENpcmNsZSA9IGFzeW5jIChjaXJjbGVJZCkgPT4gewogIGNvbnN0IHMgPSBsb2FkKCk7IGNvbnN0IG1lID0gc2Vzc2lvblVzZXIoKTsKICBjb25zdCBjID0gcy5jaXJjbGVzLmZpbmQoeCA9PiB4LmlkID09PSBjaXJjbGVJZCk7CiAgaWYgKCFjKSB0aHJvdyBuZXcgRXJyb3IoJ0NpcmNsZSBub3QgZm91bmQnKTsKICByZXF1aXJlTWVtYmVyKHMsIGNpcmNsZUlkLCBtZS51c2VySWQpOwogIGNvbnN0IG1lbWJlcnMgPSBzLm1lbWJlcnNoaXBzLmZpbHRlcihtID0+IG0uY2lyY2xlSWQgPT09IGNpcmNsZUlkICYmIG0uc3RhdHVzID09PSAnYWN0aXZlJykKICAgIC5tYXAobSA9PiAoeyAuLi5tLCB1c2VyOiBzLnVzZXJzLmZpbmQodSA9PiB1LmlkID09PSBtLnVzZXJJZCkgfSkpOwogIHJldHVybiB7IC4uLmMsIG1lbWJlcnMgfTsKfTsKCi8vIC0tLS0gaW52aXRhdGlvbnMgLS0tLQpsb2NhbC5jcmVhdGVJbnZpdGUgPSBhc3luYyAoY2lyY2xlSWQsIHsgbWF4VXNlcyA9IDEwLCB0dGxIb3VycyA9IDcyIH0gPSB7fSkgPT4gewogIGNvbnN0IHMgPSBsb2FkKCk7IGNvbnN0IG1lID0gc2Vzc2lvblVzZXIoKTsKICByZXF1aXJlTWVtYmVyKHMsIGNpcmNsZUlkLCBtZS51c2VySWQpOwogIGNvbnN0IGludiA9IHsgaWQ6IHVpZCgnaW52JyksIGNpcmNsZUlkLCB0b2tlbjogdG9rZW4oKSwgY3JlYXRlZEJ5OiBtZS51c2VySWQsCiAgICBtYXhVc2VzLCB1c2VzOiAwLCBleHBpcmVzQXQ6IG5ldyBEYXRlKERhdGUubm93KCkgKyB0dGxIb3VycyAqIDM2MDBlMykudG9JU09TdHJpbmcoKSwKICAgIGNyZWF0ZWRBdDogbm93KCkgfTsKICBzLmludml0ZXMucHVzaChpbnYpOyBzYXZlKHMpOwogIGNvbnN0IHVybCA9IGAke2xvY2F0aW9uLm9yaWdpbn0ke2xvY2F0aW9uLnBhdGhuYW1lfSMvam9pbi8ke2ludi50b2tlbn1gOwogIHJldHVybiB7IHRva2VuOiBpbnYudG9rZW4sIHVybCB9Owp9OwoKbG9jYWwuYWNjZXB0SW52aXRlID0gYXN5bmMgKHRvaykgPT4gewogIGNvbnN0IHMgPSBsb2FkKCk7IGNvbnN0IG1lID0gc2Vzc2lvblVzZXIoKTsKICBjb25zdCBpbnYgPSBzLmludml0ZXMuZmluZCh4ID0+IHgudG9rZW4gPT09IHRvayk7CiAgaWYgKCFpbnYpIHRocm93IG5ldyBFcnJvcignSW52aXRlIG5vdCBmb3VuZCcpOwogIGlmIChuZXcgRGF0ZShpbnYuZXhwaXJlc0F0KSA8IG5ldyBEYXRlKCkpIHRocm93IG5ldyBFcnJvcignSW52aXRlIGV4cGlyZWQnKTsKICBpZiAoaW52LnVzZXMgPj0gaW52Lm1heFVzZXMpIHRocm93IG5ldyBFcnJvcignSW52aXRlIGZ1bGx5IHVzZWQnKTsKICBjb25zdCBleGlzdGluZyA9IHMubWVtYmVyc2hpcHMuZmluZChtID0+IG0uY2lyY2xlSWQgPT09IGludi5jaXJjbGVJZCAmJiBtLnVzZXJJZCA9PT0gbWUudXNlcklkKTsKICBpZiAoZXhpc3RpbmcgJiYgZXhpc3Rpbmcuc3RhdHVzID09PSAnYWN0aXZlJykgdGhyb3cgbmV3IEVycm9yKCdBbHJlYWR5IGEgbWVtYmVyJyk7CiAgaWYgKGV4aXN0aW5nKSB7IGV4aXN0aW5nLnN0YXR1cyA9ICdhY3RpdmUnOyB9CiAgZWxzZSB7CiAgICBzLm1lbWJlcnNoaXBzLnB1c2goeyBpZDogdWlkKCdtJyksIGNpcmNsZUlkOiBpbnYuY2lyY2xlSWQsIHVzZXJJZDogbWUudXNlcklkLAogICAgICByb2xlOiBST0xFUy5NRU1CRVIsIHN0YXR1czogTUVNQkVSX1NUQVRVUy5BQ1RJVkUsIGNyZWF0ZWRBdDogbm93KCkgfSk7CiAgfQogIGludi51c2VzICs9IDE7CiAgY29uc3QgYyA9IHMuY2lyY2xlcy5maW5kKHggPT4geC5pZCA9PT0gaW52LmNpcmNsZUlkKTsKICBsb2cocywgaW52LmNpcmNsZUlkLCBtZS51c2VySWQsICdtZW1iZXIuam9pbmVkJywgYCR7bWUuZGlzcGxheU5hbWV9IGpvaW5lZCB0aGUgY2lyY2xlYCk7CiAgc2F2ZShzKTsKICByZXR1cm4gYzsKfTsKCi8vIC0tLS0gbWlzc2lvbnMgLS0tLQpsb2NhbC5saXN0TWlzc2lvbnMgPSBhc3luYyAoY2lyY2xlSWQpID0+IHsKICBjb25zdCBzID0gbG9hZCgpOyBjb25zdCBtZSA9IHNlc3Npb25Vc2VyKCk7CiAgcmVxdWlyZU1lbWJlcihzLCBjaXJjbGVJZCwgbWUudXNlcklkKTsKICByZXR1cm4gcy5taXNzaW9ucy5maWx0ZXIobSA9PiBtLmNpcmNsZUlkID09PSBjaXJjbGVJZCkubWFwKG0gPT4gKHsKICAgIC4uLm0sCiAgICBtaWxlc3RvbmVzOiBzLm1pbGVzdG9uZXMuZmlsdGVyKG1zID0+IG1zLm1pc3Npb25JZCA9PT0gbS5pZCksCiAgfSkpOwp9OwoKbG9jYWwuY3JlYXRlTWlzc2lvbiA9IGFzeW5jIChjaXJjbGVJZCwgeyB0aXRsZSwgZGVzY3JpcHRpb24gfSkgPT4gewogIGlmICghdGl0bGUgfHwgIXRpdGxlLnRyaW0oKSkgdGhyb3cgbmV3IEVycm9yKCdNaXNzaW9uIG5lZWRzIGEgdGl0bGUnKTsKICBjb25zdCBzID0gbG9hZCgpOyBjb25zdCBtZSA9IHNlc3Npb25Vc2VyKCk7CiAgcmVxdWlyZU1lbWJlcihzLCBjaXJjbGVJZCwgbWUudXNlcklkKTsKICBjb25zdCBtID0geyBpZDogdWlkKCdtaXMnKSwgY2lyY2xlSWQsIHRpdGxlOiB0aXRsZS50cmltKCksCiAgICBkZXNjcmlwdGlvbjogKGRlc2NyaXB0aW9uIHx8ICcnKS50cmltKCksIHN0YXR1czogTUlTU0lPTl9TVEFUVVMuT1BFTiwKICAgIGNyZWF0ZWRCeTogbWUudXNlcklkLCBjcmVhdGVkQXQ6IG5vdygpIH07CiAgcy5taXNzaW9ucy5wdXNoKG0pOwogIGxvZyhzLCBjaXJjbGVJZCwgbWUudXNlcklkLCAnbWlzc2lvbi5jcmVhdGVkJywgYCR7bWUuZGlzcGxheU5hbWV9IHN0YXJ0ZWQgbWlzc2lvbiDigJwke20udGl0bGV94oCdYCk7CiAgc2F2ZShzKTsKICByZXR1cm4geyAuLi5tLCBtaWxlc3RvbmVzOiBbXSB9Owp9OwoKbG9jYWwudXBkYXRlTWlzc2lvbiA9IGFzeW5jIChtaXNzaW9uSWQsIHBhdGNoKSA9PiB7CiAgY29uc3QgcyA9IGxvYWQoKTsgY29uc3QgbWUgPSBzZXNzaW9uVXNlcigpOwogIGNvbnN0IG0gPSBzLm1pc3Npb25zLmZpbmQoeCA9PiB4LmlkID09PSBtaXNzaW9uSWQpOwogIGlmICghbSkgdGhyb3cgbmV3IEVycm9yKCdNaXNzaW9uIG5vdCBmb3VuZCcpOwogIHJlcXVpcmVNZW1iZXIocywgbS5jaXJjbGVJZCwgbWUudXNlcklkKTsKICBpZiAocGF0Y2gudGl0bGUgIT09IHVuZGVmaW5lZCkgbS50aXRsZSA9IHBhdGNoLnRpdGxlOwogIGlmIChwYXRjaC5kZXNjcmlwdGlvbiAhPT0gdW5kZWZpbmVkKSBtLmRlc2NyaXB0aW9uID0gcGF0Y2guZGVzY3JpcHRpb247CiAgaWYgKHBhdGNoLnN0YXR1cyAhPT0gdW5kZWZpbmVkKSB7CiAgICBtLnN0YXR1cyA9IHBhdGNoLnN0YXR1czsKICAgIGxvZyhzLCBtLmNpcmNsZUlkLCBtZS51c2VySWQsICdtaXNzaW9uLicgKyBwYXRjaC5zdGF0dXMsCiAgICAgIGAke21lLmRpc3BsYXlOYW1lfSBtYXJrZWQgbWlzc2lvbiDigJwke20udGl0bGV94oCdICR7cGF0Y2guc3RhdHVzfWApOwogIH0KICBzYXZlKHMpOwogIHJldHVybiBtOwp9OwoKLy8gLS0tLSBtaWxlc3RvbmVzIC0tLS0KbG9jYWwuY3JlYXRlTWlsZXN0b25lID0gYXN5bmMgKG1pc3Npb25JZCwgeyB0aXRsZSwgYXNzaWduZWVJZCwgZHVlRGF0ZSB9KSA9PiB7CiAgaWYgKCF0aXRsZSB8fCAhdGl0bGUudHJpbSgpKSB0aHJvdyBuZXcgRXJyb3IoJ01pbGVzdG9uZSBuZWVkcyBhIHRpdGxlJyk7CiAgY29uc3QgcyA9IGxvYWQoKTsgY29uc3QgbWUgPSBzZXNzaW9uVXNlcigpOwogIGNvbnN0IG1pcyA9IHMubWlzc2lvbnMuZmluZCh4ID0+IHguaWQgPT09IG1pc3Npb25JZCk7CiAgaWYgKCFtaXMpIHRocm93IG5ldyBFcnJvcignTWlzc2lvbiBub3QgZm91bmQnKTsKICByZXF1aXJlTWVtYmVyKHMsIG1pcy5jaXJjbGVJZCwgbWUudXNlcklkKTsKICBpZiAoYXNzaWduZWVJZCAmJiAhaXNNZW1iZXIocywgbWlzLmNpcmNsZUlkLCBhc3NpZ25lZUlkKSkgdGhyb3cgbmV3IEVycm9yKCdBc3NpZ25lZSBpcyBub3QgYSBtZW1iZXInKTsKICBjb25zdCBtcyA9IHsgaWQ6IHVpZCgnbXMnKSwgbWlzc2lvbklkLCB0aXRsZTogdGl0bGUudHJpbSgpLCBhc3NpZ25lZUlkOiBhc3NpZ25lZUlkIHx8IG51bGwsCiAgICBkdWVEYXRlOiBkdWVEYXRlIHx8IG51bGwsIHN0YXR1czogTUlMRVNUT05FX1NUQVRVUy5PUEVOLCBjcmVhdGVkQnk6IG1lLnVzZXJJZCwgY3JlYXRlZEF0OiBub3coKSB9OwogIHMubWlsZXN0b25lcy5wdXNoKG1zKTsKICBsb2cocywgbWlzLmNpcmNsZUlkLCBtZS51c2VySWQsICdtaWxlc3RvbmUuY3JlYXRlZCcsCiAgICBgJHttZS5kaXNwbGF5TmFtZX0gYWRkZWQgbWlsZXN0b25lIOKAnCR7bXMudGl0bGV94oCdYCk7CiAgc2F2ZShzKTsKICByZXR1cm4gbXM7Cn07Cgpsb2NhbC50b2dnbGVNaWxlc3RvbmUgPSBhc3luYyAobWlsZXN0b25lSWQpID0+IHsKICBjb25zdCBzID0gbG9hZCgpOyBjb25zdCBtZSA9IHNlc3Npb25Vc2VyKCk7CiAgY29uc3QgbXMgPSBzLm1pbGVzdG9uZXMuZmluZCh4ID0+IHguaWQgPT09IG1pbGVzdG9uZUlkKTsKICBpZiAoIW1zKSB0aHJvdyBuZXcgRXJyb3IoJ01pbGVzdG9uZSBub3QgZm91bmQnKTsKICBjb25zdCBtaXMgPSBzLm1pc3Npb25zLmZpbmQoeCA9PiB4LmlkID09PSBtcy5taXNzaW9uSWQpOwogIHJlcXVpcmVNZW1iZXIocywgbWlzLmNpcmNsZUlkLCBtZS51c2VySWQpOwogIG1zLnN0YXR1cyA9IG1zLnN0YXR1cyA9PT0gJ29wZW4nID8gJ2RvbmUnIDogJ29wZW4nOwogIGxvZyhzLCBtaXMuY2lyY2xlSWQsIG1lLnVzZXJJZCwgJ21pbGVzdG9uZS4nICsgbXMuc3RhdHVzLAogICAgYCR7bWUuZGlzcGxheU5hbWV9IG1hcmtlZCDigJwke21zLnRpdGxlfeKAnSAke21zLnN0YXR1c31gKTsKICBzYXZlKHMpOwogIHJldHVybiBtczsKfTsKCi8vIC0tLS0gY29tbWl0bWVudHMgLS0tLQpsb2NhbC5saXN0Q29tbWl0bWVudHMgPSBhc3luYyAoY2lyY2xlSWQpID0+IHsKICBjb25zdCBzID0gbG9hZCgpOyBjb25zdCBtZSA9IHNlc3Npb25Vc2VyKCk7CiAgcmVxdWlyZU1lbWJlcihzLCBjaXJjbGVJZCwgbWUudXNlcklkKTsKICByZXR1cm4gcy5jb21taXRtZW50cy5maWx0ZXIoYyA9PiBjLmNpcmNsZUlkID09PSBjaXJjbGVJZCkKICAgIC5tYXAoYyA9PiAoeyAuLi5jLAogICAgICBwcm9wb3Nlcjogcy51c2Vycy5maW5kKHUgPT4gdS5pZCA9PT0gYy5wcm9wb3NlcklkKSwKICAgICAgcmVjaXBpZW50OiBzLnVzZXJzLmZpbmQodSA9PiB1LmlkID09PSBjLnJlY2lwaWVudElkKSB9KSk7Cn07Cgpsb2NhbC5wcm9wb3NlQ29tbWl0bWVudCA9IGFzeW5jIChjaXJjbGVJZCwgeyByZWNpcGllbnRJZCwgdGl0bGUsIHRlcm1zIH0pID0+IHsKICBpZiAoIXRpdGxlIHx8ICF0aXRsZS50cmltKCkpIHRocm93IG5ldyBFcnJvcignQ29tbWl0bWVudCBuZWVkcyBhIHRpdGxlJyk7CiAgaWYgKCFyZWNpcGllbnRJZCkgdGhyb3cgbmV3IEVycm9yKCdDaG9vc2Ugd2hvIHRoaXMgY29tbWl0bWVudCBpcyBmb3InKTsKICBjb25zdCBzID0gbG9hZCgpOyBjb25zdCBtZSA9IHNlc3Npb25Vc2VyKCk7CiAgcmVxdWlyZU1lbWJlcihzLCBjaXJjbGVJZCwgbWUudXNlcklkKTsKICBpZiAoIWlzTWVtYmVyKHMsIGNpcmNsZUlkLCByZWNpcGllbnRJZCkpIHRocm93IG5ldyBFcnJvcignUmVjaXBpZW50IGlzIG5vdCBhIG1lbWJlcicpOwogIGlmIChyZWNpcGllbnRJZCA9PT0gbWUudXNlcklkKSB0aHJvdyBuZXcgRXJyb3IoJ0Nhbm5vdCBwcm9wb3NlIGEgY29tbWl0bWVudCB0byB5b3Vyc2VsZicpOwogIGNvbnN0IGMgPSB7IGlkOiB1aWQoJ2NtJyksIGNpcmNsZUlkLCBwcm9wb3NlcklkOiBtZS51c2VySWQsIHJlY2lwaWVudElkLAogICAgdGl0bGU6IHRpdGxlLnRyaW0oKSwgdGVybXM6ICh0ZXJtcyB8fCAnJykudHJpbSgpLAogICAgc3RhdHVzOiBDT01NSVRNRU5UX1NUQVRVUy5QUk9QT1NFRCwgY3JlYXRlZEF0OiBub3coKSwgZGVjaWRlZEF0OiBudWxsIH07CiAgcy5jb21taXRtZW50cy5wdXNoKGMpOwogIHMuY29tbWl0bWVudEV2ZW50cy5wdXNoKHsgaWQ6IHVpZCgnY2UnKSwgY29tbWl0bWVudElkOiBjLmlkLCBldmVudFR5cGU6ICdwcm9wb3NlZCcsCiAgICBhY3RvcklkOiBtZS51c2VySWQsIHNuYXBzaG90OiB7IHRpdGxlOiBjLnRpdGxlLCB0ZXJtczogYy50ZXJtcyB9LCBjcmVhdGVkQXQ6IG5vdygpIH0pOwogIGNvbnN0IHJlY2lwID0gcy51c2Vycy5maW5kKHUgPT4gdS5pZCA9PT0gcmVjaXBpZW50SWQpOwogIGxvZyhzLCBjaXJjbGVJZCwgbWUudXNlcklkLCAnY29tbWl0bWVudC5wcm9wb3NlZCcsCiAgICBgJHttZS5kaXNwbGF5TmFtZX0gcHJvcG9zZWQg4oCcJHtjLnRpdGxlfeKAnSB0byAke3JlY2lwLmRpc3BsYXlOYW1lfWApOwogIHNhdmUocyk7CiAgcmV0dXJuIGM7Cn07Cgpsb2NhbC5yZXNwb25kQ29tbWl0bWVudCA9IGFzeW5jIChjb21taXRtZW50SWQsIGFjY2VwdCkgPT4gewogIGNvbnN0IHMgPSBsb2FkKCk7IGNvbnN0IG1lID0gc2Vzc2lvblVzZXIoKTsKICBjb25zdCBjID0gcy5jb21taXRtZW50cy5maW5kKHggPT4geC5pZCA9PT0gY29tbWl0bWVudElkKTsKICBpZiAoIWMpIHRocm93IG5ldyBFcnJvcignQ29tbWl0bWVudCBub3QgZm91bmQnKTsKICByZXF1aXJlTWVtYmVyKHMsIGMuY2lyY2xlSWQsIG1lLnVzZXJJZCk7CiAgaWYgKGMucmVjaXBpZW50SWQgIT09IG1lLnVzZXJJZCkgdGhyb3cgbmV3IEVycm9yKCdPbmx5IHRoZSByZWNpcGllbnQgY2FuIGFjY2VwdCBvciBkZWNsaW5lJyk7CiAgaWYgKGMuc3RhdHVzICE9PSAncHJvcG9zZWQnKSB0aHJvdyBuZXcgRXJyb3IoJ0NvbW1pdG1lbnQgaXMgbm8gbG9uZ2VyIGF3YWl0aW5nIGEgcmVzcG9uc2UnKTsKICBjLnN0YXR1cyA9IGFjY2VwdCA/ICdhY2NlcHRlZCcgOiAnZGVjbGluZWQnOwogIGMuZGVjaWRlZEF0ID0gbm93KCk7CiAgLy8gaW1tdXRhYmxlIHNuYXBzaG90IG9mIGFjY2VwdGVkIHRlcm1zCiAgcy5jb21taXRtZW50RXZlbnRzLnB1c2goeyBpZDogdWlkKCdjZScpLCBjb21taXRtZW50SWQ6IGMuaWQsCiAgICBldmVudFR5cGU6IGFjY2VwdCA/ICdhY2NlcHRlZCcgOiAnZGVjbGluZWQnLCBhY3RvcklkOiBtZS51c2VySWQsCiAgICBzbmFwc2hvdDogeyB0aXRsZTogYy50aXRsZSwgdGVybXM6IGMudGVybXMgfSwgY3JlYXRlZEF0OiBub3coKSB9KTsKICBsb2cocywgYy5jaXJjbGVJZCwgbWUudXNlcklkLCAnY29tbWl0bWVudC4nICsgYy5zdGF0dXMsCiAgICBgJHttZS5kaXNwbGF5TmFtZX0gJHtjLnN0YXR1c30g4oCcJHtjLnRpdGxlfeKAnWApOwogIHNhdmUocyk7CiAgcmV0dXJuIGM7Cn07Cgpsb2NhbC5jb21wbGV0ZUNvbW1pdG1lbnQgPSBhc3luYyAoY29tbWl0bWVudElkKSA9PiB7CiAgY29uc3QgcyA9IGxvYWQoKTsgY29uc3QgbWUgPSBzZXNzaW9uVXNlcigpOwogIGNvbnN0IGMgPSBzLmNvbW1pdG1lbnRzLmZpbmQoeCA9PiB4LmlkID09PSBjb21taXRtZW50SWQpOwogIGlmICghYykgdGhyb3cgbmV3IEVycm9yKCdDb21taXRtZW50IG5vdCBmb3VuZCcpOwogIHJlcXVpcmVNZW1iZXIocywgYy5jaXJjbGVJZCwgbWUudXNlcklkKTsKICBpZiAoYy5zdGF0dXMgIT09ICdhY2NlcHRlZCcpIHRocm93IG5ldyBFcnJvcignT25seSBhY2NlcHRlZCBjb21taXRtZW50cyBjYW4gYmUgY29tcGxldGVkJyk7CiAgaWYgKGMucHJvcG9zZXJJZCAhPT0gbWUudXNlcklkICYmIGMucmVjaXBpZW50SWQgIT09IG1lLnVzZXJJZCkKICAgIHRocm93IG5ldyBFcnJvcignT25seSB0aGUgcHJvcG9zZXIgb3IgcmVjaXBpZW50IGNhbiBjb21wbGV0ZScpOwogIGMuc3RhdHVzID0gJ2NvbXBsZXRlZCc7IGMuZGVjaWRlZEF0ID0gbm93KCk7CiAgcy5jb21taXRtZW50RXZlbnRzLnB1c2goeyBpZDogdWlkKCdjZScpLCBjb21taXRtZW50SWQ6IGMuaWQsIGV2ZW50VHlwZTogJ2NvbXBsZXRlZCcsCiAgICBhY3RvcklkOiBtZS51c2VySWQsIHNuYXBzaG90OiB7IHRpdGxlOiBjLnRpdGxlLCB0ZXJtczogYy50ZXJtcyB9LCBjcmVhdGVkQXQ6IG5vdygpIH0pOwogIGxvZyhzLCBjLmNpcmNsZUlkLCBtZS51c2VySWQsICdjb21taXRtZW50LmNvbXBsZXRlZCcsCiAgICBgJHttZS5kaXNwbGF5TmFtZX0gY29tcGxldGVkIOKAnCR7Yy50aXRsZX3igJ1gKTsKICBzYXZlKHMpOwogIHJldHVybiBjOwp9OwoKbG9jYWwuY29tbWl0bWVudEhpc3RvcnkgPSBhc3luYyAoY29tbWl0bWVudElkKSA9PiB7CiAgY29uc3QgcyA9IGxvYWQoKTsgY29uc3QgbWUgPSBzZXNzaW9uVXNlcigpOwogIGNvbnN0IGMgPSBzLmNvbW1pdG1lbnRzLmZpbmQoeCA9PiB4LmlkID09PSBjb21taXRtZW50SWQpOwogIGlmICghYykgdGhyb3cgbmV3IEVycm9yKCdDb21taXRtZW50IG5vdCBmb3VuZCcpOwogIHJlcXVpcmVNZW1iZXIocywgYy5jaXJjbGVJZCwgbWUudXNlcklkKTsKICByZXR1cm4gcy5jb21taXRtZW50RXZlbnRzLmZpbHRlcihlID0+IGUuY29tbWl0bWVudElkID09PSBjb21taXRtZW50SWQpCiAgICAubWFwKGUgPT4gKHsgLi4uZSwgYWN0b3I6IHMudXNlcnMuZmluZCh1ID0+IHUuaWQgPT09IGUuYWN0b3JJZCkgfSkpOwp9OwoKLy8gLS0tLSBjb252ZXJzYXRpb24gLS0tLQpsb2NhbC5saXN0TWVzc2FnZXMgPSBhc3luYyAoY2lyY2xlSWQpID0+IHsKICBjb25zdCBzID0gbG9hZCgpOyBjb25zdCBtZSA9IHNlc3Npb25Vc2VyKCk7CiAgcmVxdWlyZU1lbWJlcihzLCBjaXJjbGVJZCwgbWUudXNlcklkKTsKICByZXR1cm4gcy5tZXNzYWdlcy5maWx0ZXIobSA9PiBtLmNpcmNsZUlkID09PSBjaXJjbGVJZCkKICAgIC5tYXAobSA9PiAoeyAuLi5tLCB1c2VyOiBzLnVzZXJzLmZpbmQodSA9PiB1LmlkID09PSBtLnVzZXJJZCkgfSkpOwp9OwoKbG9jYWwuc2VuZE1lc3NhZ2UgPSBhc3luYyAoY2lyY2xlSWQsIGJvZHkpID0+IHsKICBpZiAoIWJvZHkgfHwgIWJvZHkudHJpbSgpKSB0aHJvdyBuZXcgRXJyb3IoJ0VtcHR5IG1lc3NhZ2UnKTsKICBjb25zdCBzID0gbG9hZCgpOyBjb25zdCBtZSA9IHNlc3Npb25Vc2VyKCk7CiAgcmVxdWlyZU1lbWJlcihzLCBjaXJjbGVJZCwgbWUudXNlcklkKTsKICBjb25zdCBtID0geyBpZDogdWlkKCdtc2cnKSwgY2lyY2xlSWQsIHVzZXJJZDogbWUudXNlcklkLCBib2R5OiBib2R5LnRyaW0oKSwgY3JlYXRlZEF0OiBub3coKSB9OwogIHMubWVzc2FnZXMucHVzaChtKTsgc2F2ZShzKTsKICByZXR1cm4geyAuLi5tLCB1c2VyOiBzLnVzZXJzLmZpbmQodSA9PiB1LmlkID09PSBtZS51c2VySWQpIH07Cn07CgovLyAtLS0tIGFjdGl2aXR5IC0tLS0KbG9jYWwubGlzdEFjdGl2aXR5ID0gYXN5bmMgKGNpcmNsZUlkLCBsaW1pdCA9IDUwKSA9PiB7CiAgY29uc3QgcyA9IGxvYWQoKTsgY29uc3QgbWUgPSBzZXNzaW9uVXNlcigpOwogIHJlcXVpcmVNZW1iZXIocywgY2lyY2xlSWQsIG1lLnVzZXJJZCk7CiAgcmV0dXJuIHMuYWN0aXZpdHkuZmlsdGVyKGUgPT4gZS5jaXJjbGVJZCA9PT0gY2lyY2xlSWQpLnNsaWNlKDAsIGxpbWl0KQogICAgLm1hcChlID0+ICh7IC4uLmUsIGFjdG9yOiBzLnVzZXJzLmZpbmQodSA9PiB1LmlkID09PSBlLmFjdG9ySWQpIH0pKTsKfTsKCmV4cG9ydCBkZWZhdWx0IGxvY2FsOwo=
+/**
+ * Local adapter — full PAGES data layer on browser localStorage.
+ *
+ * DEMO MODE ONLY. Authorization is enforced in this client code so the
+ * prototype behaves like production, but a hostile client could bypass it.
+ * Real enforcement lives in Supabase row-level security (see
+ * supabase/migrations/). Never treat local mode as secure.
+ */
+import db, {
+  ROLES, MEMBER_STATUS, MISSION_STATUS, MILESTONE_STATUS, COMMITMENT_STATUS,
+} from './db.js';
+
+const KEY = 'pages_db_v1';
+
+function load() {
+  try { return JSON.parse(localStorage.getItem(KEY)) || blank(); }
+  catch { return blank(); }
+}
+function save(s) { localStorage.setItem(KEY, JSON.stringify(s)); }
+function blank() {
+  return {
+    users: [], circles: [], memberships: [], invites: [],
+    missions: [], milestones: [], commitments: [], commitmentEvents: [],
+    messages: [], activity: [],
+  };
+}
+const uid = (p = 'id') => p + '_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
+const now = () => new Date().toISOString();
+const token = () => Math.random().toString(36).slice(2, 10) + Math.random().toString(36).slice(2, 10);
+
+function sessionUser() {
+  const s = JSON.parse(sessionStorage.getItem('pages_session') || 'null');
+  if (!s) throw new Error('Not signed in');
+  return s;
+}
+function isMember(s, circleId, userId) {
+  return s.memberships.some(m => m.circleId === circleId && m.userId === userId
+    && m.status === MEMBER_STATUS.ACTIVE);
+}
+function requireMember(s, circleId, userId) {
+  if (!isMember(s, circleId, userId)) throw new Error('Not a member of this circle');
+}
+function log(s, circleId, actorId, eventType, summary) {
+  s.activity.unshift({ id: uid('ev'), circleId, actorId, eventType, summary, createdAt: now() });
+}
+
+const local = Object.create(db);
+local.mode = 'local';
+
+local.currentSession = async () =>
+  JSON.parse(sessionStorage.getItem('pages_session') || 'null');
+
+local.signIn = async (email, displayName) => {
+  const s = load();
+  let u = s.users.find(x => x.email === email.toLowerCase());
+  if (!u) {
+    u = { id: uid('u'), email: email.toLowerCase(), displayName: displayName || email.split('@')[0], createdAt: now() };
+    s.users.push(u); save(s);
+  } else if (displayName && displayName !== u.displayName) {
+    u.displayName = displayName; save(s);
+  }
+  const sess = { userId: u.id, email: u.email, displayName: u.displayName };
+  sessionStorage.setItem('pages_session', JSON.stringify(sess));
+  return sess;
+};
+
+local.signOut = async () => sessionStorage.removeItem('pages_session');
+
+// ---- circles ----
+local.listCircles = async () => {
+  const s = load(); const me = sessionUser();
+  const myIds = s.memberships.filter(m => m.userId === me.userId && m.status === MEMBER_STATUS.ACTIVE)
+    .map(m => m.circleId);
+  return s.circles.filter(c => myIds.includes(c.id))
+    .map(c => ({ ...c, memberCount: s.memberships.filter(m => m.circleId === c.id && m.status === 'active').length }));
+};
+
+local.createCircle = async ({ name, description }) => {
+  if (!name || !name.trim()) throw new Error('Circle needs a name');
+  const s = load(); const me = sessionUser();
+  const c = { id: uid('c'), name: name.trim(), description: (description || '').trim(),
+    createdBy: me.userId, createdAt: now() };
+  s.circles.push(c);
+  s.memberships.push({ id: uid('m'), circleId: c.id, userId: me.userId,
+    role: ROLES.OWNER, status: MEMBER_STATUS.ACTIVE, createdAt: now() });
+  log(s, c.id, me.userId, 'circle.created', `${me.displayName} created the circle`);
+  save(s);
+  return c;
+};
+
+local.getCircle = async (circleId) => {
+  const s = load(); const me = sessionUser();
+  const c = s.circles.find(x => x.id === circleId);
+  if (!c) throw new Error('Circle not found');
+  requireMember(s, circleId, me.userId);
+  const members = s.memberships.filter(m => m.circleId === circleId && m.status === 'active')
+    .map(m => ({ ...m, user: s.users.find(u => u.id === m.userId) }));
+  return { ...c, members };
+};
+
+// ---- invitations ----
+local.createInvite = async (circleId, { maxUses = 10, ttlHours = 72 } = {}) => {
+  const s = load(); const me = sessionUser();
+  requireMember(s, circleId, me.userId);
+  const inv = { id: uid('inv'), circleId, token: token(), createdBy: me.userId,
+    maxUses, uses: 0, expiresAt: new Date(Date.now() + ttlHours * 3600e3).toISOString(),
+    createdAt: now() };
+  s.invites.push(inv); save(s);
+  const url = `${location.origin}${location.pathname}#/join/${inv.token}`;
+  return { token: inv.token, url };
+};
+
+local.acceptInvite = async (tok) => {
+  const s = load(); const me = sessionUser();
+  const inv = s.invites.find(x => x.token === tok);
+  if (!inv) throw new Error('Invite not found');
+  if (new Date(inv.expiresAt) < new Date()) throw new Error('Invite expired');
+  if (inv.uses >= inv.maxUses) throw new Error('Invite fully used');
+  const existing = s.memberships.find(m => m.circleId === inv.circleId && m.userId === me.userId);
+  if (existing && existing.status === 'active') throw new Error('Already a member');
+  if (existing) { existing.status = 'active'; }
+  else {
+    s.memberships.push({ id: uid('m'), circleId: inv.circleId, userId: me.userId,
+      role: ROLES.MEMBER, status: MEMBER_STATUS.ACTIVE, createdAt: now() });
+  }
+  inv.uses += 1;
+  const c = s.circles.find(x => x.id === inv.circleId);
+  log(s, inv.circleId, me.userId, 'member.joined', `${me.displayName} joined the circle`);
+  save(s);
+  return c;
+};
+
+// ---- missions ----
+local.listMissions = async (circleId) => {
+  const s = load(); const me = sessionUser();
+  requireMember(s, circleId, me.userId);
+  return s.missions.filter(m => m.circleId === circleId).map(m => ({
+    ...m,
+    milestones: s.milestones.filter(ms => ms.missionId === m.id),
+  }));
+};
+
+local.createMission = async (circleId, { title, description }) => {
+  if (!title || !title.trim()) throw new Error('Mission needs a title');
+  const s = load(); const me = sessionUser();
+  requireMember(s, circleId, me.userId);
+  const m = { id: uid('mis'), circleId, title: title.trim(),
+    description: (description || '').trim(), status: MISSION_STATUS.OPEN,
+    createdBy: me.userId, createdAt: now() };
+  s.missions.push(m);
+  log(s, circleId, me.userId, 'mission.created', `${me.displayName} started mission “${m.title}”`);
+  save(s);
+  return { ...m, milestones: [] };
+};
+
+local.updateMission = async (missionId, patch) => {
+  const s = load(); const me = sessionUser();
+  const m = s.missions.find(x => x.id === missionId);
+  if (!m) throw new Error('Mission not found');
+  requireMember(s, m.circleId, me.userId);
+  if (patch.title !== undefined) m.title = patch.title;
+  if (patch.description !== undefined) m.description = patch.description;
+  if (patch.status !== undefined) {
+    m.status = patch.status;
+    log(s, m.circleId, me.userId, 'mission.' + patch.status,
+      `${me.displayName} marked mission “${m.title}” ${patch.status}`);
+  }
+  save(s);
+  return m;
+};
+
+// ---- milestones ----
+local.createMilestone = async (missionId, { title, assigneeId, dueDate }) => {
+  if (!title || !title.trim()) throw new Error('Milestone needs a title');
+  const s = load(); const me = sessionUser();
+  const mis = s.missions.find(x => x.id === missionId);
+  if (!mis) throw new Error('Mission not found');
+  requireMember(s, mis.circleId, me.userId);
+  if (assigneeId && !isMember(s, mis.circleId, assigneeId)) throw new Error('Assignee is not a member');
+  const ms = { id: uid('ms'), missionId, title: title.trim(), assigneeId: assigneeId || null,
+    dueDate: dueDate || null, status: MILESTONE_STATUS.OPEN, createdBy: me.userId, createdAt: now() };
+  s.milestones.push(ms);
+  log(s, mis.circleId, me.userId, 'milestone.created',
+    `${me.displayName} added milestone “${ms.title}”`);
+  save(s);
+  return ms;
+};
+
+local.toggleMilestone = async (milestoneId) => {
+  const s = load(); const me = sessionUser();
+  const ms = s.milestones.find(x => x.id === milestoneId);
+  if (!ms) throw new Error('Milestone not found');
+  const mis = s.missions.find(x => x.id === ms.missionId);
+  requireMember(s, mis.circleId, me.userId);
+  ms.status = ms.status === 'open' ? 'done' : 'open';
+  log(s, mis.circleId, me.userId, 'milestone.' + ms.status,
+    `${me.displayName} marked “${ms.title}” ${ms.status}`);
+  save(s);
+  return ms;
+};
+
+// ---- commitments ----
+local.listCommitments = async (circleId) => {
+  const s = load(); const me = sessionUser();
+  requireMember(s, circleId, me.userId);
+  return s.commitments.filter(c => c.circleId === circleId)
+    .map(c => ({ ...c,
+      proposer: s.users.find(u => u.id === c.proposerId),
+      recipient: s.users.find(u => u.id === c.recipientId) }));
+};
+
+local.proposeCommitment = async (circleId, { recipientId, title, terms }) => {
+  if (!title || !title.trim()) throw new Error('Commitment needs a title');
+  if (!recipientId) throw new Error('Choose who this commitment is for');
+  const s = load(); const me = sessionUser();
+  requireMember(s, circleId, me.userId);
+  if (!isMember(s, circleId, recipientId)) throw new Error('Recipient is not a member');
+  if (recipientId === me.userId) throw new Error('Cannot propose a commitment to yourself');
+  const c = { id: uid('cm'), circleId, proposerId: me.userId, recipientId,
+    title: title.trim(), terms: (terms || '').trim(),
+    status: COMMITMENT_STATUS.PROPOSED, createdAt: now(), decidedAt: null };
+  s.commitments.push(c);
+  s.commitmentEvents.push({ id: uid('ce'), commitmentId: c.id, eventType: 'proposed',
+    actorId: me.userId, snapshot: { title: c.title, terms: c.terms }, createdAt: now() });
+  const recip = s.users.find(u => u.id === recipientId);
+  log(s, circleId, me.userId, 'commitment.proposed',
+    `${me.displayName} proposed “${c.title}” to ${recip.displayName}`);
+  save(s);
+  return c;
+};
+
+local.respondCommitment = async (commitmentId, accept) => {
+  const s = load(); const me = sessionUser();
+  const c = s.commitments.find(x => x.id === commitmentId);
+  if (!c) throw new Error('Commitment not found');
+  requireMember(s, c.circleId, me.userId);
+  if (c.recipientId !== me.userId) throw new Error('Only the recipient can accept or decline');
+  if (c.status !== 'proposed') throw new Error('Commitment is no longer awaiting a response');
+  c.status = accept ? 'accepted' : 'declined';
+  c.decidedAt = now();
+  // immutable snapshot of accepted terms
+  s.commitmentEvents.push({ id: uid('ce'), commitmentId: c.id,
+    eventType: accept ? 'accepted' : 'declined', actorId: me.userId,
+    snapshot: { title: c.title, terms: c.terms }, createdAt: now() });
+  log(s, c.circleId, me.userId, 'commitment.' + c.status,
+    `${me.displayName} ${c.status} “${c.title}”`);
+  save(s);
+  return c;
+};
+
+local.completeCommitment = async (commitmentId) => {
+  const s = load(); const me = sessionUser();
+  const c = s.commitments.find(x => x.id === commitmentId);
+  if (!c) throw new Error('Commitment not found');
+  requireMember(s, c.circleId, me.userId);
+  if (c.status !== 'accepted') throw new Error('Only accepted commitments can be completed');
+  if (c.proposerId !== me.userId && c.recipientId !== me.userId)
+    throw new Error('Only the proposer or recipient can complete');
+  c.status = 'completed'; c.decidedAt = now();
+  s.commitmentEvents.push({ id: uid('ce'), commitmentId: c.id, eventType: 'completed',
+    actorId: me.userId, snapshot: { title: c.title, terms: c.terms }, createdAt: now() });
+  log(s, c.circleId, me.userId, 'commitment.completed',
+    `${me.displayName} completed “${c.title}”`);
+  save(s);
+  return c;
+};
+
+local.commitmentHistory = async (commitmentId) => {
+  const s = load(); const me = sessionUser();
+  const c = s.commitments.find(x => x.id === commitmentId);
+  if (!c) throw new Error('Commitment not found');
+  requireMember(s, c.circleId, me.userId);
+  return s.commitmentEvents.filter(e => e.commitmentId === commitmentId)
+    .map(e => ({ ...e, actor: s.users.find(u => u.id === e.actorId) }));
+};
+
+// ---- conversation ----
+local.listMessages = async (circleId) => {
+  const s = load(); const me = sessionUser();
+  requireMember(s, circleId, me.userId);
+  return s.messages.filter(m => m.circleId === circleId)
+    .map(m => ({ ...m, user: s.users.find(u => u.id === m.userId) }));
+};
+
+local.sendMessage = async (circleId, body) => {
+  if (!body || !body.trim()) throw new Error('Empty message');
+  const s = load(); const me = sessionUser();
+  requireMember(s, circleId, me.userId);
+  const m = { id: uid('msg'), circleId, userId: me.userId, body: body.trim(), createdAt: now() };
+  s.messages.push(m); save(s);
+  return { ...m, user: s.users.find(u => u.id === me.userId) };
+};
+
+// ---- activity ----
+local.listActivity = async (circleId, limit = 50) => {
+  const s = load(); const me = sessionUser();
+  requireMember(s, circleId, me.userId);
+  return s.activity.filter(e => e.circleId === circleId).slice(0, limit)
+    .map(e => ({ ...e, actor: s.users.find(u => u.id === e.actorId) }));
+};
+
+export default local;
