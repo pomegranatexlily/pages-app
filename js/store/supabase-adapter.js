@@ -1,1 +1,277 @@
-LyoqCiAqIFN1cGFiYXNlIGFkYXB0ZXIg4oCUIHByb2R1Y3Rpb24gUEFHRVMgZGF0YSBsYXllci4KICoKICogUmVxdWlyZXMgU1VQQUJBU0VfVVJMIGFuZCBTVVBBQkFTRV9BTk9OX0tFWSAoc2VlIC5lbnYuZXhhbXBsZSkuCiAqIEF1dGhvcml6YXRpb24gaXMgZW5mb3JjZWQgYnkgUG9zdGdyZXMgcm93LWxldmVsIHNlY3VyaXR5OyBzZWUKICogc3VwYWJhc2UvbWlncmF0aW9ucy8wMDFfaW5pdGlhbF9zY2hlbWEuc3FsLiBUaGlzIGFkYXB0ZXIgbmV2ZXIKICogdXNlcyB0aGUgc2VydmljZS1yb2xlIGtleSBpbiB0aGUgYnJvd3Nlci4KICoKICogU3RhdHVzOiBJTVBMRU1FTlRFRCwgVU5URVNURUQgYWdhaW5zdCBhIGxpdmUgcHJvamVjdCAobm8gU3VwYWJhc2UKICogcHJvamVjdCBleGlzdHMgeWV0IOKAlCBmb3VuZGVyIGFjdGlvbiByZXF1aXJlZCkuIFRoZSBpbnRlcmZhY2UgbWF0Y2hlcwogKiBsb2NhbC1hZGFwdGVyLmpzIGV4YWN0bHk7IHN3aXRjaGluZyBhZGFwdGVycyByZXF1aXJlcyBubyB2aWV3IGNoYW5nZXMuCiAqLwppbXBvcnQgZGIgZnJvbSAnLi9kYi5qcyc7CgpsZXQgc3VwYWJhc2UgPSBudWxsOwpsZXQgc2Vzc2lvbiA9IG51bGw7Cgphc3luYyBmdW5jdGlvbiBjbGllbnQoKSB7CiAgaWYgKHN1cGFiYXNlKSByZXR1cm4gc3VwYWJhc2U7CiAgY29uc3QgdXJsID0gd2luZG93LlBBR0VTX0NPTkZJRz8uU1VQQUJBU0VfVVJMOwogIGNvbnN0IGtleSA9IHdpbmRvdy5QQUdFU19DT05GSUc/LlNVUEFCQVNFX0FOT05fS0VZOwogIGlmICghdXJsIHx8ICFrZXkpIHRocm93IG5ldyBFcnJvcignU3VwYWJhc2Ugbm90IGNvbmZpZ3VyZWQnKTsKICBjb25zdCBtb2QgPSBhd2FpdCBpbXBvcnQoJ2h0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vQHN1cGFiYXNlL3N1cGFiYXNlLWpzQDIvK2VzbScpOwogIHN1cGFiYXNlID0gbW9kLmNyZWF0ZUNsaWVudCh1cmwsIGtleSk7CiAgcmV0dXJuIHN1cGFiYXNlOwp9Cgphc3luYyBmdW5jdGlvbiBtZSgpIHsKICBjb25zdCBzYiA9IGF3YWl0IGNsaWVudCgpOwogIGNvbnN0IHsgZGF0YTogeyB1c2VyIH0gfSA9IGF3YWl0IHNiLmF1dGguZ2V0VXNlcigpOwogIGlmICghdXNlcikgdGhyb3cgbmV3IEVycm9yKCdOb3Qgc2lnbmVkIGluJyk7CiAgbGV0IHsgZGF0YTogcHJvZmlsZSB9ID0gYXdhaXQgc2IuZnJvbSgncHJvZmlsZXMnKS5zZWxlY3QoJyonKS5lcSgnaWQnLCB1c2VyLmlkKS5tYXliZVNpbmdsZSgpOwogIGlmICghcHJvZmlsZSkgewogICAgLy8gZmlyc3Qgc2lnbi1pbjogY3JlYXRlIHRoZSBwcm9maWxlIHJvdyAoUkxTIGFsbG93cyBvd24tcHJvZmlsZSBpbnNlcnQpCiAgICBjb25zdCBkaXNwbGF5TmFtZSA9CiAgICAgIHNlc3Npb25TdG9yYWdlLmdldEl0ZW0oJ3BhZ2VzX2Rpc3BsYXlfbmFtZScpIHx8IHVzZXIuZW1haWwuc3BsaXQoJ0AnKVswXTsKICAgIGNvbnN0IHsgZGF0YSwgZXJyb3IgfSA9IGF3YWl0IHNiLmZyb20oJ3Byb2ZpbGVzJykKICAgICAgLmluc2VydCh7IGlkOiB1c2VyLmlkLCBlbWFpbDogdXNlci5lbWFpbCwgZGlzcGxheV9uYW1lOiBkaXNwbGF5TmFtZSB9KQogICAgICAuc2VsZWN0KCkuc2luZ2xlKCk7CiAgICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogICAgcHJvZmlsZSA9IGRhdGE7CiAgfQogIHNlc3Npb24gPSB7IHVzZXJJZDogdXNlci5pZCwgZW1haWw6IHVzZXIuZW1haWwsIGRpc3BsYXlOYW1lOiBwcm9maWxlLmRpc3BsYXlfbmFtZSB9OwogIHJldHVybiBzZXNzaW9uOwp9Cgpjb25zdCBzYnggPSBPYmplY3QuY3JlYXRlKGRiKTsKc2J4Lm1vZGUgPSAnc3VwYWJhc2UnOwoKc2J4LmN1cnJlbnRTZXNzaW9uID0gYXN5bmMgKCkgPT4gewogIHRyeSB7IHJldHVybiBhd2FpdCBtZSgpOyB9IGNhdGNoIHsgcmV0dXJuIG51bGw7IH0KfTsKCnNieC5zaWduSW4gPSBhc3luYyAoZW1haWwsIGRpc3BsYXlOYW1lKSA9PiB7CiAgY29uc3Qgc2IgPSBhd2FpdCBjbGllbnQoKTsKICBpZiAoZGlzcGxheU5hbWUpIHNlc3Npb25TdG9yYWdlLnNldEl0ZW0oJ3BhZ2VzX2Rpc3BsYXlfbmFtZScsIGRpc3BsYXlOYW1lKTsKICBjb25zdCB7IGVycm9yIH0gPSBhd2FpdCBzYi5hdXRoLnNpZ25JbldpdGhPdHAoewogICAgZW1haWwsCiAgICBvcHRpb25zOiB7IGVtYWlsUmVkaXJlY3RUbzogbG9jYXRpb24ub3JpZ2luICsgbG9jYXRpb24ucGF0aG5hbWUgfSwKICB9KTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiB7IGVtYWlsLCBwZW5kaW5nTWFnaWNMaW5rOiB0cnVlIH07Cn07CgpzYnguc2lnbk91dCA9IGFzeW5jICgpID0+IHsgKGF3YWl0IGNsaWVudCgpKS5hdXRoLnNpZ25PdXQoKTsgc2Vzc2lvbiA9IG51bGw7IH07CgovLyBFbWFpbC1jb2RlIGxvZ2luIGZvciBjb250ZXh0cyB3aGVyZSBhIG1hZ2ljIGxpbmsgY2FuJ3QgcmV0dXJuIHRvIHRoZQovLyBzYW1lIGJyb3dzZXIgKGhvbWUtc2NyZWVuIFBXQSwgb3IgYSBtYWlsIGFwcCB0aGF0IG9wZW5zIGFub3RoZXIgYnJvd3NlcikuCi8vIFRoZSA2LWRpZ2l0IGNvZGUgc2hpcHMgaW4gdGhlIHNhbWUgc2lnbkluV2l0aE90cCBlbWFpbCDigJQgdGhlIFN1cGFiYXNlCi8vIGVtYWlsIHRlbXBsYXRlIG11c3QgaW5jbHVkZSB7eyAuVG9rZW4gfX0gZm9yIHRoZSB1c2VyIHRvIHNlZSBpdC4Kc2J4LnZlcmlmeUNvZGUgPSBhc3luYyAoZW1haWwsIGNvZGUpID0+IHsKICBjb25zdCBzYiA9IGF3YWl0IGNsaWVudCgpOwogIGNvbnN0IHsgZXJyb3IgfSA9IGF3YWl0IHNiLmF1dGgudmVyaWZ5T3RwKHsKICAgIGVtYWlsLCB0b2tlbjogU3RyaW5nKGNvZGUpLnRyaW0oKSwgdHlwZTogJ21hZ2ljbGluaycsCiAgfSk7CiAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICBzZXNzaW9uID0gbnVsbDsgLy8gZm9yY2UgbWUoKSB0byByZWFkIHRoZSBmcmVzaCBzZXNzaW9uCiAgcmV0dXJuIG1lKCk7Cn07CgovLyBDYWxsZWQgb25jZSBhdCBib290LiBJZiB0aGlzIHBhZ2UgbG9hZCBjYW1lIGZyb20gYSBTdXBhYmFzZSBhdXRoIHJlZGlyZWN0Ci8vIChtYWdpYy1saW5rIGNsaWNrKSwgZXN0YWJsaXNoIHRoZSBzZXNzaW9uIGZyb20gdGhlIFVSTCBwYXJhbWV0ZXJzLgovLyBIYW5kbGVzIFBLQ0UgKD9jb2RlPS4uLikgYW5kIGltcGxpY2l0ICgjYWNjZXNzX3Rva2VuPS4uLikgY2FsbGJhY2tzLgovLyBDbGVhbnMgdGhlIGF1dGggcGFyYW1zIG91dCBvZiB0aGUgVVJMIGFuZCByZXR1cm5zIHRydWUgd2hlbiBhIHNlc3Npb24KLy8gd2FzIGVzdGFibGlzaGVkIGZyb20gdGhlbS4Kc2J4LmhhbmRsZUF1dGhDYWxsYmFjayA9IGFzeW5jICgpID0+IHsKICBjb25zdCBoZXJlID0gbmV3IFVSTChsb2NhdGlvbi5ocmVmKTsKICBjb25zdCBjb2RlID0gaGVyZS5zZWFyY2hQYXJhbXMuZ2V0KCdjb2RlJyk7CiAgY29uc3QgaGFzVG9rZW5IYXNoID0gL2FjY2Vzc190b2tlbj0vLnRlc3QobG9jYXRpb24uaGFzaCk7CiAgaWYgKCFjb2RlICYmICFoYXNUb2tlbkhhc2gpIHJldHVybiBmYWxzZTsKICBjb25zdCBzYiA9IGF3YWl0IGNsaWVudCgpOwogIHRyeSB7CiAgICBpZiAoY29kZSkgewogICAgICBjb25zdCB7IGVycm9yIH0gPSBhd2FpdCBzYi5hdXRoLmV4Y2hhbmdlQ29kZUZvclNlc3Npb24oY29kZSk7CiAgICAgIGlmIChlcnJvcikgdGhyb3cgZXJyb3I7CiAgICB9IGVsc2UgewogICAgICAvLyBJbXBsaWNpdCBmbG93OiBjcmVhdGVDbGllbnQoKSB3aXRoIGRldGVjdFNlc3Npb25JblVybCBwYXJzZXMgdGhlCiAgICAgIC8vIGZyYWdtZW50IGF1dG9tYXRpY2FsbHk7IGNvbmZpcm0gdGhlIHNlc3Npb24gYWN0dWFsbHkgbGFuZGVkLgogICAgICBjb25zdCB7IGRhdGE6IHsgc2Vzc2lvbjogZ290IH0gfSA9IGF3YWl0IHNiLmF1dGguZ2V0U2Vzc2lvbigpOwogICAgICBpZiAoIWdvdCkgcmV0dXJuIGZhbHNlOwogICAgfQogIH0gY2F0Y2ggKGUpIHsKICAgIGNvbnNvbGUud2FybignYXV0aCBjYWxsYmFjayBmYWlsZWQ6JywgZSk7CiAgICBoaXN0b3J5LnJlcGxhY2VTdGF0ZShudWxsLCAnJywgaGVyZS5wYXRobmFtZSArICcjL2F1dGgnKTsKICAgIHRocm93IG5ldyBFcnJvcigKICAgICAgJ1RoYXQgc2lnbi1pbiBsaW5rIGRpZG5cdTIwMTl0IHdvcmsgaW4gdGhpcyBicm93c2VyLiAnICsKICAgICAgJ09wZW4gaXQgaW4gdGhlIHNhbWUgYnJvd3NlciB3aGVyZSB5b3UgdGFwcGVkIENvbnRpbnVlIChTYWZhcmkpLCAnICsKICAgICAgJ29yIHRhcCBDb250aW51ZSBhZ2FpbiBmb3IgYSBmcmVzaCBsaW5rLicKICAgICk7CiAgfQogIHNlc3Npb24gPSBudWxsOyAvLyBmb3JjZSBtZSgpIHRvIHJlLXJlYWQgdGhlIGZyZXNoIHNlc3Npb24gYmVsb3cKICBoaXN0b3J5LnJlcGxhY2VTdGF0ZShudWxsLCAnJywgaGVyZS5wYXRobmFtZSArICcjL2NpcmNsZXMnKTsKICByZXR1cm4gdHJ1ZTsKfTsKCnNieC5saXN0Q2lyY2xlcyA9IGFzeW5jICgpID0+IHsKICBjb25zdCBzYiA9IGF3YWl0IGNsaWVudCgpOyBjb25zdCBzID0gYXdhaXQgbWUoKTsKICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzYi5mcm9tKCdjaXJjbGVzJykKICAgIC5zZWxlY3QoJyosIG1lbWJlcnNoaXBzIWlubmVyKHVzZXJfaWQpJykKICAgIC5lcSgnbWVtYmVyc2hpcHMudXNlcl9pZCcsIHMudXNlcklkKS5lcSgnbWVtYmVyc2hpcHMuc3RhdHVzJywgJ2FjdGl2ZScpOwogIGlmIChlcnJvcikgdGhyb3cgZXJyb3I7CiAgcmV0dXJuIGRhdGE7Cn07CgpzYnguY3JlYXRlQ2lyY2xlID0gYXN5bmMgKHsgbmFtZSwgZGVzY3JpcHRpb24gfSkgPT4gewogIGNvbnN0IHNiID0gYXdhaXQgY2xpZW50KCk7IGNvbnN0IHMgPSBhd2FpdCBtZSgpOwogIGNvbnN0IHsgZGF0YSwgZXJyb3IgfSA9IGF3YWl0IHNiLmZyb20oJ2NpcmNsZXMnKQogICAgLmluc2VydCh7IG5hbWUsIGRlc2NyaXB0aW9uLCBjcmVhdGVkX2J5OiBzLnVzZXJJZCB9KS5zZWxlY3QoKS5zaW5nbGUoKTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiBkYXRhOwp9OwoKc2J4LmdldENpcmNsZSA9IGFzeW5jIChjaXJjbGVJZCkgPT4gewogIGNvbnN0IHNiID0gYXdhaXQgY2xpZW50KCk7CiAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc2IuZnJvbSgnY2lyY2xlcycpLnNlbGVjdCgKICAgICcqLCBtZW1iZXJzaGlwcygqLCBwcm9maWxlcyhkaXNwbGF5X25hbWUpKScpLmVxKCdpZCcsIGNpcmNsZUlkKS5zaW5nbGUoKTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiBkYXRhOwp9OwoKc2J4LmNyZWF0ZUludml0ZSA9IGFzeW5jIChjaXJjbGVJZCwgeyBtYXhVc2VzID0gMTAsIHR0bEhvdXJzID0gNzIgfSA9IHt9KSA9PiB7CiAgY29uc3Qgc2IgPSBhd2FpdCBjbGllbnQoKTsgY29uc3QgcyA9IGF3YWl0IG1lKCk7CiAgY29uc3QgdG9rZW4gPSBjcnlwdG8ucmFuZG9tVVVJRCgpLnJlcGxhY2UoLy0vZywgJycpLnNsaWNlKDAsIDE2KTsKICBjb25zdCB7IGVycm9yIH0gPSBhd2FpdCBzYi5mcm9tKCdpbnZpdGF0aW9ucycpLmluc2VydCh7CiAgICBjaXJjbGVfaWQ6IGNpcmNsZUlkLCB0b2tlbiwgY3JlYXRlZF9ieTogcy51c2VySWQsIG1heF91c2VzOiBtYXhVc2VzLAogICAgZXhwaXJlc19hdDogbmV3IERhdGUoRGF0ZS5ub3coKSArIHR0bEhvdXJzICogMzYwMGUzKS50b0lTT1N0cmluZygpLAogIH0pOwogIGlmIChlcnJvcikgdGhyb3cgZXJyb3I7CiAgcmV0dXJuIHsgdG9rZW4sIHVybDogYCR7bG9jYXRpb24ub3JpZ2lufSR7bG9jYXRpb24ucGF0aG5hbWV9Iy9qb2luLyR7dG9rZW59YCB9Owp9OwoKc2J4LmFjY2VwdEludml0ZSA9IGFzeW5jICh0b2spID0+IHsKICBjb25zdCBzYiA9IGF3YWl0IGNsaWVudCgpOyBjb25zdCBzID0gYXdhaXQgbWUoKTsKICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzYi5ycGMoJ2FjY2VwdF9pbnZpdGUnLCB7IHBfdG9rZW46IHRvayB9KTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiBkYXRhOwp9OwoKc2J4Lmxpc3RNaXNzaW9ucyA9IGFzeW5jIChjaXJjbGVJZCkgPT4gewogIGNvbnN0IHNiID0gYXdhaXQgY2xpZW50KCk7CiAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc2IuZnJvbSgnbWlzc2lvbnMnKQogICAgLnNlbGVjdCgnKiwgbWlsZXN0b25lcygqKScpLmVxKCdjaXJjbGVfaWQnLCBjaXJjbGVJZCkub3JkZXIoJ2NyZWF0ZWRfYXQnLCB7IGFzY2VuZGluZzogZmFsc2UgfSk7CiAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICByZXR1cm4gZGF0YTsKfTsKCnNieC5jcmVhdGVNaXNzaW9uID0gYXN5bmMgKGNpcmNsZUlkLCB7IHRpdGxlLCBkZXNjcmlwdGlvbiB9KSA9PiB7CiAgY29uc3Qgc2IgPSBhd2FpdCBjbGllbnQoKTsgY29uc3QgcyA9IGF3YWl0IG1lKCk7CiAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc2IuZnJvbSgnbWlzc2lvbnMnKQogICAgLmluc2VydCh7IGNpcmNsZV9pZDogY2lyY2xlSWQsIHRpdGxlLCBkZXNjcmlwdGlvbiwgY3JlYXRlZF9ieTogcy51c2VySWQgfSkKICAgIC5zZWxlY3QoKS5zaW5nbGUoKTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiBkYXRhOwp9OwoKc2J4LnVwZGF0ZU1pc3Npb24gPSBhc3luYyAobWlzc2lvbklkLCBwYXRjaCkgPT4gewogIGNvbnN0IHNiID0gYXdhaXQgY2xpZW50KCk7CiAgY29uc3QgcCA9IHt9OwogIGlmIChwYXRjaC50aXRsZSAhPT0gdW5kZWZpbmVkKSBwLnRpdGxlID0gcGF0Y2gudGl0bGU7CiAgaWYgKHBhdGNoLmRlc2NyaXB0aW9uICE9PSB1bmRlZmluZWQpIHAuZGVzY3JpcHRpb24gPSBwYXRjaC5kZXNjcmlwdGlvbjsKICBpZiAocGF0Y2guc3RhdHVzICE9PSB1bmRlZmluZWQpIHAuc3RhdHVzID0gcGF0Y2guc3RhdHVzOwogIGNvbnN0IHsgZGF0YSwgZXJyb3IgfSA9IGF3YWl0IHNiLmZyb20oJ21pc3Npb25zJykudXBkYXRlKHApLmVxKCdpZCcsIG1pc3Npb25JZCkuc2VsZWN0KCkuc2luZ2xlKCk7CiAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICByZXR1cm4gZGF0YTsKfTsKCnNieC5jcmVhdGVNaWxlc3RvbmUgPSBhc3luYyAobWlzc2lvbklkLCB7IHRpdGxlLCBhc3NpZ25lZUlkLCBkdWVEYXRlIH0pID0+IHsKICBjb25zdCBzYiA9IGF3YWl0IGNsaWVudCgpOyBjb25zdCBzID0gYXdhaXQgbWUoKTsKICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzYi5mcm9tKCdtaWxlc3RvbmVzJykuaW5zZXJ0KHsKICAgIG1pc3Npb25faWQ6IG1pc3Npb25JZCwgdGl0bGUsIGFzc2lnbmVlX2lkOiBhc3NpZ25lZUlkIHx8IG51bGwsCiAgICBkdWVfZGF0ZTogZHVlRGF0ZSB8fCBudWxsLCBjcmVhdGVkX2J5OiBzLnVzZXJJZCwKICB9KS5zZWxlY3QoKS5zaW5nbGUoKTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiBkYXRhOwp9OwoKc2J4LnRvZ2dsZU1pbGVzdG9uZSA9IGFzeW5jIChtaWxlc3RvbmVJZCkgPT4gewogIGNvbnN0IHNiID0gYXdhaXQgY2xpZW50KCk7CiAgY29uc3QgeyBkYXRhOiBjdXIgfSA9IGF3YWl0IHNiLmZyb20oJ21pbGVzdG9uZXMnKS5zZWxlY3QoJ3N0YXR1cycpLmVxKCdpZCcsIG1pbGVzdG9uZUlkKS5zaW5nbGUoKTsKICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzYi5mcm9tKCdtaWxlc3RvbmVzJykKICAgIC51cGRhdGUoeyBzdGF0dXM6IGN1ci5zdGF0dXMgPT09ICdvcGVuJyA/ICdkb25lJyA6ICdvcGVuJyB9KQogICAgLmVxKCdpZCcsIG1pbGVzdG9uZUlkKS5zZWxlY3QoKS5zaW5nbGUoKTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiBkYXRhOwp9OwoKc2J4Lmxpc3RDb21taXRtZW50cyA9IGFzeW5jIChjaXJjbGVJZCkgPT4gewogIGNvbnN0IHNiID0gYXdhaXQgY2xpZW50KCk7CiAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc2IuZnJvbSgnY29tbWl0bWVudHMnKQogICAgLnNlbGVjdCgnKiwgcHJvcG9zZXI6cHJvZmlsZXMhY29tbWl0bWVudHNfcHJvcG9zZXJfaWRfZmtleShkaXNwbGF5X25hbWUpLCByZWNpcGllbnQ6cHJvZmlsZXMhY29tbWl0bWVudHNfcmVjaXBpZW50X2lkX2ZrZXkoZGlzcGxheV9uYW1lKScpCiAgICAuZXEoJ2NpcmNsZV9pZCcsIGNpcmNsZUlkKS5vcmRlcignY3JlYXRlZF9hdCcsIHsgYXNjZW5kaW5nOiBmYWxzZSB9KTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiBkYXRhOwp9OwoKc2J4LnByb3Bvc2VDb21taXRtZW50ID0gYXN5bmMgKGNpcmNsZUlkLCB7IHJlY2lwaWVudElkLCB0aXRsZSwgdGVybXMgfSkgPT4gewogIGNvbnN0IHNiID0gYXdhaXQgY2xpZW50KCk7IGNvbnN0IHMgPSBhd2FpdCBtZSgpOwogIGNvbnN0IHsgZGF0YSwgZXJyb3IgfSA9IGF3YWl0IHNiLmZyb20oJ2NvbW1pdG1lbnRzJykuaW5zZXJ0KHsKICAgIGNpcmNsZV9pZDogY2lyY2xlSWQsIHByb3Bvc2VyX2lkOiBzLnVzZXJJZCwgcmVjaXBpZW50X2lkOiByZWNpcGllbnRJZCwgdGl0bGUsIHRlcm1zLAogIH0pLnNlbGVjdCgpLnNpbmdsZSgpOwogIGlmIChlcnJvcikgdGhyb3cgZXJyb3I7CiAgcmV0dXJuIGRhdGE7Cn07CgpzYngucmVzcG9uZENvbW1pdG1lbnQgPSBhc3luYyAoY29tbWl0bWVudElkLCBhY2NlcHQpID0+IHsKICBjb25zdCBzYiA9IGF3YWl0IGNsaWVudCgpOwogIC8vIFJMUyArIGEgY2hlY2sgY29uc3RyYWludCBlbnN1cmUgb25seSB0aGUgcmVjaXBpZW50IGNhbiBkZWNpZGUgYSBwcm9wb3NlZCBjb21taXRtZW50LgogIGNvbnN0IHsgZGF0YSwgZXJyb3IgfSA9IGF3YWl0IHNiLnJwYygncmVzcG9uZF9jb21taXRtZW50JywgewogICAgcF9jb21taXRtZW50X2lkOiBjb21taXRtZW50SWQsIHBfYWNjZXB0OiBhY2NlcHQsCiAgfSk7CiAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICByZXR1cm4gZGF0YTsKfTsKCnNieC5jb21wbGV0ZUNvbW1pdG1lbnQgPSBhc3luYyAoY29tbWl0bWVudElkKSA9PiB7CiAgY29uc3Qgc2IgPSBhd2FpdCBjbGllbnQoKTsKICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzYi5ycGMoJ2NvbXBsZXRlX2NvbW1pdG1lbnQnLCB7IHBfY29tbWl0bWVudF9pZDogY29tbWl0bWVudElkIH0pOwogIGlmIChlcnJvcikgdGhyb3cgZXJyb3I7CiAgcmV0dXJuIGRhdGE7Cn07CgpzYnguY29tbWl0bWVudEhpc3RvcnkgPSBhc3luYyAoY29tbWl0bWVudElkKSA9PiB7CiAgY29uc3Qgc2IgPSBhd2FpdCBjbGllbnQoKTsKICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzYi5mcm9tKCdjb21taXRtZW50X2V2ZW50cycpCiAgICAuc2VsZWN0KCcqLCBhY3Rvcjpwcm9maWxlcyhkaXNwbGF5X25hbWUpJykuZXEoJ2NvbW1pdG1lbnRfaWQnLCBjb21taXRtZW50SWQpCiAgICAub3JkZXIoJ2NyZWF0ZWRfYXQnLCB7IGFzY2VuZGluZzogdHJ1ZSB9KTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiBkYXRhOwp9OwoKc2J4Lmxpc3RNZXNzYWdlcyA9IGFzeW5jIChjaXJjbGVJZCkgPT4gewogIGNvbnN0IHNiID0gYXdhaXQgY2xpZW50KCk7CiAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc2IuZnJvbSgnbWVzc2FnZXMnKQogICAgLnNlbGVjdCgnKiwgdXNlcjpwcm9maWxlcyhkaXNwbGF5X25hbWUpJykuZXEoJ2NpcmNsZV9pZCcsIGNpcmNsZUlkKQogICAgLm9yZGVyKCdjcmVhdGVkX2F0JywgeyBhc2NlbmRpbmc6IHRydWUgfSkubGltaXQoMjAwKTsKICBpZiAoZXJyb3IpIHRocm93IGVycm9yOwogIHJldHVybiBkYXRhOwp9OwoKc2J4LnNlbmRNZXNzYWdlID0gYXN5bmMgKGNpcmNsZUlkLCBib2R5KSA9PiB7CiAgY29uc3Qgc2IgPSBhd2FpdCBjbGllbnQoKTsgY29uc3QgcyA9IGF3YWl0IG1lKCk7CiAgY29uc3QgeyBkYXRhLCBlcnJvciB9ID0gYXdhaXQgc2IuZnJvbSgnbWVzc2FnZXMnKQogICAgLmluc2VydCh7IGNpcmNsZV9pZDogY2lyY2xlSWQsIHVzZXJfaWQ6IHMudXNlcklkLCBib2R5IH0pLnNlbGVjdCgpLnNpbmdsZSgpOwogIGlmIChlcnJvcikgdGhyb3cgZXJyb3I7CiAgcmV0dXJuIGRhdGE7Cn07CgpzYngubGlzdEFjdGl2aXR5ID0gYXN5bmMgKGNpcmNsZUlkLCBsaW1pdCA9IDUwKSA9PiB7CiAgY29uc3Qgc2IgPSBhd2FpdCBjbGllbnQoKTsKICBjb25zdCB7IGRhdGEsIGVycm9yIH0gPSBhd2FpdCBzYi5mcm9tKCdhY3Rpdml0eV9ldmVudHMnKQogICAgLnNlbGVjdCgnKiwgYWN0b3I6cHJvZmlsZXMoZGlzcGxheV9uYW1lKScpLmVxKCdjaXJjbGVfaWQnLCBjaXJjbGVJZCkKICAgIC5vcmRlcignY3JlYXRlZF9hdCcsIHsgYXNjZW5kaW5nOiBmYWxzZSB9KS5saW1pdChsaW1pdCk7CiAgaWYgKGVycm9yKSB0aHJvdyBlcnJvcjsKICByZXR1cm4gZGF0YTsKfTsKCmV4cG9ydCBkZWZhdWx0IHNieDsK
+/**
+ * Supabase adapter — production PAGES data layer.
+ *
+ * Requires SUPABASE_URL and SUPABASE_ANON_KEY (see .env.example).
+ * Authorization is enforced by Postgres row-level security; see
+ * supabase/migrations/001_initial_schema.sql. This adapter never
+ * uses the service-role key in the browser.
+ *
+ * Status: IMPLEMENTED, UNTESTED against a live project (no Supabase
+ * project exists yet — founder action required). The interface matches
+ * local-adapter.js exactly; switching adapters requires no view changes.
+ */
+import db from './db.js';
+
+let supabase = null;
+let session = null;
+
+async function client() {
+  if (supabase) return supabase;
+  const url = window.PAGES_CONFIG?.SUPABASE_URL;
+  const key = window.PAGES_CONFIG?.SUPABASE_ANON_KEY;
+  if (!url || !key) throw new Error('Supabase not configured');
+  const mod = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
+  supabase = mod.createClient(url, key);
+  return supabase;
+}
+
+async function me() {
+  const sb = await client();
+  const { data: { user } } = await sb.auth.getUser();
+  if (!user) throw new Error('Not signed in');
+  let { data: profile } = await sb.from('profiles').select('*').eq('id', user.id).maybeSingle();
+  if (!profile) {
+    // first sign-in: create the profile row (RLS allows own-profile insert)
+    const displayName =
+      sessionStorage.getItem('pages_display_name') || user.email.split('@')[0];
+    const { data, error } = await sb.from('profiles')
+      .insert({ id: user.id, email: user.email, display_name: displayName })
+      .select().single();
+    if (error) throw error;
+    profile = data;
+  }
+  session = { userId: user.id, email: user.email, displayName: profile.display_name };
+  return session;
+}
+
+const sbx = Object.create(db);
+sbx.mode = 'supabase';
+
+sbx.currentSession = async () => {
+  try { return await me(); } catch { return null; }
+};
+
+sbx.signIn = async (email, displayName) => {
+  const sb = await client();
+  if (displayName) sessionStorage.setItem('pages_display_name', displayName);
+  const { error } = await sb.auth.signInWithOtp({
+    email,
+    options: { emailRedirectTo: location.origin + location.pathname },
+  });
+  if (error) throw error;
+  return { email, pendingMagicLink: true };
+};
+
+sbx.signOut = async () => { (await client()).auth.signOut(); session = null; };
+
+// Email-code login for contexts where a magic link can't return to the
+// same browser (home-screen PWA, or a mail app that opens another browser).
+// The 6-digit code ships in the same signInWithOtp email — the Supabase
+// email template must include {{ .Token }} for the user to see it.
+sbx.verifyCode = async (email, code) => {
+  const sb = await client();
+  const { error } = await sb.auth.verifyOtp({
+    email, token: String(code).trim(), type: 'magiclink',
+  });
+  if (error) throw error;
+  session = null; // force me() to read the fresh session
+  return me();
+};
+
+// Called once at boot. If this page load came from a Supabase auth redirect
+// (magic-link click), establish the session from the URL parameters.
+// Handles PKCE (?code=...) and implicit (#access_token=...) callbacks.
+// Cleans the auth params out of the URL and returns true when a session
+// was established from them.
+sbx.handleAuthCallback = async () => {
+  const here = new URL(location.href);
+  const code = here.searchParams.get('code');
+  const hasTokenHash = /access_token=/.test(location.hash);
+  if (!code && !hasTokenHash) return false;
+  const sb = await client();
+  try {
+    if (code) {
+      const { error } = await sb.auth.exchangeCodeForSession(code);
+      if (error) throw error;
+    } else {
+      // Implicit flow: createClient() with detectSessionInUrl parses the
+      // fragment automatically; confirm the session actually landed.
+      const { data: { session: got } } = await sb.auth.getSession();
+      if (!got) return false;
+    }
+  } catch (e) {
+    console.warn('auth callback failed:', e);
+    history.replaceState(null, '', here.pathname + '#/auth');
+    throw new Error(
+      'That sign-in link didn\u2019t work in this browser. ' +
+      'Open it in the same browser where you tapped Continue (Safari), ' +
+      'or tap Continue again for a fresh link.'
+    );
+  }
+  session = null; // force me() to re-read the fresh session below
+  history.replaceState(null, '', here.pathname + '#/circles');
+  return true;
+};
+
+sbx.listCircles = async () => {
+  const sb = await client(); const s = await me();
+  const { data, error } = await sb.from('circles')
+    .select('*, memberships!inner(user_id)')
+    .eq('memberships.user_id', s.userId).eq('memberships.status', 'active');
+  if (error) throw error;
+  return data;
+};
+
+sbx.createCircle = async ({ name, description }) => {
+  const sb = await client(); const s = await me();
+  const { data, error } = await sb.from('circles')
+    .insert({ name, description, created_by: s.userId }).select().single();
+  if (error) throw error;
+  return data;
+};
+
+sbx.getCircle = async (circleId) => {
+  const sb = await client();
+  const { data, error } = await sb.from('circles').select(
+    '*, memberships(*, profiles(display_name))').eq('id', circleId).single();
+  if (error) throw error;
+  return data;
+};
+
+sbx.createInvite = async (circleId, { maxUses = 10, ttlHours = 72 } = {}) => {
+  const sb = await client(); const s = await me();
+  const token = crypto.randomUUID().replace(/-/g, '').slice(0, 16);
+  const { error } = await sb.from('invitations').insert({
+    circle_id: circleId, token, created_by: s.userId, max_uses: maxUses,
+    expires_at: new Date(Date.now() + ttlHours * 3600e3).toISOString(),
+  });
+  if (error) throw error;
+  return { token, url: `${location.origin}${location.pathname}#/join/${token}` };
+};
+
+sbx.acceptInvite = async (tok) => {
+  const sb = await client(); const s = await me();
+  const { data, error } = await sb.rpc('accept_invite', { p_token: tok });
+  if (error) throw error;
+  return data;
+};
+
+sbx.listMissions = async (circleId) => {
+  const sb = await client();
+  const { data, error } = await sb.from('missions')
+    .select('*, milestones(*)').eq('circle_id', circleId).order('created_at', { ascending: false });
+  if (error) throw error;
+  return data;
+};
+
+sbx.createMission = async (circleId, { title, description }) => {
+  const sb = await client(); const s = await me();
+  const { data, error } = await sb.from('missions')
+    .insert({ circle_id: circleId, title, description, created_by: s.userId })
+    .select().single();
+  if (error) throw error;
+  return data;
+};
+
+sbx.updateMission = async (missionId, patch) => {
+  const sb = await client();
+  const p = {};
+  if (patch.title !== undefined) p.title = patch.title;
+  if (patch.description !== undefined) p.description = patch.description;
+  if (patch.status !== undefined) p.status = patch.status;
+  const { data, error } = await sb.from('missions').update(p).eq('id', missionId).select().single();
+  if (error) throw error;
+  return data;
+};
+
+sbx.createMilestone = async (missionId, { title, assigneeId, dueDate }) => {
+  const sb = await client(); const s = await me();
+  const { data, error } = await sb.from('milestones').insert({
+    mission_id: missionId, title, assignee_id: assigneeId || null,
+    due_date: dueDate || null, created_by: s.userId,
+  }).select().single();
+  if (error) throw error;
+  return data;
+};
+
+sbx.toggleMilestone = async (milestoneId) => {
+  const sb = await client();
+  const { data: cur } = await sb.from('milestones').select('status').eq('id', milestoneId).single();
+  const { data, error } = await sb.from('milestones')
+    .update({ status: cur.status === 'open' ? 'done' : 'open' })
+    .eq('id', milestoneId).select().single();
+  if (error) throw error;
+  return data;
+};
+
+sbx.listCommitments = async (circleId) => {
+  const sb = await client();
+  const { data, error } = await sb.from('commitments')
+    .select('*, proposer:profiles!commitments_proposer_id_fkey(display_name), recipient:profiles!commitments_recipient_id_fkey(display_name)')
+    .eq('circle_id', circleId).order('created_at', { ascending: false });
+  if (error) throw error;
+  return data;
+};
+
+sbx.proposeCommitment = async (circleId, { recipientId, title, terms }) => {
+  const sb = await client(); const s = await me();
+  const { data, error } = await sb.from('commitments').insert({
+    circle_id: circleId, proposer_id: s.userId, recipient_id: recipientId, title, terms,
+  }).select().single();
+  if (error) throw error;
+  return data;
+};
+
+sbx.respondCommitment = async (commitmentId, accept) => {
+  const sb = await client();
+  // RLS + a check constraint ensure only the recipient can decide a proposed commitment.
+  const { data, error } = await sb.rpc('respond_commitment', {
+    p_commitment_id: commitmentId, p_accept: accept,
+  });
+  if (error) throw error;
+  return data;
+};
+
+sbx.completeCommitment = async (commitmentId) => {
+  const sb = await client();
+  const { data, error } = await sb.rpc('complete_commitment', { p_commitment_id: commitmentId });
+  if (error) throw error;
+  return data;
+};
+
+sbx.commitmentHistory = async (commitmentId) => {
+  const sb = await client();
+  const { data, error } = await sb.from('commitment_events')
+    .select('*, actor:profiles(display_name)').eq('commitment_id', commitmentId)
+    .order('created_at', { ascending: true });
+  if (error) throw error;
+  return data;
+};
+
+sbx.listMessages = async (circleId) => {
+  const sb = await client();
+  const { data, error } = await sb.from('messages')
+    .select('*, user:profiles(display_name)').eq('circle_id', circleId)
+    .order('created_at', { ascending: true }).limit(200);
+  if (error) throw error;
+  return data;
+};
+
+sbx.sendMessage = async (circleId, body) => {
+  const sb = await client(); const s = await me();
+  const { data, error } = await sb.from('messages')
+    .insert({ circle_id: circleId, user_id: s.userId, body }).select().single();
+  if (error) throw error;
+  return data;
+};
+
+sbx.listActivity = async (circleId, limit = 50) => {
+  const sb = await client();
+  const { data, error } = await sb.from('activity_events')
+    .select('*, actor:profiles(display_name)').eq('circle_id', circleId)
+    .order('created_at', { ascending: false }).limit(limit);
+  if (error) throw error;
+  return data;
+};
+
+export default sbx;
