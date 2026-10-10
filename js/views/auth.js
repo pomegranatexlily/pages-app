@@ -23,14 +23,37 @@ export async function showAuth() {
     } catch {}
   }
   wrap.querySelector('#go').onclick = async () => {
+    const btn = wrap.querySelector('#go');
+    if (btn.disabled) return; // already sending — don't stack up emails
     const email = wrap.querySelector('#email').value.trim();
     const name = wrap.querySelector('#name').value.trim();
     if (!email) return toast('Enter an email to continue');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
     try {
       const s = await db.signIn(email, name);
-      if (s.pendingMagicLink) { toast('Check your email for the sign-in link'); return; }
+      if (s.pendingMagicLink) {
+        toast('Check your email for the sign-in link');
+        // Cooldown: one link per minute. Hammering Continue trips
+        // Supabase's email rate limit and locks everyone out.
+        let wait = 60;
+        btn.textContent = `Link sent — retry in ${wait}s`;
+        const t = setInterval(() => {
+          wait -= 1;
+          if (wait <= 0) {
+            clearInterval(t);
+            btn.disabled = false;
+            btn.textContent = 'Continue';
+          } else {
+            btn.textContent = `Link sent — retry in ${wait}s`;
+          }
+        }, 1000);
+        return;
+      }
       location.hash = '#/';
     } catch (e) { toast(e.message); }
+    btn.disabled = false;
+    btn.textContent = 'Continue';
   };
   return wrap;
 }
