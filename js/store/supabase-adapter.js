@@ -64,6 +64,41 @@ sbx.signIn = async (email, displayName) => {
 
 sbx.signOut = async () => { (await client()).auth.signOut(); session = null; };
 
+// Called once at boot. If this page load came from a Supabase auth redirect
+// (magic-link click), establish the session from the URL parameters.
+// Handles PKCE (?code=...) and implicit (#access_token=...) callbacks.
+// Cleans the auth params out of the URL and returns true when a session
+// was established from them.
+sbx.handleAuthCallback = async () => {
+  const here = new URL(location.href);
+  const code = here.searchParams.get('code');
+  const hasTokenHash = /access_token=/.test(location.hash);
+  if (!code && !hasTokenHash) return false;
+  const sb = await client();
+  try {
+    if (code) {
+      const { error } = await sb.auth.exchangeCodeForSession(code);
+      if (error) throw error;
+    } else {
+      // Implicit flow: createClient() with detectSessionInUrl parses the
+      // fragment automatically; confirm the session actually landed.
+      const { data: { session: got } } = await sb.auth.getSession();
+      if (!got) return false;
+    }
+  } catch (e) {
+    console.warn('auth callback failed:', e);
+    history.replaceState(null, '', here.pathname + '#/auth');
+    throw new Error(
+      'That sign-in link didn\u2019t work in this browser. ' +
+      'Open it in the same browser where you tapped Continue (Safari), ' +
+      'or tap Continue again for a fresh link.'
+    );
+  }
+  session = null; // force me() to re-read the fresh session below
+  history.replaceState(null, '', here.pathname + '#/');
+  return true;
+};
+
 sbx.listCircles = async () => {
   const sb = await client(); const s = await me();
   const { data, error } = await sb.from('circles')
