@@ -1,5 +1,5 @@
 {
-  "background_color": "#faf7f2",
+  "background_color": "#faf7ff",
   "description": "One identity. Many Circles. Everything you build together.",
   "display": "standalone",
   "icons": [
@@ -31,6 +31,6 @@
   "name": "PAGES — Build a Life Together",
   "short_name": "PAGES",
   "start_url": "./index.html",
-  "theme_color": "#7f1d24",
+  "theme_color": "#48256d",
   "scope": "./"
 }
