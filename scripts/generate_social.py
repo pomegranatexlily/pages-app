@@ -65,7 +65,21 @@ def make_pages_icon(side, outfile):
     q.rounded_rectangle((int(100*s),int(68*s),int(183*s),int(449*s)),radius=max(2,int(18*s)),fill=(164,0,22))
     q.ellipse((int(154*s),int(68*s),int(418*s),int(332*s)),fill=(174,7,27))
     ico.save(ROOT/outfile,optimize=True)
+def make_pages_maskable():
+    # Preserve the existing PAGES visual identity while scaling its mark
+    # inside the standard center safe-zone of a maskable 512 x 512 icon.
+    side=512
+    ico=Image.new("RGB", (side,side), (255,244,226))
+    q=ImageDraw.Draw(ico)
+    def at(coord): return round(256 + (coord-256)*0.70)
+    q.rounded_rectangle((at(100),at(68),at(183),at(449)),
+                        radius=13,fill=(164,0,22))
+    q.ellipse((at(154),at(68),at(418),at(332)),fill=(174,7,27))
+    ico.save(ROOT/"icon-maskable-512.png",optimize=True)
+    print("Created icon-maskable-512.png")
+
 if CONFIG["kind"] == "pages":
+    make_pages_maskable()
     for n,f in [(32,"favicon-32.png"),(180,"apple-touch-icon.png"),(192,"icon-192.png"),(512,"icon-512.png")]:
         make_pages_icon(n,f)
         print("Created",f)
