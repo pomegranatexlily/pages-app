@@ -1,85 +1,103 @@
 #!/usr/bin/env python3
-"""Generate first-party PNG social preview and, for PAGES, app icons.
-All illustrations and typography are produced from local shapes/fonts.
-No visitor tracking, third-party image calls, or credentials.
+"""PAGES watercolor identity: reproducible, first-party social preview and PWA icons.
+Produces soft lavender paper, hand-inked plum monogram, and accessible
+high-contrast typography without third-party downloads or user data.
 """
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+import random
 import math
 
 ROOT = Path(__file__).resolve().parent.parent
-W, H = 1200, 630
-CONFIG = {"kind":"pages","brand":"POMEGRANATE × LILY","title":["PAGES"],"subtitle":"BUILD A LIFE TOGETHER","base":"#231015","accent":"#f2dfc8","accent2":"#9e1327"}
-FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
-def font(sz, bold=False):
-    try: return ImageFont.truetype(FONT_BOLD if bold else FONT_REG, sz)
-    except OSError: return ImageFont.load_default()
-def rgb(c):
-    return tuple(int(c[i:i+2], 16) for i in (1, 3, 5))
+random.seed(121513)
+RESAMPLE = Image.Resampling.LANCZOS
+BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
+SERIF = "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"
+SANS = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
-im = Image.new("RGB", (W, H), rgb(CONFIG["base"]))
-d = ImageDraw.Draw(im)
-accent = rgb(CONFIG["accent"]); secondary = rgb(CONFIG["accent2"])
-# Restrained graphic system: framed editorial cover and right-side emblem.
-d.rectangle((0, 0, 18, H), fill=secondary)
-d.rectangle((64, 64, W-64, H-64), outline=accent, width=2)
-d.rectangle((72, 72, W-72, 80), fill=secondary)
-d.rectangle((72, H-94, W-72, H-88), fill=secondary)
-d.text((104, 109), CONFIG["brand"], font=font(21, True), fill=accent)
-d.text((104, 163), "OFFICIAL DIGITAL EXPERIENCE", font=font(16), fill=(180, 180, 178))
-# Large text in two steps, using modest tracking and max width.
-lines = CONFIG["title"]
-size = 78 if CONFIG["kind"] != "builder" else 63
-for idx, word in enumerate(lines):
-    yy = 257 + idx * 102
-    d.text((94, yy), word, font=font(size, True), fill=(248, 245, 235) if CONFIG["kind"] != "pages" else accent)
-# Recognizable brand motif, drawn directly rather than loading external assets.
-cx, cy, radius = 978, 320, 130
-d.ellipse((cx-radius, cy-radius, cx+radius, cy+radius), outline=accent, width=5)
-d.ellipse((cx-radius+20, cy-radius+20, cx+radius-20, cy+radius-20), outline=secondary, width=3)
-if CONFIG["kind"] == "pages":
-    d.rounded_rectangle((cx-67, cy-81, cx-20, cy+85), radius=12, fill=secondary)
-    d.ellipse((cx-32, cy-78, cx+75, cy+29), fill=secondary)
-elif CONFIG["kind"] == "python":
-    d.rounded_rectangle((cx-73,cy-66,cx+73,cy+66),radius=30,outline=accent,width=8)
-    d.line((cx-36,cy-10,cx-8,cy+16,cx-36,cy+40),fill=secondary,width=11)
-    d.line((cx+11,cy+42,cx+50,cy+42),fill=accent,width=9)
-elif CONFIG["kind"] == "arkives":
-    d.line([(cx,cy-75),(cx,cy+80)],fill=accent,width=7)
-    d.arc((cx-80,cy-56,cx+4,cy+92),90,280,fill=accent,width=9)
-    d.arc((cx-4,cy-56,cx+80,cy+92),260,90,fill=accent,width=9)
-else:
-    d.text((cx-66,cy-53), "QC",font=font(70,True),fill=accent)
-d.text((102, 536), CONFIG["subtitle"], font=font(19,True), fill=accent)
-# Use lossless palette PNG with exact 1200 x 630 dimensions.
-im.convert("P", palette=Image.Palette.ADAPTIVE, colors=64).save(ROOT/"social-preview.png", optimize=True)
-print("Created social-preview.png", (ROOT/"social-preview.png").stat().st_size)
+def font(path, size):
+    try:
+        return ImageFont.truetype(path, size)
+    except OSError:
+        return ImageFont.load_default()
 
-def make_pages_icon(side, outfile):
-    # Generate four needed raster icons for PAGES using its established
-    # cream background / red block-and-circle icon vocabulary.
-    ico=Image.new("RGB",(side,side),(255,244,226))
-    q=ImageDraw.Draw(ico)
-    s=side/512
-    q.rounded_rectangle((int(100*s),int(68*s),int(183*s),int(449*s)),radius=max(2,int(18*s)),fill=(164,0,22))
-    q.ellipse((int(154*s),int(68*s),int(418*s),int(332*s)),fill=(174,7,27))
-    ico.save(ROOT/outfile,optimize=True)
-def make_pages_maskable():
-    # Preserve the existing PAGES visual identity while scaling its mark
-    # inside the standard center safe-zone of a maskable 512 x 512 icon.
-    side=512
-    ico=Image.new("RGB", (side,side), (255,244,226))
-    q=ImageDraw.Draw(ico)
-    def at(coord): return round(256 + (coord-256)*0.70)
-    q.rounded_rectangle((at(100),at(68),at(183),at(449)),
-                        radius=13,fill=(164,0,22))
-    q.ellipse((at(154),at(68),at(418),at(332)),fill=(174,7,27))
-    ico.save(ROOT/"icon-maskable-512.png",optimize=True)
-    print("Created icon-maskable-512.png")
+def paper(width, height):
+    im = Image.new("RGB", (width, height), "#faf6ff")
+    px = im.load()
+    for y in range(height):
+        for x in range(width):
+            edge = min(1.0, abs(x / max(1, width - 1) - .5) * 1.16 +
+                       abs(y / max(1, height - 1) - .5) * .42)
+            wave = math.sin(x / max(10, width) * 14.6 + y / max(10, height) * 11) * 2
+            px[x,y] = (int(251-14*edge+wave), int(247-15*edge+wave), int(255-3*edge))
+    return im.convert("RGBA")
 
-if CONFIG["kind"] == "pages":
-    make_pages_maskable()
-    for n,f in [(32,"favicon-32.png"),(180,"apple-touch-icon.png"),(192,"icon-192.png"),(512,"icon-512.png")]:
-        make_pages_icon(n,f)
-        print("Created",f)
+def wash(im, width, height):
+    mask = Image.new("L", (width, height), 0)
+    d = ImageDraw.Draw(mask)
+    random.seed(121513)
+    for cluster in range(3):
+        left = cluster != 1
+        cx = (width * .06 if left else width*.96)
+        if cluster == 2: cx=width*.14
+        cy = height*(.12 if cluster == 0 else (.8 if cluster == 1 else .91))
+        for i in range(17):
+            rx = random.uniform(width*.035,width*.18)
+            ry = random.uniform(height*.025,height*.14)
+            x = cx + random.uniform(-width*.16,width*.13)
+            y = cy + random.uniform(-height*.19,height*.16)
+            d.ellipse((x-rx,y-ry,x+rx,y+ry),fill=random.randrange(35,110))
+    blur=mask.filter(ImageFilter.GaussianBlur(max(4,int(width*.021))))
+    violet=Image.new("RGBA",(width,height),(134,82,204,0))
+    violet.putalpha(blur)
+    im.alpha_composite(violet)
+    detail=ImageDraw.Draw(im)
+    for side in [0,1]:
+        for i in range(5):
+            x = width*(.03 if side == 0 else .94)
+            y = height*(.12+i*.175)
+            detail.arc((x-width*.07,y-height*.15,x+width*.14,y+height*.25),
+                       20 if side == 0 else 135,140 if side == 0 else 255,
+                       fill=(164,125,213,65),width=max(1,int(width*.003)))
+    return im
+
+def centered_text(draw, area, text, typeface, fill):
+    left,top,right,bottom=area
+    bounds=draw.textbbox((0,0),text,font=typeface)
+    tw,th=bounds[2]-bounds[0],bounds[3]-bounds[1]
+    draw.text((left+(right-left-tw)/2-bounds[0],
+               top+(bottom-top-th)/2-bounds[1]),text,font=typeface,fill=fill)
+
+def icon(size=512,maskable=False):
+    # Supersample for crisp rounded-corner and small-screen icon edges.
+    S=800
+    im=paper(S,S)
+    wash(im,S,S)
+    d=ImageDraw.Draw(im)
+    padding=160 if maskable else 86
+    letter_font=font(BOLD, 520 if not maskable else 390)
+    centered_text(d,(padding,padding,S-padding,S-padding),
+                  "P",letter_font,(65,32,111,255))
+    return im.convert("RGB").resize((size,size),RESAMPLE)
+
+for size,name in [(32,"favicon-32.png"),(180,"apple-touch-icon.png"),
+                  (192,"icon-192.png"),(512,"icon-512.png")]:
+    icon(size).save(ROOT/name,optimize=True)
+    print("Created",name)
+icon(512,maskable=True).save(ROOT/"icon-maskable-512.png",optimize=True)
+print("Created icon-maskable-512.png")
+
+W,H=1200,630
+cover=paper(W,H)
+wash(cover,W,H)
+d=ImageDraw.Draw(cover)
+plum=(65,32,111,255)
+purple=(106,67,149,255)
+centered_text(d,(125,90,1075,230),"P",font(BOLD,155),plum)
+centered_text(d,(110,255,1090,365),"P A G E S",font(SERIF,80),plum)
+centered_text(d,(100,368,1100,432),"Organize. Create. Connect.",
+              font(SANS,33),purple)
+centered_text(d,(150,495,1050,535),"POMEGRANATE × LILY",
+              font(SANS,21),purple)
+cover.convert("RGB").save(ROOT/"social-preview.png",optimize=True)
+print("Created social-preview.png")
