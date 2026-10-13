@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your PAGES sign-in code</title>
+</head>
+<body style="margin:0;padding:26px;background:#faf7f2;color:#3b2226;font:16px/1.6 Arial,sans-serif">
+  <div style="max-width:550px;margin:auto;background:#fff;border:1px solid #eadbd6;border-radius:16px;padding:32px">
+    <p style="margin-top:0;color:#921e30;font-size:13px;font-weight:bold;letter-spacing:3px">PAGES · POMEGRANATE × LILY</p>
+    <h1 style="font-size:27px;margin:0 0 12px">Your sign-in code</h1>
+    <p>Enter this six-digit code in PAGES to finish signing in:</p>
+    <p style="font:bold 34px/1.25 monospace;letter-spacing:8px;margin:24px 0;color:#921e30">{{ .Token }}</p>
+    <p>Or use the link below to sign in in your browser:</p>
+    <p><a href="{{ .ConfirmationURL }}" style="display:inline-block;background:#921e30;color:#fff;text-decoration:none;padding:11px 18px;border-radius:8px;font-weight:bold">Sign in to PAGES</a></p>
+    <p style="color:#7b676b;font-size:13px;margin-bottom:0">If you didn't ask to sign in, you can ignore this email. Never share your code or forward this sign-in link to anyone. This email does not ask for a password or payment.</p>
+  </div>
+</body>
+</html>
