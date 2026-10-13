@@ -58,7 +58,12 @@ sbx.signIn = async (email, displayName) => {
     email,
     // Email content (link versus six-digit code) is chosen by the
     // project's Supabase Auth > Email Templates, not by this method name.
-    options: { shouldCreateUser: true },
+    // Preserve the correct PAGES destination for older link-based emails
+    // while the Supabase email templates are being switched to code-only.
+    options: {
+      shouldCreateUser: true,
+      emailRedirectTo: location.origin + location.pathname,
+    },
   });
   if (error) throw error;
   return { email, pendingOtp: true };
