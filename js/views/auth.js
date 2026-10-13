@@ -6,7 +6,7 @@ export async function showAuth() {
     <div class="mark">PAGES</div>
     <div class="tag">Organize. Create. Connect.</div>
     <p class="pages-subline">Build a life together, one Circle at a time.</p>
-    <p role="note" style="max-width:440px;margin:10px auto 18px;color:#7f1d24;font-size:13px;line-height:1.55">PAGES is an early-access prototype. Avoid sensitive personal information while account security and data controls are being verified. <a href="./privacy.html" style="color:inherit;text-decoration:underline">Privacy &amp; data</a></p>
+    <p role="note" style="max-width:440px;margin:10px auto 18px;color:#48256d;font-size:13px;line-height:1.55">PAGES is an early-access prototype. Avoid sensitive personal information while account security and data controls are being verified. <a href="./privacy.html" style="color:inherit;text-decoration:underline">Privacy &amp; data</a></p>
     <div class="card" style="text-align:left">
       <div class="field"><label>Email</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
       <div class="field"><label>Display name</label><input id="name" type="text" placeholder="What should Circles call you?" autocomplete="nickname"></div>
