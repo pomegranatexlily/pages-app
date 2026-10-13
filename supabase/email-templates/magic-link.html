@@ -1,16 +1,18 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PAGES sign-in</title></head>
-<body style="margin:0;background:#faf7f2;color:#241717;font:16px/1.6 Arial,sans-serif">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf7f2"><tr><td align="center" style="padding:32px 15px">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:540px;background:#fff;border:1px solid #e6d8d4;border-radius:14px"><tr><td style="padding:34px">
-<p style="color:#7f1d24;font-weight:bold;letter-spacing:3px;margin:0 0 10px">PAGES</p>
-<h1 style="margin:0 0 14px;font-size:28px;line-height:1.2">Your sign-in code</h1>
-<p style="margin:0 0 20px">Use this one-time code in PAGES. Only enter it on the PAGES website you opened.</p>
-<p style="font-size:34px;letter-spacing:7px;font-weight:bold;color:#7f1d24;text-align:center;background:#faf4ee;border-radius:10px;padding:16px;margin:0 0 20px">{{ .Token }}</p>
-<p>Or <a href="{{ .ConfirmationURL }}" style="color:#7f1d24;font-weight:bold">open the secure sign-in link</a> in this message.</p>
-<p style="color:#755e61;font-size:13px">If you didn't request this email, you can ignore it. Never forward this code or share it with anyone.</p>
-<p style="color:#755e61;font-size:12px">Pomegranate × Lily · PAGES</p>
-</td></tr></table>
-</td></tr></table>
-</body></html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:28px 14px;background:#f4edfb;color:#291a39;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
+  <div style="max-width:520px;margin:0 auto;padding:32px 28px;background:#fffafd;border:1px solid #e6d8f2;border-radius:18px">
+    <div style="color:#48256d;font-size:26px;font-family:Georgia,serif;font-weight:700;letter-spacing:.22em;text-align:center">PAGES</div>
+    <p style="text-align:center;color:#715b83;margin:9px 0 27px">Organize. Create. Connect.</p>
+    <h1 style="font:700 26px/1.25 Georgia,serif;color:#48256d;margin:0 0 14px">Your PAGES sign-in code</h1>
+    <p style="font-size:16px;line-height:1.6;margin:0 0 16px">Enter this six-digit verification code in PAGES to sign in:</p>
+    <div style="background:#f4eafc;border:1px solid #d9c4ed;border-radius:12px;text-align:center;padding:23px 10px;margin:22px 0">
+      <span style="font:bold 38px/1.3 monospace;letter-spacing:.20em;color:#3d2166">{{ .Token }}</span>
+    </div>
+    <p style="font-size:14px;line-height:1.6;color:#665473">Return to PAGES and enter your code. You do not need to tap a sign-in link or open another browser.</p>
+    <p style="font-size:13px;line-height:1.6;color:#806e88;margin-top:24px">Only use this code if you requested it. Never share it. If you did not try to sign in, ignore this message.</p>
+    <div style="border-top:1px solid #e5d9ef;margin-top:27px;padding-top:18px;color:#786a82;font-size:12px;text-align:center">POMEGRANATE × LILY · PAGES</div>
+  </div>
+</body>
+</html>
