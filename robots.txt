@@ -1,0 +1,6 @@
+# PAGES is a private-sign-in prototype. Do not index its app routes.
+# NOTE: on project-path GitHub Pages this file is not the hostname-root
+# robots.txt and thus is not an effective crawler directive; noindex meta
+# directives in index.html and privacy.html provide page-level protection.
+User-agent: *
+Disallow: /
