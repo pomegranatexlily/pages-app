@@ -1,27 +1,23 @@
-/* PAGES design tokens — Pomegranate × Lily */
+/* PAGES design tokens — Lavender Watercolor edition · Pomegranate × Lily */
 :root {
-  --pl-crimson: #7f1d24;
-  --pl-crimson-deep: #5e141a;
-  --pl-copper: #9b4c30;
-  --pl-cream: #faf7f2;
+  --pl-crimson: #48256d;
+  --pl-crimson-deep: #34184f;
+  --pl-copper: #77519e;
+  --pl-cream: #faf7ff;
   --pl-paper: #ffffff;
-  --pl-ink: #1a1a1a;
-  --pl-ink-soft: #4a4a4a;
-  --pl-muted: #8a857e;
-  --pl-line: #e8e2d9;
-  --pl-success: #2e7d4f;
-  --pl-warn: #b7791f;
+  --pl-ink: #281a37;
+  --pl-ink-soft: #604f70;
+  --pl-muted: #776b81;
+  --pl-line: #e6daf1;
+  --pl-success: #286d4d;
+  --pl-warn: #9a6b22;
   --pl-danger: #b3362b;
-
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   --font-display: Georgia, "Times New Roman", serif;
-
   --r-sm: 8px;
   --r-md: 14px;
   --r-lg: 22px;
-
-  --shadow-1: 0 1px 3px rgba(26,26,26,.08);
-  --shadow-2: 0 4px 16px rgba(26,26,26,.10);
-
+  --shadow-1: 0 1px 3px rgba(49,25,72,.09);
+  --shadow-2: 0 6px 22px rgba(49,25,72,.15);
   --tabbar-h: 64px;
 }
