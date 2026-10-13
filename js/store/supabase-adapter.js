@@ -6,9 +6,9 @@
  * supabase/migrations/001_initial_schema.sql. This adapter never
  * uses the service-role key in the browser.
  *
- * Status: IMPLEMENTED, UNTESTED against a live project (no Supabase
- * project exists yet — founder action required). The interface matches
- * local-adapter.js exactly; switching adapters requires no view changes.
+ * The deployed client uses a configured Supabase project; actual provider
+ * email templates and database policies must be verified in that project.
+ * The interface matches local-adapter.js exactly.
  */
 import db from './db.js';
 
@@ -56,22 +56,25 @@ sbx.signIn = async (email, displayName) => {
   if (displayName) sessionStorage.setItem('pages_display_name', displayName);
   const { error } = await sb.auth.signInWithOtp({
     email,
-    options: { emailRedirectTo: location.origin + location.pathname },
+    // Email content (link versus six-digit code) is chosen by the
+    // project's Supabase Auth > Email Templates, not by this method name.
+    options: { shouldCreateUser: true },
   });
   if (error) throw error;
-  return { email, pendingMagicLink: true };
+  return { email, pendingOtp: true };
 };
 
 sbx.signOut = async () => { (await client()).auth.signOut(); session = null; };
 
-// Email-code login for contexts where a magic link can't return to the
-// same browser (home-screen PWA, or a mail app that opens another browser).
-// The 6-digit code ships in the same signInWithOtp email — the Supabase
-// email template must include {{ .Token }} for the user to see it.
+// Six-digit email OTP is the preferred sign-in path for PAGES PWA users.
+// The Supabase "Magic Link" AND "Confirm sign up" email templates must
+// include {{ .Token }} for existing and new accounts, respectively.
+// See supabase/email-templates/README.md. Older link emails may still
+// work through the callback handler during the configuration transition.
 sbx.verifyCode = async (email, code) => {
   const sb = await client();
   const { error } = await sb.auth.verifyOtp({
-    email, token: String(code).trim(), type: 'magiclink',
+    email, token: String(code).trim(), type: 'email',
   });
   if (error) throw error;
   session = null; // force me() to read the fresh session
