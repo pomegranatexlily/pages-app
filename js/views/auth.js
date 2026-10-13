@@ -2,8 +2,10 @@ import { db, el, esc, toast } from '../main.js';
 
 export async function showAuth() {
   const wrap = el(`<div class="authwrap">
+    <img class="pages-seal" src="./icon-192.png" alt="" width="82" height="82">
     <div class="mark">PAGES</div>
-    <div class="tag">Build a Life Together.</div>
+    <div class="tag">Organize. Create. Connect.</div>
+    <p class="pages-subline">Build a life together, one Circle at a time.</p>
     <p role="note" style="max-width:440px;margin:10px auto 18px;color:#7f1d24;font-size:13px;line-height:1.55">PAGES is an early-access prototype. Avoid sensitive personal information while account security and data controls are being verified. <a href="./privacy.html" style="color:inherit;text-decoration:underline">Privacy &amp; data</a></p>
     <div class="card" style="text-align:left">
       <div class="field"><label>Email</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
