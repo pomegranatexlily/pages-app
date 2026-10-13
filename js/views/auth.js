@@ -96,50 +96,48 @@ function showCodeStep(wrap, email, sentAt = Date.now()) {
   const resendBtn = card.querySelector('#resend');
   card.querySelector('#change-email').onclick = async () => {
     clearPending();
-    clearInterval(t);
+    clearInterval(cooldownTimer);
     const fresh = await showAuth();
     wrap.replaceWith(fresh);
   };
   codeEl.focus();
 
-  // Resend cooldown: one email per minute — hammering Continue trips
-  // Supabase's email rate limit and locks everyone out.
-  let wait = Math.max(0, Math.ceil((60000 - (Date.now() - sentAt)) / 1000));
-  if (wait === 0) {
-    resendBtn.disabled = false;
-    resendBtn.textContent = 'Resend code';
-  }
-  const t = setInterval(() => {
-    wait -= 1;
-    if (wait <= 0) {
-      clearInterval(t);
-      resendBtn.disabled = false;
-      resendBtn.textContent = 'Resend code';
-    } else {
-      resendBtn.textContent = `Resend code (${wait}s)`;
+  // Supabase limits repeat emails; one timer covers initial send and resends.
+  let lastSentAt = sentAt;
+  let cooldownTimer = null;
+  function updateCooldown() {
+    if (!resendBtn.isConnected) {
+      clearInterval(cooldownTimer);
+      cooldownTimer = null;
+      return;
     }
-  }, 1000);
+    const remaining = Math.max(0, Math.ceil((60000 - (Date.now() - lastSentAt)) / 1000));
+    resendBtn.disabled = remaining > 0;
+    resendBtn.textContent = remaining > 0 ? 'Resend code (' + remaining + 's)' : 'Resend code';
+    if (remaining === 0) {
+      clearInterval(cooldownTimer);
+      cooldownTimer = null;
+    } else if (cooldownTimer === null) {
+      cooldownTimer = setInterval(updateCooldown, 1000);
+    }
+  }
+  updateCooldown();
 
   resendBtn.onclick = async () => {
     if (resendBtn.disabled) return;
     resendBtn.disabled = true;
+    resendBtn.textContent = 'Sending…';
     try {
       await db.signIn(email);
-      savePending(email, Date.now());
+      lastSentAt = Date.now();
+      savePending(email, lastSentAt);
       toast('Sign-in email sent again');
-    } catch (e) { toast(e.message); }
-    wait = 60;
-    resendBtn.textContent = `Resend code (${wait}s)`;
-    const t2 = setInterval(() => {
-      wait -= 1;
-      if (wait <= 0) {
-        clearInterval(t2);
-        resendBtn.disabled = false;
-        resendBtn.textContent = 'Resend code';
-      } else {
-        resendBtn.textContent = `Resend code (${wait}s)`;
-      }
-    }, 1000);
+    } catch (e) {
+      // Continue a cooldown after failure to avoid triggering provider rate limits.
+      lastSentAt = Date.now();
+      toast(e.message || 'Could not resend. Please wait and retry.');
+    }
+    updateCooldown();
   };
 
   verifyBtn.onclick = async () => {
@@ -151,7 +149,7 @@ function showCodeStep(wrap, email, sentAt = Date.now()) {
       if (typeof db.verifyCode !== 'function') throw new Error('Code login not supported here');
       await db.verifyCode(email, code);
       clearPending();
-      clearInterval(t);
+      clearInterval(cooldownTimer);
       location.hash = '#/circles';
     } catch (e) {
       toast(e.message);
