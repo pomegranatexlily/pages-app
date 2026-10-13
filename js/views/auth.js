@@ -1,5 +1,25 @@
 import { db, el, esc, toast } from '../main.js';
 
+// Restore the code field when a home-screen app reloads after opening Mail.
+const OTP_KEY = 'pages.otp.pending.v1';
+function readPending() {
+  try {
+    const p = JSON.parse(sessionStorage.getItem(OTP_KEY) || 'null');
+    if (p && typeof p.email === 'string' && p.email.length < 255 &&
+        Number.isFinite(p.sentAt) && Date.now() >= p.sentAt &&
+        Date.now() - p.sentAt < 30 * 60 * 1000) return p;
+    sessionStorage.removeItem(OTP_KEY);
+  } catch {}
+  return null;
+}
+function savePending(email, sentAt) {
+  try { sessionStorage.setItem(OTP_KEY, JSON.stringify({email, sentAt})); } catch {}
+}
+function clearPending() {
+  try { sessionStorage.removeItem(OTP_KEY); } catch {}
+}
+
+
 export async function showAuth() {
   const wrap = el(`<div class="authwrap">
     <img class="pages-seal" src="./icon-192.png" alt="" width="82" height="82">
@@ -10,17 +30,24 @@ export async function showAuth() {
     <div class="card" style="text-align:left">
       <div class="field"><label>Email</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
       <div class="field"><label>Display name</label><input id="name" type="text" placeholder="What should Circles call you?" autocomplete="nickname"></div>
-      <button class="btn" id="go">Continue</button>
-      <p class="hint" style="margin-top:12px;font-size:12px;line-height:1.5">PAGES uses your email for sign-in and stores Circle data through Supabase. Read the <a href="./privacy.html" style="color:#a63342;text-decoration:underline">Privacy &amp; Data notice</a> before joining. Do not enter sensitive personal information in this early-stage release.</p>
+      <button class="btn" id="go">Email me a sign-in code</button>
+      <p class="hint" style="margin-top:12px;font-size:12px;line-height:1.5">PAGES uses your email for sign-in and stores Circle data through Supabase. Read the <a href="./privacy.html" style="color:#48256d;text-decoration:underline">Privacy &amp; Data notice</a> before joining. Do not enter sensitive personal information in this early-stage release.</p>
     </div>
     <div class="mode-note" id="mode"></div>
   </div>`);
   const mode = db.mode === 'supabase'
-    ? 'Production mode — we\u2019ll email you a 6-digit code.'
+    ? 'Keep PAGES open. Check your email, then enter the six digits here.'
     : 'Demo mode — no password. Use one email per test account (e.g. ama@test.com, ben@test.com).';
   wrap.querySelector('#mode').textContent = mode;
-  // remember the last email so reopening the app is one tap
-  if (db.mode !== 'supabase') {
+  // Restore the code screen if iPhone suspends PAGES while opening Mail.
+  if (db.mode === 'supabase') {
+    const pending = readPending();
+    if (pending) {
+      showCodeStep(wrap, pending.email, pending.sentAt);
+      return wrap;
+    }
+  } else {
+    wrap.querySelector('#go').textContent = 'Continue';
     try {
       const last = localStorage.getItem('pages_last_email');
       if (last) wrap.querySelector('#email').value = last;
@@ -31,27 +58,28 @@ export async function showAuth() {
     if (btn.disabled) return; // already sending — don't stack up emails
     const email = wrap.querySelector('#email').value.trim();
     const name = wrap.querySelector('#name').value.trim();
-    if (!email) return toast('Enter an email to continue');
+    if (!email || !wrap.querySelector('#email').checkValidity()) return toast('Enter a valid email address');
     btn.disabled = true;
     btn.textContent = 'Sending…';
     try {
       const s = await db.signIn(email, name);
-      if (s.pendingMagicLink) {
-        showCodeStep(wrap, email);
+      if (s.pendingOtp || s.pendingMagicLink) {
+        const sentAt = Date.now();
+        savePending(email, sentAt);
+        showCodeStep(wrap, email, sentAt);
         return;
       }
+      clearPending();
       location.hash = '#/';
     } catch (e) { toast(e.message); }
     btn.disabled = false;
-    btn.textContent = 'Continue';
+    btn.textContent = db.mode === 'supabase' ? 'Email me a sign-in code' : 'Continue';
   };
   return wrap;
 }
 
-// Step 2 of email login: the user types the 6-digit code from the email.
-// Works everywhere — home-screen PWA, any browser — because nothing has
-// to hop between apps. The magic link in the same email keeps working too.
-function showCodeStep(wrap, email) {
+// Step 2: email OTP. Provider templates must include {{ .Token }}.
+function showCodeStep(wrap, email, sentAt = Date.now()) {
   const card = wrap.querySelector('.card');
   card.innerHTML = `
       <div class="field"><label>6-digit code</label>
