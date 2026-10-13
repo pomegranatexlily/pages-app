@@ -8,6 +8,7 @@ export async function showAuth() {
       <div class="field"><label>Email</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
       <div class="field"><label>Display name</label><input id="name" type="text" placeholder="What should Circles call you?" autocomplete="nickname"></div>
       <button class="btn" id="go">Continue</button>
+      <p class="hint" style="margin-top:12px;font-size:12px;line-height:1.5">PAGES uses your email for sign-in and stores Circle data through Supabase. Read the <a href="./privacy.html" style="color:#a63342;text-decoration:underline">Privacy &amp; Data notice</a> before joining. Do not enter sensitive personal information in this early-stage release.</p>
     </div>
     <div class="mode-note" id="mode"></div>
   </div>`);
