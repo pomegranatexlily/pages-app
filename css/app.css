@@ -137,3 +137,34 @@ h2.sec { font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px;
   body { background: #e9e2d6; }
   #app { box-shadow: var(--shadow-2); }
 }
+
+
+/* PAGES lavender-watercolor identity. Functional routes and auth unchanged. */
+body{background:linear-gradient(160deg,#f8f3ff,#fdfaff 45%,#f0e6fc)}
+#app{background:var(--pl-cream)}
+.topbar{background:linear-gradient(110deg,#34184f,#694290);box-shadow:0 5px 22px #36194d33}
+.card{border-color:#e5d6f2;box-shadow:0 5px 19px #4220610d}
+.field input:focus-visible,.field textarea:focus-visible,.field select:focus-visible,
+button:focus-visible,a:focus-visible{outline:3px solid #9d6dd0;outline-offset:2px}
+.authwrap{position:relative;isolation:isolate;min-height:100svh;
+  padding:clamp(35px,6vh,70px) 22px 48px;
+  background:radial-gradient(ellipse at -5% 4%,#b58cd947,transparent 48%),
+    radial-gradient(ellipse at 105% 66%,#9068bf42,transparent 42%),
+    radial-gradient(ellipse at 0% 95%,#d5b8f064,transparent 34%),
+    linear-gradient(165deg,#fcf9ff,#f4eafb 55%,#fefcff)}
+.authwrap:before,.authwrap:after{content:"";position:absolute;z-index:-1;pointer-events:none;border:2px solid #a17cd025;
+  width:46vw;max-width:220px;height:46vw;max-height:220px;border-radius:45% 61% 56% 30%;transform:rotate(32deg)}
+.authwrap:before{left:-100px;top:10%}
+.authwrap:after{right:-105px;bottom:16%;transform:rotate(-38deg)}
+.authwrap .pages-seal{display:block;max-width:82px;margin:0 auto 10px;border-radius:18px;box-shadow:0 9px 28px #48256d18}
+.authwrap .mark{font-size:clamp(40px,10vw,52px);font-weight:700;letter-spacing:.19em;text-indent:.19em;color:#48256d;margin:0 0 2px}
+.authwrap .tag{color:#48256d;font-family:var(--font-display);font-size:19px;letter-spacing:.01em;margin:0 0 5px}
+.authwrap .pages-subline{font-size:13px;color:#765f87;margin:0 0 23px}
+.authwrap .card{text-align:left;background:#ffffffed;backdrop-filter:blur(5px);padding:23px;border:1px solid #dac8ef;
+  box-shadow:0 16px 36px #573b8218;border-radius:18px}
+.authwrap .btn:not(.secondary):not(.ghost){background:linear-gradient(115deg,#522778,#6a3a96);box-shadow:0 7px 19px #46216a26}
+.authwrap .btn:not(.secondary):not(.ghost):active{background:#34184f}
+.authwrap .mode-note{color:#725f80}
+.invitebox{background:#f2eafa}
+@media(min-width:600px){body{background:linear-gradient(150deg,#ede1fa,#faf6ff 60%,#e9def6)}#app{box-shadow:var(--shadow-2)}}
+@media(prefers-reduced-motion:reduce){.card.tappable:active{transform:none}}
