@@ -82,21 +82,33 @@ export async function showAuth() {
 function showCodeStep(wrap, email, sentAt = Date.now()) {
   const card = wrap.querySelector('.card');
   card.innerHTML = `
-      <div class="field"><label>6-digit code</label>
+      <h2 style="font-size:21px;color:#48256d;margin-bottom:8px">Enter your email code</h2>
+      <div class="field"><label for="code">6-digit sign-in code</label>
         <input id="code" type="text" inputmode="numeric" autocomplete="one-time-code"
                placeholder="123456" maxlength="6" style="text-align:center;letter-spacing:0.35em;font-size:1.4em"></div>
-      <button class="btn" id="verify">Verify</button>
+      <button class="btn" id="verify">Sign in with code</button>
       <button class="btn ghost" id="resend" disabled>Resend code (60s)</button>
-      <p class="hint">Sent to ${esc(email)}. Didn\u2019t get it? Check spam — or tap the sign-in link in the email instead.</p>`;
+      <button class="btn ghost" id="change-email">Use a different email</button>
+      <p class="hint">Sent to ${esc(email)}. Return here with the six digits, without opening a browser. If the message has only a sign-in link, Supabase's email template still needs switching; the link remains a temporary workaround.</p>`;
   wrap.querySelector('#mode').textContent = 'Enter the code from your email.';
   const codeEl = card.querySelector('#code');
   const verifyBtn = card.querySelector('#verify');
   const resendBtn = card.querySelector('#resend');
+  card.querySelector('#change-email').onclick = async () => {
+    clearPending();
+    clearInterval(t);
+    const fresh = await showAuth();
+    wrap.replaceWith(fresh);
+  };
   codeEl.focus();
 
   // Resend cooldown: one email per minute — hammering Continue trips
   // Supabase's email rate limit and locks everyone out.
-  let wait = 60;
+  let wait = Math.max(0, Math.ceil((60000 - (Date.now() - sentAt)) / 1000));
+  if (wait === 0) {
+    resendBtn.disabled = false;
+    resendBtn.textContent = 'Resend code';
+  }
   const t = setInterval(() => {
     wait -= 1;
     if (wait <= 0) {
@@ -113,7 +125,8 @@ function showCodeStep(wrap, email, sentAt = Date.now()) {
     resendBtn.disabled = true;
     try {
       await db.signIn(email);
-      toast('New code sent');
+      savePending(email, Date.now());
+      toast('Sign-in email sent again');
     } catch (e) { toast(e.message); }
     wait = 60;
     resendBtn.textContent = `Resend code (${wait}s)`;
@@ -131,17 +144,19 @@ function showCodeStep(wrap, email, sentAt = Date.now()) {
 
   verifyBtn.onclick = async () => {
     const code = codeEl.value.trim();
-    if (code.length < 6) return toast('Enter the 6-digit code');
+    if (!/^[0-9]{6}$/.test(code)) return toast('Enter the six digits from your email');
     verifyBtn.disabled = true;
     verifyBtn.textContent = 'Verifying\u2026';
     try {
       if (typeof db.verifyCode !== 'function') throw new Error('Code login not supported here');
       await db.verifyCode(email, code);
+      clearPending();
+      clearInterval(t);
       location.hash = '#/circles';
     } catch (e) {
       toast(e.message);
       verifyBtn.disabled = false;
-      verifyBtn.textContent = 'Verify';
+      verifyBtn.textContent = 'Sign in with code';
     }
   };
   codeEl.addEventListener('keydown', e => { if (e.key === 'Enter') verifyBtn.click(); });
