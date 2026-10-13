@@ -29,14 +29,14 @@ async function me() {
   const sb = await client();
   const { data: { user } } = await sb.auth.getUser();
   if (!user) throw new Error('Not signed in');
-  let { data: profile } = await sb.from('profiles').select('*').eq('id', user.id).maybeSingle();
+  let { data: profile } = await sb.from('profiles').select('id, display_name').eq('id', user.id).maybeSingle();
   if (!profile) {
     // first sign-in: create the profile row (RLS allows own-profile insert)
     const displayName =
       sessionStorage.getItem('pages_display_name') || user.email.split('@')[0];
     const { data, error } = await sb.from('profiles')
       .insert({ id: user.id, email: user.email, display_name: displayName })
-      .select().single();
+      .select('id, display_name').single();
     if (error) throw error;
     profile = data;
   }
