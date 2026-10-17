@@ -29,8 +29,10 @@ assert.match(invite, /drop policy if exists "members manage invites" on public\.
 assert.match(invite, /create policy "members read invites"[\s\S]*?for select to authenticated/i);
 assert.match(invite, /create policy "members create invites"[\s\S]*?for insert to authenticated/i);
 assert.match(invite, /and uses = 0[\s\S]*?and max_uses between 1 and 100/i);
-assert.doesNotMatch(invite, /create policy "[^"]+" on public\.invitations[\s\S]*?for (?:all|update|delete) to authenticated/i,
- 'User-level writes must never change server-tracked invite uses or tokens');
+for (const match of invite.matchAll(/create policy "[^"]+" on public\.invitations([\s\S]*?);/gi)) {
+  assert.doesNotMatch(match[0], /for (?:all|update|delete) to authenticated/i,
+    'User-level writes must never change server-tracked invite uses or tokens');
+}
 assert.match(invite, /drop policy if exists "owners manage memberships" on public\.memberships;/i);
 assert.match(invite, /create policy "owners manage memberships"[\s\S]*?using \(public\.circle_role\(circle_id\) = 'owner'\)/i);
 const clientFiles = ['js/config.js', 'js/main.js', 'js/store/supabase-adapter.js'];
