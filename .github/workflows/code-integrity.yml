@@ -58,3 +58,5 @@ jobs:
         run: node tests/authz.test.js
       - name: Verify passwordless email OTP contract
         run: node tests/otp-auth.test.mjs
+      - name: Verify database security policies and privilege boundaries
+        run: node tests/security-policy.test.mjs
