@@ -55,3 +55,30 @@ $$;
 -- Do not let anonymous callers execute a privileged SECURITY DEFINER RPC.
 revoke execute on function public.accept_invite(text) from public, anon;
 grant execute on function public.accept_invite(text) to authenticated;
+
+-- The original "for all" RLS policy unintentionally let any member edit
+-- invitation tokens, expiration dates and use counters through the REST API.
+-- Restrict members to reading/creating invitations; only the trusted RPC
+-- above can increment the use counter.
+drop policy if exists "members manage invites" on public.invitations;
+create policy "members read invites" on public.invitations
+  for select to authenticated
+  using (public.is_circle_member(circle_id));
+create policy "members create invites" on public.invitations
+  for insert to authenticated
+  with check (
+    public.is_circle_member(circle_id)
+    and created_by = auth.uid()
+    and uses = 0
+    and max_uses between 1 and 100
+    and expires_at > now()
+    and expires_at <= now() + interval '30 days'
+  );
+
+-- The original membership policy let administrators make themselves owners.
+-- In this prototype only the owner may manage other members' privileges.
+drop policy if exists "owners manage memberships" on public.memberships;
+create policy "owners manage memberships" on public.memberships
+  for all to authenticated
+  using (public.circle_role(circle_id) = 'owner')
+  with check (public.circle_role(circle_id) = 'owner');
