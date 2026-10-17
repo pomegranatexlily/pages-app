@@ -54,3 +54,9 @@ jobs:
           console.log('Parsed '+jsonCount+' JSON/manifest files and '+htmlCount+' HTML files; checked '+scriptCount+' local scripts.');
           if (remoteCount) console.log(remoteCount+' URL/absolute-path script references require separate deployment and supply-chain review.');
           NODE
+      - name: Verify circles, permissions, memberships and invite authorization
+        run: node tests/authz.test.js
+      - name: Verify passwordless email OTP contract
+        run: node tests/otp-auth.test.mjs
+      - name: Verify database security policies and privilege boundaries
+        run: node tests/security-policy.test.mjs
