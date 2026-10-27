@@ -1,0 +1,9 @@
+{
+  "status": "not_run",
+  "checks": [],
+  "email_sent": false,
+  "reason": "Browser setup or an earlier workflow step failed.",
+  "release": "02cda795efcbc9f79d62f145c9e1f3aeba6462bd",
+  "workflow_run": "40586153676",
+  "recorded_at": "2026-10-27T21:22:01.556368+00:00"
+}
