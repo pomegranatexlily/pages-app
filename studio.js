@@ -1,6 +1,8 @@
 'use strict';
 document.documentElement.classList.add('js');
+document.querySelectorAll('.no-js-info').forEach(node=>{node.hidden=true;});
 const $=s=>document.querySelector(s);
+function providerDetail(result,httpStatus){const raw=typeof result?.message==='string'?result.message:typeof result?.error==='string'?result.error:'';const safe=raw.replace(/[\u0000-\u001f\u007f]/g,' ').replace(/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}/gi,'[redacted key]').trim().slice(0,240);return 'EasyFormAPI HTTP '+httpStatus+(safe?': '+safe:': no error detail returned.');}
 const form=$('#brief-form'),brief=$('#brief'),status=$('#brief-status'),send=form.querySelector('button[type="submit"]');
 let sending=false;
 form.addEventListener('submit',async e=>{
@@ -17,8 +19,8 @@ form.addEventListener('submit',async e=>{
   try{
     const response=await fetch(form.action,{method:'POST',body,headers:{Accept:'application/json'},credentials:'omit',redirect:'error',referrerPolicy:'no-referrer',signal:controller.signal});
     let result=null;try{result=await response.json()}catch{}
-    if(!response.ok||result?.success===false){status.textContent=response.status===429?'The form service is limiting requests. Your message is still here; wait before trying again.':'The form service did not confirm acceptance. Your message is still here; check before resending.';return;}
-    if(result?.success!==true){status.textContent='We could not confirm acceptance. Your message may have reached the service; check before resending.';return;}
+    if(!response.ok||result?.success===false){status.textContent=providerDetail(result,response.status)+' The form service did not confirm acceptance. '+(response.status===429?'Wait before retrying. ':'')+'Your message is still here; check before resending.';return;}
+    if(result?.success!==true){status.textContent=providerDetail(result,response.status)+' We could not confirm acceptance. Your message may have reached the service; check before resending.';return;}
     status.textContent='Thank you—your inquiry was accepted for delivery. Inbox arrival is not independently confirmed.';
     if(brief.value.trim()===message)brief.value='';
   }catch{

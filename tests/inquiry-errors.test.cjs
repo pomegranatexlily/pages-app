@@ -1,0 +1,12 @@
+const test=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const source=fs.readFileSync(path.join(__dirname,'..','studio.js'),'utf8');
+const line=source.split('\n').find(s=>s.startsWith('function providerDetail('));
+const detail=vm.runInNewContext('('+line+')');
+test('provider validation message and status stay visible',()=>{assert.equal(detail({message:'Email is required'},400),'EasyFormAPI HTTP 400: Email is required')});
+test('provider error fallback and absent detail are explicit',()=>{assert.ok(detail({error:'Invalid access key'},403).includes('Invalid access key'));assert.ok(detail(null,503).includes('HTTP 503'));assert.ok(detail({message:{}},400).includes('no error detail'))});
+test('diagnostics redact key-shaped values and bound untrusted messages',()=>{const fake='00000000-0000-0000-0000-000000000000',text=detail({message:'Invalid '+fake+'\n'+'x'.repeat(500)},400);assert.ok(!text.includes(fake));assert.ok(text.includes('[redacted key]'));assert.ok(!text.includes('\n'));assert.ok(text.length<280)});
+test('diagnostic output uses textContent and no-JavaScript help is hidden only at runtime',()=>{assert.ok(source.includes('status.textContent=providerDetail(result,response.status)'));assert.ok(source.includes("document.querySelectorAll('.no-js-info').forEach(node=>{node.hidden=true;});"));assert.ok(!source.includes('innerHTML'))});
