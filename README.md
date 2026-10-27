@@ -1,21 +1,22 @@
 # Pomegranate × Lily Labs
 
 Founder & AI-Assisted Full-Stack Developer: Dr. Nachamasha Yahsharala.
-Business portfolio: Packet Lily (flagship), POM Lily Labs and Python Atelier. Personal research and publishing projects are not featured.
+Business portfolio: Packet Lily (flagship), POM Lily Labs and Python Atelier.
 
 ## Approved interface
-The existing design, stylesheet, icon and perspective controls are preserved. This update connects the existing inquiry form and changes only necessary labels, validation and delivery/privacy text. No new visible fields or styling are introduced. The protected CSS/icon Git blob hashes remain in tests. PR #5 has already been merged; earlier draft/local-only descriptions in docs/business-package.md describe the preceding milestone, not this implementation.
+The stylesheet, icon, product illustration and perspective controls remain unchanged. The existing contact area retains its textarea and button styling. The primary action is now a real mailto link labeled Open email app. Only necessary contact instructions and behavior are changed.
 
-## Inquiry delivery
-The native form posts to https://api.easyformapi.com/submit using the founder-provided browser form access key. This key is intentionally present in the public form; it is not an administrative token. Inbox routing is configured in EasyFormAPI, not by exposing the recipient email in the page. Messages must include a reply address in their text if a response is wanted.
-With JavaScript, submissions have a 20-second timeout, duplicate-tap protection, a hidden honeypot, and explicit acceptance/error states. An affirmative JSON success flag plus HTTP success is required to report acceptance. Unknown responses or network errors preserve text and warn against blind retries. Acceptance does not independently confirm inbox arrival. With JavaScript disabled, native HTML POST navigates to the provider response page.
-No test email is sent on page load, deployment or by the regression suite. A live end-to-end submission and recipient readback must be verified separately. Provider API response compatibility, quota and spam filtering remain operational checks.
+## Email-app handoff
+Inquiries no longer use an email-sending API. The current page has no provider access key, honeypot, HTTP submission, quota dependency or delivery-status parser. Historical Git commits and strategy documents may describe the retired API implementation; they do not represent current behavior. No account keys are revoked by this code change.
+The recipient is editor.hw12@gmail.com. JavaScript encodes a fixed subject and the visitor's message into a mailto URI on a normal link. Their configured mail app or handler chooses the sending account. The visitor must review the draft and press Send themselves. The site neither sends email nor detects whether an app opened, the visitor sent, or the message arrived.
+The textarea is never cleared automatically. If no configured handler opens, the page exposes the address and instructions to copy the message manually. With JavaScript disabled, the static link still supplies recipient and subject; visitors must paste their typed message into that draft. Native form POST is a mailto fallback, not an HTTP API submission.
+Mail-client and URI-length support varies. Long drafts must be reviewed for completeness; the code does not intentionally truncate them. Browser tests and recipient readback are separate from encoding/unit tests. A public email address can still receive spam; this change is not a guarantee against inbox abuse.
 
 ## Privacy
-No analytics, backend, account system, browser record storage or payment processing is installed. The message is sent to EasyFormAPI only on explicit submission; provider delivery/logging policies apply. Do not submit passwords, keys or private customer records. The site does not read other applications' storage. Product artwork remains illustrative.
+No analytics, backend, account system, browser record storage, payment processing or form-delivery service is installed. Typed messages are handed to the visitor's mail handler only when they choose the link. Do not enter passwords, keys or private customer records. The site does not read other applications' storage.
 
 ## Run and check
-Serve with `python3 -m http.server 8000` and open http://localhost:8000.
-Run `node --check studio.js` and `node --test tests/studio.test.cjs`.
-The tests mock network and DOM behavior; they do not send real email or prove browser rendering. STUDIO_LOCAL_SOURCE_ONLY=1 skips repository-source and visual-asset checks only for local testing without those fixtures; never set it in CI.
-The deployment workflow runs the full suite before publishing only public site assets. A passing test suite or successful commit does not alone prove deployment or inbox delivery. Physical iPhone, live hosting and recipient confirmation remain separate.
+Serve with `python3 -m http.server 8000`, then open http://localhost:8000.
+Run `node --check studio.js` and `node --test tests/*.test.cjs`.
+The suite checks recipient/subject/body encoding, header-injection resistance, draft validation, text preservation, CTA/swipe behavior, retired-provider removal and frozen CSS/icon hashes. Mocked tests do not open mail apps or send emails. STUDIO_LOCAL_SOURCE_ONLY=1 skips repository-source and visual-asset checks only when local fixtures are unavailable; never set it in CI.
+Deployment runs both test files before packaging only public site assets. Actual hosting, physical iPhone behavior, configured mail-handler behavior and delivery require separate verification.
