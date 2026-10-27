@@ -1,45 +1,26 @@
 # Pomegranate × Lily Labs
 
-Founder-led, AI-assisted software studio website for practical web applications, AI-enabled tools, and business workflows. This replaces the retired PAGES application in this repository.
+Founder & AI-Assisted Full-Stack Developer: Dr. Nachamasha Yahsharala.
+Business portfolio: Packet Lily (flagship), POM Lily Labs and Python Atelier. Personal research and publishing projects are not featured.
 
-## Featured portfolio
-
-- **Packet Lily** — phone-first job, invoice, payment-record, and closeout workflow. [Live app](https://pomegranatexlily.github.io/Closeout-Pocket/) · [Repository](https://github.com/pomegranatexlily/Closeout-Pocket)
-- **POM Lily Labs** — mobile-first AI assistant project. [Live app](https://pom-lily-labs.pages.dev/) · [Repository](https://github.com/pomegranatexlily/pom-lily-labs)
-- **Python Atelier** — browser-based Python learning and practice. [Live app](https://pomegranatexlily.github.io/Python-Atelier/) · [Repository](https://github.com/pomegranatexlily/Python-Atelier)
-
-Personal publishing and research projects are intentionally not featured on this business landing page.
+## Scope and approved UI
+This content/behavior update is on `fix/studio-landing-page-ux`, associated with draft PR #5. It does not merge or publish that PR. The current layout, CSS, monochrome icon and illustrative product model are preserved. `studio.css` and `favicon.svg` are protected by recorded Git blob hashes in the regression suite. Any visual change needs separate user approval. Some obsolete invoice-demo selectors remain intentionally untouched under this UI freeze.
 
 ## Files
+- index.html: unchanged markup structure with business-package copy and consistent full-stack title.
+- studio.js: contact CTA navigation/focus, local G-CAFL-QC brief download, error handling and existing swipe behavior.
+- docs/business-package.md: positioning, portfolio, Upwork copy, service scopes, intake, delivery and roadmap.
+- tests/studio.test.cjs: markup, behavior and visual-asset invariants.
+- .github/workflows/studio-qc.yml: checks on pull requests and branch pushes, without deployment.
 
-- index.html: static-first studio site, project links, services, founder summary, and local project-brief form.
-- studio.css: responsive layout, accessible focus styles, and illustrative Packet Lily product rendering.
-- studio.js: navigation CTAs, local project-brief download, and perspective/swipe controls for the illustration.
-- favicon.svg: monochrome vector brand symbol.
-- .github/workflows/deploy-pages.yml: JavaScript syntax check, static packaging, and GitHub Pages deployment workflow.
+## Local use and checks
+Run `python3 -m http.server 8000`, then open `http://localhost:8000`.
+Run `node --check studio.js` and `node --test tests/studio.test.cjs`. No runtime or test dependencies are required beyond Node for these checks.
+Tests use a mocked DOM. They do not prove real-browser rendering, physical iPhone behavior, provider access or production hosting. Do not set STUDIO_LOCAL_SOURCE_ONLY in CI: that local-only flag skips the asset-hash check when remote CSS/icon fixtures are unavailable.
 
-## Run locally
+## Privacy and behavior
+No analytics, backend, account system, cookies, payment processing or inquiry submission is installed. The brief stays in the page until explicitly downloaded. It is plain text, not a sent inquiry. Download failure retains the typed text. Avoid secrets, credentials and customer data. Do not read other apps' storage.
+The Packet Lily render remains illustrative. Its external payment handoff does not verify receipt. Public/private project links require network access and sometimes authorization.
 
-Serve the root with `python3 -m http.server 8000` and open `http://localhost:8000`. No application dependencies or build step are required.
-
-## Hosting
-
-The workflow attempts GitHub Pages deployment on pushes to main. Pages must be enabled for GitHub Actions in repository settings. A committed workflow alone does not prove a successful deployment. Existing hosting can also serve the root files directly.
-
-## Data and scope
-
-No analytics, backend, cookies, customer-record storage, payment processing, or inquiry submission is installed. The contact view downloads a local project brief only; it does not send an inquiry. Never claim a brief was sent. The Packet Lily visual is illustrative, not an app screenshot. External project links require network access and may require authorization.
-
-No secrets belong in this repository. Do not automatically read other applications' browser storage.
-
-## Acceptance checks
-
-- [ ] Confirm all primary CTAs and navigation on mobile and desktop.
-- [ ] Check mobile overflow, focus visibility, keyboard navigation, and reduced-motion behavior.
-- [ ] Confirm all project links point to the intended live apps and repositories.
-- [ ] Verify local project-brief download and empty-input behavior.
-- [ ] Check the page with JavaScript disabled and confirm the limitation is understandable.
-- [ ] Remove unused CSS and verify no references remain to the retired invoice demo.
-- [ ] Run `node --check studio.js`.
-- [ ] Verify the deployed page separately from code-level checks.
-- [ ] Replace illustrative product artwork with authentic screenshots before presenting it as real product evidence.
+## Before release
+Keep PR #5 draft until mobile/desktop browser navigation, keyboard focus, overflow, reduced motion and brief downloads are verified. Verify real deployment separately; workflow existence and Node tests do not prove hosting. A real inquiry destination and authentic visuals remain separate follow-up work requiring appropriate approval.
