@@ -1,7 +1,7 @@
 import hashlib
 import json
 import os
-import time
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
@@ -18,7 +18,12 @@ try:
     from playwright.sync_api import sync_playwright
     expected = hashlib.sha256(Path("studio.js").read_bytes()).hexdigest()
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True)
+        chrome = shutil.which("google-chrome") or shutil.which("chromium") or shutil.which("chromium-browser")
+        launch = {"headless": True}
+        if chrome:
+            launch["executable_path"] = chrome
+            report["engine"] = "System Chrome/Chromium"
+        browser = pw.chromium.launch(**launch)
         try:
             for label, width, height in [("mobile360", 360, 800), ("mobile390", 390, 844), ("desktop", 1440, 1000)]:
                 context = browser.new_context(viewport={"width": width, "height": height}, device_scale_factor=1)
