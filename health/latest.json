@@ -1,9 +1,240 @@
 {
-  "status": "not_run",
-  "checks": [],
+  "site": "https://pomegranatexlily.github.io/pages-app/",
+  "release": "57d22879a03b926257b1a3e881dfa8b6b3722118",
+  "started_at": "2026-10-27T22:28:59.307076+00:00",
+  "engine": "System Chrome/Chromium",
+  "physical_iphone": false,
   "email_sent": false,
-  "reason": "Browser setup or an earlier workflow step failed.",
-  "release": "02cda795efcbc9f79d62f145c9e1f3aeba6462bd",
-  "workflow_run": "40586153676",
-  "recorded_at": "2026-10-27T21:22:01.556368+00:00"
+  "checks": [
+    {
+      "name": "mobile360: page HTTP",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile360: loaded release script",
+      "ok": true,
+      "detail": "Browser-loaded script compared with checked-out release"
+    },
+    {
+      "name": "mobile360: spatial scene present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: no horizontal overflow",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: background does not intercept taps",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: original CTA color",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: services navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: founder navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: work navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: contact focus",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: draft recipient",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: draft body",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: text retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile360: no JavaScript errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: page HTTP",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "mobile390: loaded release script",
+      "ok": true,
+      "detail": "Browser-loaded script compared with checked-out release"
+    },
+    {
+      "name": "mobile390: spatial scene present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: no horizontal overflow",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: background does not intercept taps",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: original CTA color",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: services navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: founder navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: work navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: contact focus",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: draft recipient",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: draft body",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: text retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile390: no JavaScript errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: page HTTP",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "desktop: loaded release script",
+      "ok": true,
+      "detail": "Browser-loaded script compared with checked-out release"
+    },
+    {
+      "name": "desktop: spatial scene present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: no horizontal overflow",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: background does not intercept taps",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: original CTA color",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: services navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: founder navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: work navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: contact focus",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: draft recipient",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: draft body",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: text retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop: no JavaScript errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion is static",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "completed_at": "2026-10-27T22:29:15.771326+00:00",
+  "status": "passed",
+  "workflow_run": "40595119649",
+  "recorded_at": "2026-10-27T22:29:16.882785+00:00",
+  "setup": {
+    "checkout": "success",
+    "python": "success",
+    "dependencies": "success",
+    "browser": "success",
+    "test": "success"
+  },
+  "setup_log_tail": {
+    "dependency.log": "Collecting playwright==1.51.0\n  Downloading playwright-1.51.0-py3-none-manylinux1_x86_64.whl.metadata (3.5 kB)\nCollecting pyee<13,>=12 (from playwright==1.51.0)\n  Downloading pyee-12.1.1-py3-none-any.whl.metadata (2.9 kB)\nCollecting greenlet<4.0.0,>=3.1.1 (from playwright==1.51.0)\n  Downloading greenlet-3.5.6-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)\nCollecting typing-extensions (from pyee<13,>=12->playwright==1.51.0)\n  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)\nDownloading playwright-1.51.0-py3-none-manylinux1_x86_64.whl (45.2 MB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 45.2/45.2 MB 157.5 MB/s  0:00:00\nDownloading greenlet-3.5.6-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (621 kB)\n   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 621.4/621.4 kB 109.6 MB/s  0:00:00\nDownloading pyee-12.1.1-py3-none-any.whl (15 kB)\nDownloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)\nInstalling collected packages: typing-extensions, greenlet, pyee, playwright\n\nSuccessfully installed greenlet-3.5.6 playwright-1.51.0 pyee-12.1.1 typing-extensions-4.16.0",
+    "browser.log": "Google Chrome 156.0.8078.47 "
+  }
 }
