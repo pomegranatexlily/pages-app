@@ -22,6 +22,7 @@ jobs:
         with:
           node-version: '22'
       - run: node --check studio.js
+      - run: node --test tests/studio.test.cjs
       - name: Package only public site assets
         run: |
           mkdir _site
