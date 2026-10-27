@@ -1,0 +1,88 @@
+name: Live spatial browser check
+"on":
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/live-spatial-check.yml
+      - scripts/live-spatial-check.py
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: live-spatial-check
+  cancel-in-progress: true
+jobs:
+  live:
+    if: github.repository == 'pomegranatexlily/pages-app'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned browser test dependency
+        run: python -m pip install playwright==1.51.0
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Test actual published website without sending email
+        run: python scripts/live-spatial-check.py
+      - name: Retain screenshots and machine-readable results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-spatial-${{ github.sha }}
+          path: live-report/
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Save public validation report for repository readback
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import base64
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from urllib.error import HTTPError
+          from urllib.request import Request, urlopen
+          
+          repo = os.environ["GITHUB_REPOSITORY"]
+          assert repo == "pomegranatexlily/pages-app"
+          release = os.environ["GITHUB_SHA"]
+          path = Path("live-report/result.json")
+          report = json.loads(path.read_text()) if path.exists() else {"status": "not_run", "checks": [], "email_sent": False, "reason": "Browser setup or an earlier workflow step failed."}
+          report["release"] = release
+          report["workflow_run"] = os.environ["GITHUB_RUN_ID"]
+          report["recorded_at"] = datetime.now(timezone.utc).isoformat()
+          headers = {"Accept": "application/vnd.github+json", "Authorization": "Bearer " + os.environ["GH_TOKEN"], "X-GitHub-Api-Version": "2022-11-28"}
+          base = "https://api.github.com/repos/" + repo
+          
+          def api(url, data=None):
+              body = json.dumps(data).encode() if data is not None else None
+              request = Request(url, data=body, headers=headers, method="PUT" if data is not None else "GET")
+              with urlopen(request, timeout=30) as response:
+                  return json.load(response)
+          
+          head = api(base + "/git/ref/heads/main")["object"]["sha"]
+          if head != release:
+              print("Main advanced; retaining artifacts and not replacing the latest report.")
+          else:
+              target = base + "/contents/health/latest.json"
+              old_sha = None
+              try:
+                  old_sha = api(target + "?ref=main")["sha"]
+              except HTTPError as error:
+                  if error.code != 404:
+                      raise
+              payload = {"message": "Record live spatial validation [skip ci]", "branch": "main", "content": base64.b64encode((json.dumps(report, indent=2) + "\n").encode()).decode()}
+              if old_sha:
+                  payload["sha"] = old_sha
+              result = api(target, payload)
+              print(json.dumps({"report_status": report.get("status"), "report_commit": result["commit"]["sha"]}))
+          PY
