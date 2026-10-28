@@ -7,3 +7,24 @@
 .build-link{white-space:nowrap}
 @media(max-width:760px){.intro-actions{display:flex}}
 @media(max-width:700px){.top{margin:0 18px;height:76px}.navigation{margin:0 18px;gap:0;flex-wrap:wrap}.navigation label{padding:9px 10px}main{padding:0 18px 24px}.intro-actions{flex-wrap:wrap}.work-layout{min-height:0;padding-top:35px;gap:30px}.stage{height:360px}}
+
+/* Packet Lily screenshots + live demo (appended; existing rules untouched). */
+.screen .shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;opacity:0;transition:opacity .35s ease;pointer-events:none}
+.screen .shot.on{opacity:1}
+.screen[data-mode="live"] .shot{display:none}
+.screen .live{position:absolute;inset:0;overflow:auto;background:#f7f3fb;padding:16px 12px 12px;display:none;color:#32213f}
+.screen[data-mode="live"] .live{display:block}
+.live-step{display:none}
+.live-step.on{display:block}
+.live h4{font-size:18px;font-weight:400;margin:6px 0 12px;letter-spacing:-.3px}
+.live p{font-size:11px;margin:8px 0}
+.live label{display:block;font-size:9px;letter-spacing:.4px;color:#6b5a7d}
+.live input{width:100%;padding:10px;border:1px solid #ddd0e7;border-radius:7px;font-size:13px;margin:5px 0 10px;background:#fff;color:#32213f}
+.live button{width:100%;font-size:11px;padding:11px;background:#7448a6;color:#fff;text-align:center;border:0;border-radius:7px;margin-top:6px;cursor:pointer}
+.live button.secondary{background:transparent;border:1px solid #ddd0e7;color:#382442}
+.live-badge{font-size:7px;letter-spacing:.5px;color:#7448a6;margin-bottom:8px}
+.live-note{font-size:9px;color:#8a4b2f;min-height:14px}
+.demo-toggle{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:10px}
+.demo-toggle button{font-size:9px;color:#7f7984;padding:9px 15px;border:1px solid var(--line);border-radius:20px;cursor:pointer;background:transparent}
+.demo-toggle button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.demo-toggle .demo-hint{font-size:8px;color:#948f97}
